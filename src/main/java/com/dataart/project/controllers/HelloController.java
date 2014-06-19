@@ -1,8 +1,9 @@
-package com.dataart.project.controller;
+package com.dataart.project.controllers;
 
 import java.util.Date;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
@@ -41,8 +42,9 @@ public class HelloController {
 		ModelAndView model = new ModelAndView("default");
 		String now = (new Date()).toString();
 		model.addObject("now", now);
-		
-		logger.info("************************** "+request.getAttributeNames().nextElement().toString());
+
+		logger.info("************************** "
+				+ request.getAttributeNames().nextElement().toString());
 
 		logger.info("Returning hello view with " + now);
 		// log it via log4j
@@ -51,5 +53,13 @@ public class HelloController {
 		}
 
 		return model;
+	}
+
+	@RequestMapping(value = "/register", method = RequestMethod.GET)
+	public ModelAndView handleRequest(HttpServletRequest request,
+			HttpServletResponse response) throws Exception {
+
+		ModelAndView mav = new ModelAndView("ticket");
+		return mav;
 	}
 }

@@ -7,6 +7,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.dataart.project.controllers.HelloController;
+
 public class HelloControllerTest extends TestSuite {
 
 	@Ignore
