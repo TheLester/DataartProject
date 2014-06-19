@@ -18,7 +18,7 @@
                 <li><a href="">Portfolio</a></li>
                 <li><a href="">Styles</a></li>
                 <li><a href="">Blog</a></li>
-                <li><a href="">Layout</a></li>
+                <li><a href=""><c:out value="${now}"/></a></li>
 	            <li><a href="">Contact</a></li>	
             </ul>				
 			 </div>	
