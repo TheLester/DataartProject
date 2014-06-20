@@ -23,7 +23,7 @@
 				<li><a href="">Styles</a></li>
 				<li><a href="">Blog</a></li>
 				<li><a href=""><c:out value="${now}" /></a></li>
-				<li><a href="register.htm">Contact</a></li>
+				<li><a href="register.html">Contact</a></li>
 			</ul>
 		</div>
 		<div class="content">

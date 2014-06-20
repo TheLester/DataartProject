@@ -1,0 +1,11 @@
+body {
+     margin-left: 40px;
+ }
+ 
+table tr td {
+    padding-right: 40px;
+}
+ 
+table tr th {
+    text-align: left;
+}

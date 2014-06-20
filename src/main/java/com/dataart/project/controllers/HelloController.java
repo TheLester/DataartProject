@@ -20,7 +20,7 @@ public class HelloController {
 	private static final Logger logger = Logger
 			.getLogger(HelloController.class);
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "/welcome", method = RequestMethod.GET)
 	public ModelAndView getdata() {
 		logger.debug("===========================");
 		ModelAndView model = new ModelAndView("ticket");
@@ -29,22 +29,19 @@ public class HelloController {
 		if (logger.isDebugEnabled()) {
 			logger.debug(model);
 		}
-
+		
 		return model;
 
 	}
 
 	// http://www.commonj.com/blogs/2012/06/01/spring-mvc-3-tutorial-passing-request-parameters-to-controllers/
-	@RequestMapping(value = "/welcome", method = RequestMethod.GET)
-	public ModelAndView getdata1(HttpServletRequest request) {
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public ModelAndView getdata1() {
 		logger.debug("===========================");
 
 		ModelAndView model = new ModelAndView("default");
 		String now = (new Date()).toString();
 		model.addObject("now", now);
-
-		logger.info("************************** "
-				+ request.getAttributeNames().nextElement().toString());
 
 		logger.info("Returning hello view with " + now);
 		// log it via log4j
