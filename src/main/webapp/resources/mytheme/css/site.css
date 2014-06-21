@@ -1,9 +1,11 @@
 body {
-     margin-left: 40px;   
+    margin-left: 40px; 
+	background-color: #b7b7b7; 
  }
  
 table tr td {
-    padding-right: 40px;   
+    padding-right: 40px;  
+    border: 1px solid #d8dbde; 
 }
  
 table tr th {
