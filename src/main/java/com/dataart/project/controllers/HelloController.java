@@ -6,16 +6,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.dataart.project.services.BookService;
+
 @Controller
 public class HelloController {
 	// http://javabeginnerstutorial.com/spring-framework-tutorial/developing-a-spring-3-framework-mvc-application-step-by-step-tutorial/
 	/* Bodybuilding food shopping */
-
+	@Autowired
+	protected BookService service;
 	/* how to pass values to Controller from View */
 	private static final Logger logger = Logger
 			.getLogger(HelloController.class);

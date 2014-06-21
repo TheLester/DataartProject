@@ -1,13 +1,12 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
-       xmlns:p="http://www.springframework.org/schema/p"
-       xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:mvc="http://www.springframework.org/schema/mvc"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/tx 
-       http://www.springframework.org/schema/tx/spring-tx-3.1.xsd http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd
+       http://www.springframework.org/schema/tx/spring-tx-3.1.xsd http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
        http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
        http://www.springframework.org/schema/context
@@ -15,10 +14,14 @@
 
 
 
-	<context:component-scan base-package="com.dataart.project" />
+	<context:component-scan base-package="com.dataart.project">
+	</context:component-scan>
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
 	<context:annotation-config />
+	<mvc:annotation-driven />
 
-	<jdbc:embedded-database id="dataSource" />
+	<jdbc:embedded-database id="dataSource" type="HSQL" />
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
@@ -34,7 +37,7 @@
 			</props>
 		</property>
 	</bean>
-
+	<tx:annotation-driven />
 	<tx:annotation-driven transaction-manager="transactionManager" />
 	<bean id="transactionManager"
 		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
@@ -51,7 +54,10 @@
 		</property>
 	</bean>
 
+	<!-- <bean id="beanDefinitionReader" class="org.springframework.beans.factory.xml.XmlBeanDefinitionReader"> 
+		<property name="VALIDATION_NONE"> <value>true</value> </property> </bean> -->
+
 	<mvc:resources mapping="/resources/**" location="/resources/mytheme/" />
-	<mvc:annotation-driven />
+
 
 </beans>
