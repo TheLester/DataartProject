@@ -3,7 +3,7 @@ package com.dataart.project.repositories;
 import javax.persistence.*;
 
 @Entity
-@Table
+@Table(name = "BOOK")
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
