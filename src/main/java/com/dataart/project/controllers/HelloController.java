@@ -63,4 +63,12 @@ public class HelloController {
 		ModelAndView mav = new ModelAndView("ticket");
 		return mav;
 	}
+	
+	@RequestMapping(value = "/locale", method = RequestMethod.GET)
+	public ModelAndView handleLocalisation(HttpServletRequest request,
+			HttpServletResponse response) throws Exception {
+
+		ModelAndView mav = new ModelAndView("localisation");
+		return mav;
+	}
 }
