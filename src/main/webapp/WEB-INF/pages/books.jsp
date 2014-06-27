@@ -7,7 +7,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="Content-Language" content="English"/>
-    <link rel="stylesheet" media="all" href="<c:url value="/resources/site.css"/>">
+    <link rel="stylesheet" media="all" href="<c:url value="/resources/css/site.css"/>">
     <title>Books</title>
 </head>
 <body>

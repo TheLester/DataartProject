@@ -12,15 +12,16 @@ import java.util.List;
 public class BookRepository {
 
 	@Autowired
-	protected SessionFactory sessionFactory;
+	protected SessionFactory sessionFactoryMySQL; 
+	/* change to sessionFactory if using HSQL in memory DB */
 
 	@SuppressWarnings("unchecked")
 	public List<Book> getBooks() {
-		return sessionFactory.getCurrentSession().createQuery("FROM Book b")
+		return sessionFactoryMySQL.getCurrentSession().createQuery("FROM Book b")
 				.list();
 	}
 
 	public void createBook(Book book) {
-		sessionFactory.getCurrentSession().save(book);
+		sessionFactoryMySQL.getCurrentSession().save(book);
 	}
 }
