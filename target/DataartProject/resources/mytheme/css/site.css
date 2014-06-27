@@ -1,14 +1,13 @@
 body {
-     margin-left: 40px;
-    background-color: #b7b7b7;
+    margin-left: 40px; 
+	background-color: #b7b7b7; 
  }
  
 table tr td {
-    padding-right: 40px;
-    background-color: #b7b7b7;
+    padding-right: 40px;  
+    border: 1px solid #d8dbde; 
 }
  
 table tr th {
     text-align: left;
-    background-color: #b7b7b7;
 }

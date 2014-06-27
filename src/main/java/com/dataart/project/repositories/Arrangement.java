@@ -19,12 +19,17 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "Arrangments")
 public class Arrangement {
-	public Arrangement(int id, String name, Date date) {
-		this.id=id;
-		this.name=name;
-		this.date=date;
+	
+	public Arrangement() {
+		// TODO Auto-generated constructor stub
 	}
 
+	public Arrangement(int id, String name, Date date) {
+		this.id = id;
+		this.name = name;
+		this.date = date;
+	}
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;

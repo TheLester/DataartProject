@@ -13,31 +13,17 @@
        http://www.springframework.org/schema/context/spring-context-3.0.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 
+	<import resource="classpath:datasource.xml" />
 
 	<context:component-scan base-package="com.dataart.project">
 	</context:component-scan>
-	<bean
-		class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
+	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
+
 	<context:annotation-config />
 	<mvc:annotation-driven />
-
-	<jdbc:embedded-database id="dataSource" type="HSQL" />
-	<bean id="sessionFactory"
-		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
-		<property name="dataSource" ref="dataSource" />
-		<property name="packagesToScan">
-			<list>
-				<value>com.dataart.project.repositories</value>
-			</list>
-		</property>
-		<property name="hibernateProperties">
-			<props>
-				<prop key="hibernate.dialect">org.hibernate.dialect.HSQLDialect</prop>
-				<prop key="hibernate.hbm2ddl.auto">update</prop>
-			</props>
-		</property>
-	</bean>
+	
 	<tx:annotation-driven />
+
 	<tx:annotation-driven transaction-manager="transactionManager" />
 	<bean id="transactionManager"
 		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
@@ -58,6 +44,5 @@
 		<property name="VALIDATION_NONE"> <value>true</value> </property> </bean> -->
 
 	<mvc:resources mapping="/resources/**" location="/resources/mytheme/" />
-
 
 </beans>
