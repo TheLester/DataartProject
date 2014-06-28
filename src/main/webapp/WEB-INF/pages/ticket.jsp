@@ -17,7 +17,7 @@
 			<div class="afterHeaderSpace"></div>
 			<div class="navigation">
 			<ul>
-			    <li><a href="">Матчи</a></li>
+			    <li><a href="arrangements.html">Матчи</a></li>
 	   		    <li><a href="">Билетная схема</a></li>
                 <li><a href="">Билеты</a></li>
                 <li><a href="">Расписание матчей</a></li>
