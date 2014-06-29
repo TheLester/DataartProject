@@ -2,12 +2,7 @@ package com.dataart.project.repositories;
 
 import java.util.Date;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * Defines a name and date of any arrangement (like match, concert etc)
@@ -18,11 +13,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "Arrangements")
-public class Arrangement {
-	
-	public Arrangement() {
-		// TODO Auto-generated constructor stub
-	}
+public class Arrangement {	
 
 	public Arrangement(int id, String name, Date date) {
 		this.id = id;
@@ -30,6 +21,15 @@ public class Arrangement {
 		this.date = date;
 	}
 	
+	public Arrangement() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Arrangement(String name2, Date date2) {
+		this.date=date2;
+		this.name=name2;
+	}
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
@@ -40,14 +40,20 @@ public class Arrangement {
 	@Column
 	private Date date;
 
-	public void setArrangementName(String name) {
+	public void setId(int id) {
+        this.id = id;
+    }
+	
+	public void setName(String name) {
 		this.name = name;
 	}
 
-	public void setArrangementDate(Date date) {
+	public void setDate(Date date) {
+		System.out.println("-------------------------");
+		System.out.println(date);
 		this.date = date;
 	}
-
+	
 	public int getId() {
 		return id;
 	}

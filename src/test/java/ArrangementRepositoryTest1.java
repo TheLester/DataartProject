@@ -39,7 +39,7 @@ public class ArrangementRepositoryTest1 {
 		    		Date()));
 		}};
 		System.out.println(real.get(0).getName().toString());
-	//	assertEquals(list,real);
+		//assertEquals(list,real);
 
 	}
 

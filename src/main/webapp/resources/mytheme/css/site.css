@@ -1,13 +1,17 @@
 body {
-    margin-left: 40px; 
-	background-color: #b7b7b7; 
+     margin-left: 40px;   
  }
  
 table tr td {
-    padding-right: 40px;  
-    border: 1px solid #d8dbde; 
+    padding-right: 40px;   
 }
  
 table tr th {
     text-align: left;
+}
+
+h2 {
+	text-align: left;
+	color: red;
+	position: relative;
 }
