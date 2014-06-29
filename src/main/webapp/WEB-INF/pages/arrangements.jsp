@@ -25,6 +25,7 @@
     </c:forEach>
 </table>
 <br/>
-<a href="<c:url value="/create-arrangement"/>">Create Book</a>
+<a href="<c:url value="/create-arrangement"/>">Create Arrangement</a>
+<a href="<c:url value="/delete-arrangement"/>">Delete Arrangement</a>
 </body>
 </html>

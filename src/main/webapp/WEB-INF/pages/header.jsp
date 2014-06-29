@@ -18,10 +18,8 @@
 		<ul>
 			<li><a href="arrangements.html">Мероприятия</a></li>
 			<li><a href="create-arrangement.html">Создать мероприятие</a></li>
-			<li><a href="">Layout</a></li>
-			<li><a href="">Layout</a></li>
-			<li><a href="">Layout</a></li>
-			<li><a href="">Layout</a></li>
+			<li><a href="delete-arrangement.html">Удалить мероприятие</a></li>
+			<li><a href="edit-arrangement.html">Редактировать мероприятие</a></li>
 			<li><a href="">Contact</a></li>
 		</ul>
 	</div>

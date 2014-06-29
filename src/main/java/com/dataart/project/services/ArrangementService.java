@@ -24,5 +24,8 @@ public class ArrangementService {
 		 repository.createArrangement(arrangement);
 	}
 	
+	public void deleteArrangement(int id) {
+		 repository.deleteArrangement(id);
+	}
 
 }

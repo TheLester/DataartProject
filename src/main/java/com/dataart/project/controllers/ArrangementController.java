@@ -33,23 +33,22 @@ public class ArrangementController {
 	}
 
 	@RequestMapping(value = "create-arrangement")
-	public String createBookGet(Model model) {		
+	public String createArrangementGet(Model model) {
 		model.addAttribute("partial", "create-arrangement.jsp");
 		model.addAttribute("title", "Template");
 		return "template";
 	}
 
 	@RequestMapping(value = "create-arrangement", method = RequestMethod.POST)
-	public String createBookPost(HttpServletRequest request) {
-		String time=request.getParameter("time");
-		String date=request.getParameter("date");
-		String name=request.getParameter("name");
+	public String createArrangementPost(HttpServletRequest request) {
+		String time = request.getParameter("time");
+		String date = request.getParameter("date");
+		String name = request.getParameter("name");
 		System.out.println("*****");
-		 SimpleDateFormat format = 
-		            new SimpleDateFormat("yyyy-mm-dd HH:mm");
-		 try {
-			Date dateDate = format.parse(date+" "+time);
-			Arrangement a=new Arrangement(name, dateDate);
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-mm-dd HH:mm");
+		try {
+			Date dateDate = format.parse(date + " " + time);
+			Arrangement a = new Arrangement(name, dateDate);
 			System.out.println(a.getName());
 			System.out.println(a.getDate());
 			service.createArrangement(a);
@@ -57,32 +56,22 @@ public class ArrangementController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 		return "redirect:arrangements";
 	}
 
-	/*@RequestMapping(value = "create-arrangement", method = RequestMethod.POST)
-	public String createBookPost(
-			@ModelAttribute("arrangement") Arrangement arrangement) {
-		service.createArrangement(arrangement);
-		return "redirect:arrangements";
-	}
-	*/
-	@RequestMapping(value = "/welcome", method = RequestMethod.GET)
-	public ModelAndView getdata() {
-		ModelAndView model = new ModelAndView("ticket");
-		return model;
-	}
-
-	@RequestMapping(value = "/home", method = RequestMethod.GET)
-	public ModelAndView handleRequest() {
-		return new ModelAndView("home");
-	}
-	
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public ModelAndView handleRequest1(Model model) {
-		model.addAttribute("partial", "home.jsp");
+	@RequestMapping(value = { "/delete-arrangement" })
+	public String deleteArrangementGet(Model model) {
+		List<Arrangement> arrangements = service.getArrangements();
+		model.addAttribute("partial", "delete-arrangement.jsp");
 		model.addAttribute("title", "Template");
-		return new ModelAndView("template");
+		model.addAttribute("arrangements", arrangements);
+		return "template";
+	}
+
+	@RequestMapping(value = "/delete-arrangement", method = RequestMethod.POST)
+	public String deleteArrangementPost(HttpServletRequest request) {
+		String id = request.getParameter("selector");		
+		service.deleteArrangement(Integer.parseInt(id));
+		return "redirect:arrangements";
 	}
 }
