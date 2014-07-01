@@ -2,19 +2,30 @@ package com.dataart.project.services;
 
 import java.util.List;
 
-import com.dataart.project.repositories.Arrangement;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-public interface ArrangementService {
+import com.dataart.project.repositories.Arrangement;
+import com.dataart.project.repositories.ArrangementRepository;
+
+@Service
+public class ArrangementService {
+
+	@Autowired 
+	protected ArrangementRepository repository;
+	
 	/* get list of all arrangements */
-	List<Arrangement> getArrangements();
+	public List<Arrangement> getArrangements() {
+		return repository.getArrangements();
+	}
 
 	/* create an arrangement */
-	void createArrangement(Arrangement arrangement);
-
-	/* delete an arrangement */
-	void deleteArrangement(int id);
+	public void createArrangement(Arrangement arrangement) {
+		 repository.createArrangement(arrangement);
+	}
 	
-	/* change an arrangement */
-	void amendArrangement(int id, String name);
+	public void deleteArrangement(int id) {
+		 repository.deleteArrangement(id);
+	}
 
 }

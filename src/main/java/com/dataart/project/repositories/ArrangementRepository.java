@@ -7,11 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.dataart.project.services.ArrangementService;
-
 @Repository
 @Transactional
-public class ArrangementRepository implements ArrangementService {
+public class ArrangementRepository {
+
 
 	@Autowired
 	protected SessionFactory sessionFactory;
