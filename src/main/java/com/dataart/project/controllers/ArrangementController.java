@@ -61,7 +61,7 @@ public class ArrangementController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return "redirect:arrangements";
+		return "redirect:arrangements";		
 		}
 		else
 			return "redirect:create-arrangement";

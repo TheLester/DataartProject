@@ -23,37 +23,31 @@
 	src="<c:url value="/resources/js/jquery.jalert.js"/>"></script>
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/css/jalert.css"/>">
-<script type="text/javascript">
+<script>
 	$(function() {
-		$('#submitDemo').live("click", function() {
-			//		if (document.forms["reviewForm"].NotNull.value=="true") {
-			e.preventDefault();
-			jAlert('Мероприятие успешно создано', "success");
-			console.log("created!");
-			//}
-		});
+		//$('body').jAlert('Welcome to jAlert Demo Page', "success");
+		$(document).jAlert('This is a jAlert Info Box',"info",'infoboxid');
 
 	});
 </script>
-<script>
-	function checkForNull() {
-		var nameSel = document.forms["reviewForm"].name.value;
-		var dateSel = document.forms["reviewForm"].date.value;
-		var timeSel = document.forms["reviewForm"].time.value;
-		var check = document.forms["reviewForm"].NotNull.value;
+<script>	
+		function checkForNull() {
+			var nameSel = document.forms["reviewForm"].name.value;
+			var dateSel = document.forms["reviewForm"].date.value;
+			var timeSel = document.forms["reviewForm"].time.value;
+			var check = document.forms["reviewForm"].NotNull.value;
 
-		if (!nameSel || !dateSel || !timeSel) {
-
-			alert("Заполните все поля");
-			document.forms["reviewForm"].NotNull.value = "false";
-		}
-		console.log(check);
-	}
+			if (!nameSel || !dateSel || !timeSel) {
+				alert("Please, fill all fields");				
+				document.forms["reviewForm"].NotNull.value = "false";
+			}
+			console.log(check);
+		}	
 </script>
 </head>
 <body>
 	<h2>Create Arrangement</h2>
-	<form:form id='reviewForm' method="post">
+	<form:form id="reviewForm" method="post">
 		<table>
 			<tr>
 				<td>Name:</td>
@@ -68,7 +62,8 @@
 		</table>
 		<br />
 		<input type="hidden" id="NotNull" name="NotNull" value="true">
-		<input type="submit" id="submitDemo" onclick="checkForNull()" value="Create" />
+		<input type="submit" id="submitDemo" onclick="checkForNull()"
+			value="Create" />
 	</form:form>
 
 </body>
