@@ -2,41 +2,12 @@ package com.dataart.project.repositories;
 
 import java.util.List;
 
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
+public interface ArrangementRepository {
+	List<Arrangement> getArrangements();
 
-@Repository
-@Transactional
-public class ArrangementRepository {
+	void createArrangement(Arrangement arrangement);
 
-	@Autowired
-	protected SessionFactory sessionFactory;
+	void deleteArrangement(int id);
 
-	/* change to sessionFactory if using HSQL in memory DB */
-
-	@SuppressWarnings("unchecked")
-	public List<Arrangement> getArrangements() {
-		return currentSession().createQuery("FROM Arrangement a").list();
-	}
-
-	public void createArrangement(Arrangement arrangement) {
-		currentSession().save(arrangement);
-	}
-
-	public void deleteArrangement(int id) {
-		Arrangement arrangement = (Arrangement) sessionFactory
-				.getCurrentSession().get(Arrangement.class, id);
-		currentSession().delete(arrangement);
-	}
-
-	public void amendArrangement(int id, String name) {
-
-	}
-
-	private Session currentSession() {
-		return sessionFactory.getCurrentSession();
-	}
+	void amendArrangement(Arrangement arrangement);
 }
