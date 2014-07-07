@@ -13,7 +13,7 @@
 	href="<c:url value="/resources/css/site.css"/>">
 </head>
 <body>
-	<h2>Delete Arrangement</h2>
+	<h2>Delete Event</h2>
 	<form:form method="post">
 		<select name="selector">
 			<c:forEach items="${arrangements}" var="arrangements">				

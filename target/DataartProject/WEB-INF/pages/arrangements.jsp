@@ -11,7 +11,7 @@
     <title>Arrangements</title>
 </head>
 <body>
-<h2>Arrangements</h2>
+<h2>Events</h2>
 <table>
     <tr>
         <th>Name</th>
@@ -25,7 +25,7 @@
     </c:forEach>
 </table>
 <br/>
-<a href="<c:url value="/create-arrangement"/>">Create Arrangement</a>
-<a href="<c:url value="/delete-arrangement"/>">Delete Arrangement</a>
+<a href="<c:url value="/create-arrangement"/>">Create Event</a>
+<a href="<c:url value="/delete-arrangement"/>">Delete Event</a>
 </body>
 </html>

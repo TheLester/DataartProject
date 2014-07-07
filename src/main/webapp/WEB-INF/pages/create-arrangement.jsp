@@ -46,7 +46,7 @@
 </script>
 </head>
 <body>
-	<h2>Create Arrangement</h2>
+	<h2>Create Event</h2>
 	<form:form id="reviewForm" method="post">
 		<table>
 			<tr>

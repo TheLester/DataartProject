@@ -16,10 +16,10 @@
 	<div class="afterHeaderSpace"></div>
 	<div class="navigation">
 		<ul>
-			<li><a href="arrangements.html">Мероприятия</a></li>
-			<li><a href="create-arrangement.html">Создать</a></li>
-			<li><a href="delete-arrangement.html">Удалить</a></li>
-			<li><a href="edit-arrangement.html">Редактировать</a></li>		
+			<li><a href="arrangements.html">Events</a></li>
+			<li><a href="create-arrangement.html">Create Event</a></li>
+			<li><a href="delete-arrangement.html">Delete Event</a></li>
+			<li><a href="edit-arrangement.html">Edit Event</a></li>		
 		</ul>
 	</div>
 </body>

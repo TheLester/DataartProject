@@ -13,7 +13,7 @@
 	href="<c:url value="/resources/css/site.css"/>">
 </head>
 <body>
-	<h2>Create Arrangement</h2>
+	<h2>Edit Event</h2>
 	<form:form method="post">
 		<table>
 			<tr>
