@@ -17,10 +17,9 @@
 	<div class="navigation">
 		<ul>
 			<li><a href="arrangements.html">Мероприятия</a></li>
-			<li><a href="create-arrangement.html">Создать мероприятие</a></li>
-			<li><a href="delete-arrangement.html">Удалить мероприятие</a></li>
-			<li><a href="edit-arrangement.html">Редактировать мероприятие</a></li>
-			<li><a href="">Contact</a></li>
+			<li><a href="create-arrangement.html">Создать</a></li>
+			<li><a href="delete-arrangement.html">Удалить</a></li>
+			<li><a href="edit-arrangement.html">Редактировать</a></li>		
 		</ul>
 	</div>
 </body>
