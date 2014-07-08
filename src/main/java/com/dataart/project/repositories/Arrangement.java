@@ -1,6 +1,7 @@
 package com.dataart.project.repositories;
 
 import java.util.Date;
+import java.util.Set;
 
 import javax.persistence.*;
 
@@ -16,6 +17,7 @@ import javax.persistence.*;
 public class Arrangement {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "arrangement_id")
 	private int id;
 
 	@Column(nullable = false, length = 255)
@@ -23,6 +25,8 @@ public class Arrangement {
 
 	@Column
 	private Date date;
+	@OneToMany(mappedBy = "arrangement")
+	private Set<Sector> sectors;
 
 	public Arrangement(int id, String name, Date date) {
 		this.id = id;
@@ -64,4 +68,11 @@ public class Arrangement {
 		return date;
 	}
 
+	public Set<Sector> getSectors() {
+		return sectors;
+	}
+
+	public void setSectors(Set<Sector> sectors) {
+		this.sectors = sectors;
+	}
 }

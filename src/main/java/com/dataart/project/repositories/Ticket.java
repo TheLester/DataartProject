@@ -1,8 +1,8 @@
 package com.dataart.project.repositories;
 
-import javax.persistence.*;
+import java.util.Set;
 
-import org.hibernate.annotations.Check;
+import javax.persistence.*;
 
 enum TicketStatus {
 	FREE, SOLD, RESERVED
@@ -19,6 +19,7 @@ enum TicketStatus {
 public class Ticket {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "ticket_id")
 	private int id;
 	@Column(nullable = false)
 	private int row;
@@ -26,6 +27,12 @@ public class Ticket {
 	private int seat;
 	@Enumerated(EnumType.STRING)
 	private TicketStatus status;
+	@ManyToOne
+	@JoinColumn(name = "sector_id")
+	private Sector sector;
+	@ManyToOne
+	@JoinColumn(name = "customer_id")
+	private Customer customer;
 
 	public Ticket() {
 	}
@@ -77,4 +84,19 @@ public class Ticket {
 		this.status = status;
 	}
 
+	public Sector getSector() {
+		return sector;
+	}
+
+	public void setSector(Sector sector) {
+		this.sector = sector;
+	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
 }
