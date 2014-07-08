@@ -12,7 +12,7 @@
 </head>
 <body>
 <h2>Events</h2>
-<table>
+<table id="events">
     <tr>
         <th>Name</th>
         <th>Date</th>

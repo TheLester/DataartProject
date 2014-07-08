@@ -13,7 +13,9 @@
 <body>
 	<div class="fix">
 		<jsp:include page="header.jsp" />
+		<div class="content">
 		<jsp:include page="${partial}" />
+		</div>
 		<jsp:include page="footer.jsp" />
 	</div>
 </body>

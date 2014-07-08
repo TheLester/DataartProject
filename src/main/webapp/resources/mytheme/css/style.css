@@ -38,13 +38,7 @@ html,body {
 	height: 25px;
 }
 
-hr {
-    border: none; /* Убираем границу */
-    background-color: #020061; /* Цвет линии */
-    color: #020061; /* Цвет линии для IE6-7 */
-    height: 3px; /* Толщина линии */
-   }
-   
+ 
 .navigation {
 height: 32px;
 /*background:url("images/header1.jpg") repeat;*/
@@ -88,4 +82,11 @@ box-shadow: 0 5px 5px rgba(0,0,0, 0.15);
 	background: #020061;
 	position: absolute;
 	bottom: 0;
+}
+
+.content {
+	padding-left: 20px; 
+	padding-top: 20px;  	
+	padding-bottom: 20px;
+	padding-right: 20px;
 }

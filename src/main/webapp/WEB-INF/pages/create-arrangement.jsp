@@ -23,14 +23,13 @@
 	src="<c:url value="/resources/js/jquery.jalert.js"/>"></script>
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/css/jalert.css"/>">
-<script>
-	$(function() {
-		//$('body').jAlert('Welcome to jAlert Demo Page', "success");
-		$(document).jAlert('This is a jAlert Info Box',"info",'infoboxid');
-
-	});
-</script>
 <script>	
+function sleep(milliseconds) { 
+        var start = new Date().getTime(); 
+        for (var i = 0; i < 1e7; i++) { 
+                if ((new Date().getTime() - start) > milliseconds){ break; } 
+        } 
+}
 		function checkForNull() {
 			var nameSel = document.forms["reviewForm"].name.value;
 			var dateSel = document.forms["reviewForm"].date.value;
@@ -38,11 +37,14 @@
 			var check = document.forms["reviewForm"].NotNull.value;
 
 			if (!nameSel || !dateSel || !timeSel) {
-				alert("Please, fill all fields");				
+						sleep(100);
+				$(document).jAlert('This is a jAlert Info Box',"info",'infoboxid');	
+sleep(300); 					
 				document.forms["reviewForm"].NotNull.value = "false";
 			}
 			console.log(check);
 		}	
+
 </script>
 </head>
 <body>
