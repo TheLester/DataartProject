@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.dataart.project.repositories.Arrangement;
-import com.dataart.project.repositories.ArrangementRepository;
+import com.dataart.project.repositories.ArrangementRepositoryHibernateImpl;
 import com.dataart.project.services.ArrangementService;
 
 import org.springframework.test.context.ContextConfiguration;
