@@ -26,5 +26,11 @@ public class GeneralController {
 		model.addAttribute("title", "Template");
 		return new ModelAndView("template");
 	}
-
+	
+	@RequestMapping(value = "/stadium", method = RequestMethod.GET)
+	public ModelAndView handleRequestStadium(Model model) {
+		model.addAttribute("partial", "stadium.jsp");
+		model.addAttribute("title", "Stadium");
+		return new ModelAndView("template");
+	}
 }

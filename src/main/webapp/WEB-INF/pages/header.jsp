@@ -19,7 +19,8 @@
 			<li><a href="arrangements.html">Events</a></li>
 			<li><a href="create-arrangement.html">Create Event</a></li>
 			<li><a href="delete-arrangement.html">Delete Event</a></li>
-			<li><a href="edit-arrangement.html">Edit Event</a></li>		
+			<li><a href="edit-arrangement.html">Edit Event</a></li>	
+			<li><a href="stadium.html">Scheme of stadium</a></li>				
 		</ul>
 	</div>
 </body>
