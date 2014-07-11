@@ -45,25 +45,26 @@ public class ArrangementController {
 		String date = request.getParameter("date");
 		String name = request.getParameter("name");
 		String check = request.getParameter("NotNull");
-		System.out.println("=============================================================================");
+		System.out
+				.println("=============================================================================");
 		System.out.println(name);
 		System.out.println(date);
 		System.out.println(time);
 		System.out.println(check);
-		System.out.println("=============================================================================");
+		System.out
+				.println("=============================================================================");
 		if (check.equals("true")) {
-		SimpleDateFormat format = new SimpleDateFormat("yyyy-mm-dd HH:mm");
-		try {
-			Date dateDate = format.parse(date + " " + time);
-			Arrangement a = new Arrangement(name, dateDate);			
-			service.createArrangement(a);
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return "redirect:arrangements";		
-		}
-		else
+			SimpleDateFormat format = new SimpleDateFormat("yyyy-mm-dd HH:mm");
+			try {
+				Date dateDate = format.parse(date + " " + time);
+				Arrangement a = new Arrangement(name, dateDate);
+				service.createArrangement(a);
+			} catch (ParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return "redirect:arrangements";
+		} else
 			return "redirect:create-arrangement";
 	}
 
@@ -78,8 +79,46 @@ public class ArrangementController {
 
 	@RequestMapping(value = "/delete-arrangement", method = RequestMethod.POST)
 	public String deleteArrangementPost(HttpServletRequest request) {
-		String id = request.getParameter("selector");		
+		String id = request.getParameter("selector");
 		service.deleteArrangement(Integer.parseInt(id));
 		return "redirect:arrangements";
+	}
+	
+	@RequestMapping(value = { "/edit-arrangement" })
+	public String editArrangementGet(Model model) {
+		List<Arrangement> arrangements = service.getArrangements();
+		model.addAttribute("partial", "edit-arrangement.jsp");
+		model.addAttribute("title", "Edit");
+		model.addAttribute("arrangements", arrangements);
+		return "template";
+	}
+	
+	@RequestMapping(value = "edit-arrangement", method = RequestMethod.POST)
+	public String editArrangementPost(HttpServletRequest request) {
+		String time = request.getParameter("time");
+		String date = request.getParameter("date");
+		String name = request.getParameter("name");
+		String check = request.getParameter("NotNull");
+		System.out
+				.println("=============================================================================");
+		System.out.println(name);
+		System.out.println(date);
+		System.out.println(time);
+		System.out.println(check);
+		System.out
+				.println("=============================================================================");
+		if (check.equals("true")) {
+			SimpleDateFormat format = new SimpleDateFormat("yyyy-mm-dd HH:mm");
+			try {
+				Date dateDate = format.parse(date + " " + time);
+				Arrangement a = new Arrangement(name, dateDate);
+			//	service.createArrangement(a);
+			} catch (ParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return "redirect:arrangements";
+		} else
+			return "redirect:edit-arrangement";
 	}
 }
