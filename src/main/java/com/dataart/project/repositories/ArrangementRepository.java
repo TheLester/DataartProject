@@ -1,5 +1,6 @@
 package com.dataart.project.repositories;
 
+import java.util.Date;
 import java.util.List;
 
 public interface ArrangementRepository {
@@ -9,5 +10,5 @@ public interface ArrangementRepository {
 
 	void deleteArrangement(int id);
 
-	void amendArrangement(Arrangement arrangement);
+	public void updateArrangement(int id, String name, Date date);
 }

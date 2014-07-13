@@ -18,11 +18,12 @@ function setFields() {
 	if(selector_value!="") {
 		var res = selector_value.split("/");	
 		console.log(res);
+		document.forms["reviewForm"].arrangement_id.value=res[0];
 		document.forms["reviewForm"].name.value=res[1];	
 		var datetime=res[2].split(" ");
 		document.forms["reviewForm"].date.value=datetime[0];
 		document.forms["reviewForm"].time.value=datetime[1];
-	} else
+	} else // hide input fields
 	{
 		console.log("Inputs +++++++++++++++++++++++++");
 		setInputs("no");
@@ -34,6 +35,29 @@ function setInputs(status) {
 		document.getElementById("date").style.display=status;
 		document.getElementById("time").style.display=status;
 }
+
+function checkForNull() {
+	var nameSel = document.forms["reviewForm"].name.value;
+	var dateSel = document.forms["reviewForm"].date.value;
+	var timeSel = document.forms["reviewForm"].time.value;
+	var check = document.forms["reviewForm"].NotNull.value;
+
+	if (!nameSel || !dateSel || !timeSel) {
+				sleep(100);
+		$(document).jAlert('This is a jAlert Info Box',"info",'infoboxid');	
+sleep(300); 					
+		document.forms["reviewForm"].NotNull.value = "false";
+	}
+	console.log(check);
+}	
+
+function sleep(milliseconds) { 
+    var start = new Date().getTime(); 
+    for (var i = 0; i < 1e7; i++) { 
+            if ((new Date().getTime() - start) > milliseconds){ break; } 
+    } 
+}
+
 </script>
 </head>
 <body onload="setFields();">
@@ -61,7 +85,8 @@ function setInputs(status) {
 		</table>
 		<br />
 		<input type="hidden" id="NotNull" name="NotNull" value="true">
-		<input type="submit" value="Save" />
+		<input type="hidden" id="arrangement_id" name="arrangement_id" value="true">
+		<input type="submit"  onclick="checkForNull();" value="Save" />
 	</form:form>
 </body>
 </html>

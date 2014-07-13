@@ -1,5 +1,6 @@
 package com.dataart.project.repositories;
 
+import java.util.Date;
 import java.util.List;
 
 import org.hibernate.Session;
@@ -22,19 +23,26 @@ public class ArrangementRepositoryHibernateImpl implements
 	public List<Arrangement> getArrangements() {
 		return currentSession().createQuery("FROM Arrangement a").list();
 	}
+
 	@Override
 	public void createArrangement(Arrangement arrangement) {
 		currentSession().save(arrangement);
 	}
+
 	@Override
 	public void deleteArrangement(int id) {
 		Arrangement arrangement = (Arrangement) sessionFactory
 				.getCurrentSession().get(Arrangement.class, id);
 		currentSession().delete(arrangement);
 	}
+
 	@Override
-	public void amendArrangement(Arrangement arrangement) {
-		 currentSession().update(arrangement);
+	public void updateArrangement(int id, String name, Date date) {
+		Arrangement a = (Arrangement) currentSession().get(Arrangement.class,
+				id);
+		a.setName(name);
+		a.setDate(date);
+		currentSession().update(a);	
 	}
 
 	private Session currentSession() {

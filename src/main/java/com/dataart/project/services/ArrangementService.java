@@ -1,5 +1,6 @@
 package com.dataart.project.services;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,5 +28,8 @@ public class ArrangementService {
 	public void deleteArrangement(int id) {
 		 repository.deleteArrangement(id);
 	}
-
+	
+	public void updateArrangement(int id, String name, Date date) {
+		 repository.updateArrangement(id, name, date);
+	}
 }

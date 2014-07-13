@@ -98,21 +98,23 @@ public class ArrangementController {
 		String time = request.getParameter("time");
 		String date = request.getParameter("date");
 		String name = request.getParameter("name");
+		int arrangement_id=Integer.parseInt(request.getParameter("arrangement_id"));
 		String check = request.getParameter("NotNull");
+		
 		System.out
 				.println("=============================================================================");
 		System.out.println(name);
 		System.out.println(date);
 		System.out.println(time);
 		System.out.println(check);
+		System.out.println(arrangement_id);
 		System.out
 				.println("=============================================================================");
 		if (check.equals("true")) {
 			SimpleDateFormat format = new SimpleDateFormat("yyyy-mm-dd HH:mm");
 			try {
-				Date dateDate = format.parse(date + " " + time);
-				Arrangement a = new Arrangement(name, dateDate);
-			//	service.createArrangement(a);
+				Date dateDate = format.parse(date + " " + time);				
+				service.updateArrangement(arrangement_id, name, dateDate);
 			} catch (ParseException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
