@@ -25,45 +25,62 @@
 	src="<c:url value="/resources/js/jquery.jalert.js"/>"></script>
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/css/jalert.css"/>">
-	<link rel="stylesheet" media="all"
+<link rel="stylesheet" media="all"
 	href="<c:url value="/resources/css/site.css"/>">
 <script>
-	$(function() {		
+	$(function() {
 		document.getElementById("warn").style.display = 'none';
-	/*	document.getElementById('warn').addEventListener('click',function(e){	
-		document.getElementById("warn").style.display = 'none';
-	});*/
+		document.getElementById("suc").style.display = 'none';
+		/*	document.getElementById('warn').addEventListener('click',function(e){	
+			document.getElementById("warn").style.display = 'none';
+		});*/
 	});
-	function showCreateWarning() {
-		//document.getElementById("demo").innerHTML = "YOU CLICKED ME!";	
-		 document.getElementById("warn").style.display = 'block';
-		 
-}
 </script>
-<script>	
-		function checkForNull() {
-			var nameSel = document.forms["reviewForm"].name.value;
-			var dateSel = document.forms["reviewForm"].date.value;
-			var timeSel = document.forms["reviewForm"].time.value;
-			var check = document.forms["reviewForm"].NotNull.value;
+<script>
+	function checkForNull() {
+		document.getElementById("submitDemo").disabled = true;
 
-			if (!nameSel || !dateSel || !timeSel) {						
-				showCreateWarning();						
-				document.forms["reviewForm"].NotNull.value = "false";
-			}
-			console.log(check);
-		}	
+		var nameSel = document.forms["reviewForm"].name.value;
+		var dateSel = document.forms["reviewForm"].date.value;
+		var timeSel = document.forms["reviewForm"].time.value;
+		var check = document.forms["reviewForm"].NotNull.value;
 
+		if (!nameSel || !dateSel || !timeSel) {
+			document.getElementById("warn").style.display = 'block';
+			setTimeout(function() {
+				document.getElementById("warn").style.display = 'none';
+				document.forms["reviewForm"].submit();
+			}, 1500);
+
+			document.forms["reviewForm"].NotNull.value = "false";
+		}else{
+		console.log(check);
+		document.getElementById("suc").style.display = 'block';
+		setTimeout(function() {
+			document.getElementById("suc").style.display = 'none';
+			document.forms["reviewForm"].submit();
+		}, 1500);
+
+		
+		}
+	}
 </script>
 </head>
 <body>
-<div class="bs-example" id="warn">
-    <div class="alert alert-warning">
+	<div class="bs-example" id="warn">
+    <div class="alert alert-info">
         <a href="#" class="close" data-dismiss="alert">&times;</a>
-        <strong>Warning!</strong> There was a problem with your network connection.
+        <strong>Note!</strong> Please fill all fields.
     </div>
 </div>
-	<h2>Create Event</h2>
+<div class="bs-example1" id="suc" >
+    <div class="alert alert-success">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong>Success!</strong> Event has been created successfully.
+    </div>
+</div>
+
+	<h2 id="myHead">Create Event</h2>
 	<form:form id="reviewForm" method="post">
 		<table>
 			<tr>

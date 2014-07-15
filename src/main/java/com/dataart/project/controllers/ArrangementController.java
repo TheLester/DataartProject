@@ -78,9 +78,12 @@ public class ArrangementController {
 	}
 
 	@RequestMapping(value = "/delete-arrangement", method = RequestMethod.POST)
-	public String deleteArrangementPost(HttpServletRequest request) {
-		String id = request.getParameter("selector");
-		service.deleteArrangement(Integer.parseInt(id));
+	public String deleteArrangementPost(HttpServletRequest request) {		
+		String check = request.getParameter("NotNull");
+		if (check.equals("true")) {
+			String id = request.getParameter("selector");
+			service.deleteArrangement(Integer.parseInt(id));
+		}
 		return "redirect:arrangements";
 	}
 	
