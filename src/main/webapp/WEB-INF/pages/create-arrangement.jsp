@@ -9,37 +9,46 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Language" content="English" />
-<link rel="stylesheet" media="all"
-	href="<c:url value="/resources/css/site.css"/>">
+
 <script
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script
 	src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.js"
 	type="text/javascript"></script>
-
+<link rel="stylesheet" type="text/css"
+	href="<c:url value="/resources/css/bootstrap.min.css"/>">
+<script type="text/javascript"
+	src="<c:url value="/resources/js/bootstrap.js"/>"></script>
 <script type="text/javascript"
 	src="<c:url value="/resources/js/jquery.js"/>"></script>
 <script type="text/javascript"
 	src="<c:url value="/resources/js/jquery.jalert.js"/>"></script>
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/css/jalert.css"/>">
-<script>	
-function sleep(milliseconds) { 
-        var start = new Date().getTime(); 
-        for (var i = 0; i < 1e7; i++) { 
-                if ((new Date().getTime() - start) > milliseconds){ break; } 
-        } 
+	<link rel="stylesheet" media="all"
+	href="<c:url value="/resources/css/site.css"/>">
+<script>
+	$(function() {		
+		document.getElementById("warn").style.display = 'none';
+	/*	document.getElementById('warn').addEventListener('click',function(e){	
+		document.getElementById("warn").style.display = 'none';
+	});*/
+	});
+	function showCreateWarning() {
+		//document.getElementById("demo").innerHTML = "YOU CLICKED ME!";	
+		 document.getElementById("warn").style.display = 'block';
+		 
 }
+</script>
+<script>	
 		function checkForNull() {
 			var nameSel = document.forms["reviewForm"].name.value;
 			var dateSel = document.forms["reviewForm"].date.value;
 			var timeSel = document.forms["reviewForm"].time.value;
 			var check = document.forms["reviewForm"].NotNull.value;
 
-			if (!nameSel || !dateSel || !timeSel) {
-						sleep(100);
-				$(document).jAlert('This is a jAlert Info Box',"info",'infoboxid');	
-sleep(300); 					
+			if (!nameSel || !dateSel || !timeSel) {						
+				showCreateWarning();						
 				document.forms["reviewForm"].NotNull.value = "false";
 			}
 			console.log(check);
@@ -48,6 +57,12 @@ sleep(300);
 </script>
 </head>
 <body>
+<div class="bs-example" id="warn">
+    <div class="alert alert-warning">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong>Warning!</strong> There was a problem with your network connection.
+    </div>
+</div>
 	<h2>Create Event</h2>
 	<form:form id="reviewForm" method="post">
 		<table>
@@ -64,7 +79,7 @@ sleep(300);
 		</table>
 		<br />
 		<input type="hidden" id="NotNull" name="NotNull" value="true">
-		<input type="submit" id="submitDemo" onclick="checkForNull()"
+		<input type="submit" id="submitDemo" onclick="checkForNull();"
 			value="Create" />
 	</form:form>
 
