@@ -1,5 +1,6 @@
 package com.dataart.project.repositories;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.*;
@@ -21,11 +22,10 @@ public class Sector {
 	private String name;
 	@Column(columnDefinition = "Decimal(10,2) default '100.00'")
 	private double price;
-	@ManyToOne
-	@JoinColumn(name = "arrangement_id")
-	private Arrangement arrangement;
+	@ManyToMany(mappedBy = "sectors")
+	private Set<Arrangement> arrangements = new HashSet<Arrangement>();
 	@OneToMany(mappedBy = "sector")
-	private Set<Ticket> tickets;
+	private Set<Ticket> tickets = new HashSet<Ticket>();
 
 	public Sector() {
 	}
@@ -65,12 +65,12 @@ public class Sector {
 		this.price = price;
 	}
 
-	public Arrangement getArrangement() {
-		return arrangement;
+	public Set<Arrangement> getArrangements() {
+		return arrangements;
 	}
 
-	public void setArrangement(Arrangement arrangement) {
-		this.arrangement = arrangement;
+	public void setArrangements(Set<Arrangement> arrangements) {
+		this.arrangements = arrangements;
 	}
 
 	public Set<Ticket> getTickets() {

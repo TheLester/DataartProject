@@ -1,6 +1,7 @@
 package com.dataart.project.repositories;
 
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.*;
@@ -25,8 +26,9 @@ public class Arrangement {
 
 	@Column
 	private Date date;
-	@OneToMany(mappedBy = "arrangement")
-	private Set<Sector> sectors;
+	@ManyToMany(cascade = CascadeType.ALL)
+	@JoinTable(name = "Arrangement_sector", joinColumns = { @JoinColumn(name = "arrangement_id") }, inverseJoinColumns = { @JoinColumn(name = "sector_id") })
+	private Set<Sector> sectors = new HashSet<Sector>();
 
 	public Arrangement(int id, String name, Date date) {
 		this.id = id;
