@@ -4,11 +4,11 @@ import java.util.Date;
 import java.util.List;
 
 public interface ArrangementRepository {
-	List<Arrangement> getArrangements();
+	public List<Arrangement> getArrangements();
 
-	void createArrangement(Arrangement arrangement);
+	public void createArrangement(Arrangement arrangement);
 
-	void deleteArrangement(int id);
+	public void deleteArrangement(int id);
 
 	public void updateArrangement(int id, String name, Date date);
 }

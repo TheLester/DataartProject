@@ -1,6 +1,7 @@
 package com.dataart.project.repositories;
 
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -11,6 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
 
 /**
  * Represents person who reserves a ticket
@@ -32,7 +34,7 @@ public class Customer {
 	@Column
 	private Date reservationTime;
 	@OneToMany(mappedBy = "customer")
-	private Set<Ticket> tickets;
+	private Set<Ticket> tickets = new HashSet<Ticket>();
 
 	public Customer() {
 	}
