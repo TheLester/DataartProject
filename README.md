@@ -8,3 +8,4 @@ http://bikashshaw.wordpress.com/2013/05/13/spring-mvc-create-jspjstl-composite-v
 http://learn.jquery.com/using-jquery-core/document-ready/
 http://www.smooka.com/projects/jalert/
 
+http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-alerts.php
