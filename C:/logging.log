@@ -1,0 +1,1153 @@
+23:05:02,161 DEBUG StandardServletEnvironment:172 - Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+23:05:02,162 DEBUG StandardServletEnvironment:172 - Replacing [servletConfigInitParams] PropertySource with [servletConfigInitParams]
+23:05:02,164  INFO XmlWebApplicationContext:510 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Wed Jul 16 23:05:02 EEST 2014]; parent: Root WebApplicationContext
+23:05:02,166 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+23:05:02,166 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+23:05:02,167 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+23:05:02,168 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+23:05:02,169 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+23:05:02,169 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+23:05:02,170 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+23:05:02,170 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+23:05:02,171  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/mvc-dispatcher-servlet.xml]
+23:05:02,174 DEBUG DefaultDocumentLoader:72 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+23:05:02,179 DEBUG PluggableSchemaResolver:140 - Loading schema mappings from [META-INF/spring.schemas]
+23:05:02,182 DEBUG PluggableSchemaResolver:146 - Loaded schema mappings: {http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+23:05:02,185 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.2.xsd
+23:05:02,230 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+23:05:02,243 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+23:05:02,257 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/mvc/spring-mvc.xsd] in classpath: org/springframework/web/servlet/config/spring-mvc-3.2.xsd
+23:05:02,291 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/tx/spring-tx-3.1.xsd] in classpath: org/springframework/transaction/config/spring-tx-3.1.xsd
+23:05:02,304 DEBUG DefaultBeanDefinitionDocumentReader:106 - Loading bean definitions
+23:05:02,305  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [datasource.xml]
+23:05:02,319 DEBUG DefaultDocumentLoader:72 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+23:05:02,331 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-2.5.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.5.xsd
+23:05:02,419 DEBUG DefaultBeanDefinitionDocumentReader:106 - Loading bean definitions
+23:05:02,427 DEBUG XmlBeanDefinitionReader:216 - Loaded 2 bean definitions from location pattern [classpath:datasource.xml]
+23:05:02,429 DEBUG DefaultBeanDefinitionDocumentReader:242 - Imported 2 bean definitions from URL location [classpath:datasource.xml]
+23:05:02,432 DEBUG DefaultNamespaceHandlerResolver:156 - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+23:05:02,438 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+23:05:02,444 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+23:05:02,445 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+23:05:02,446 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+23:05:02,448 DEBUG PathMatchingResourcePatternResolver:550 - Looking for matching resources in directory tree [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project]
+23:05:02,458 DEBUG PathMatchingResourcePatternResolver:612 - Searching directory [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project] for files matching pattern [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/**/*.class]
+23:05:02,460 DEBUG PathMatchingResourcePatternResolver:612 - Searching directory [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/controllers] for files matching pattern [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/**/*.class]
+23:05:02,462 DEBUG PathMatchingResourcePatternResolver:612 - Searching directory [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/view] for files matching pattern [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/**/*.class]
+23:05:02,463 DEBUG PathMatchingResourcePatternResolver:612 - Searching directory [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/services] for files matching pattern [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/**/*.class]
+23:05:02,464 DEBUG PathMatchingResourcePatternResolver:612 - Searching directory [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories] for files matching pattern [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/**/*.class]
+23:05:02,480 DEBUG PathMatchingResourcePatternResolver:351 - Resolved location pattern [classpath*:com/dataart/project/**/*.class] to resources [file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/controllers/GeneralController.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/controllers/ArrangementController.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/view/JstlView.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/services/ArrangementService.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/TicketRepositoryHibernateImpl.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/Customer.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/ArrangementRepository.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/Ticket.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/TicketStatus.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/SectorRepository.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/TicketRepository.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/Sector.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/SectorRepositoryHibernateImpl.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/CustomerRepositoryHibernateImpl.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/ArrangementRepositoryHibernateImpl.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/Arrangement.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/CustomerRepository.class]]
+23:05:02,485 DEBUG ClassPathBeanDefinitionScanner:264 - Identified candidate component class: file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/controllers/GeneralController.class]
+23:05:02,490 DEBUG ClassPathBeanDefinitionScanner:264 - Identified candidate component class: file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/controllers/ArrangementController.class]
+23:05:02,503 DEBUG ClassPathBeanDefinitionScanner:264 - Identified candidate component class: file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/services/ArrangementService.class]
+23:05:02,509 DEBUG ClassPathBeanDefinitionScanner:264 - Identified candidate component class: file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/ArrangementRepositoryHibernateImpl.class]
+23:05:02,514 DEBUG BeanDefinitionParserDelegate:500 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0]
+23:05:02,531 DEBUG BeanDefinitionParserDelegate:500 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.view.InternalResourceViewResolver#0]
+23:05:02,534 DEBUG XmlBeanDefinitionReader:216 - Loaded 32 bean definitions from location pattern [/WEB-INF/mvc-dispatcher-servlet.xml]
+23:05:02,542 DEBUG XmlWebApplicationContext:540 - Bean factory for WebApplicationContext for namespace 'mvc-dispatcher-servlet': org.springframework.beans.factory.support.DefaultListableBeanFactory@265def14: defining beans [dataSource,sessionFactory,generalController,arrangementController,arrangementService,arrangementRepositoryHibernateImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionManager,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,jspViewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@5070b2f8
+23:05:02,551 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:05:02,554 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:05:02,555 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+23:05:02,558 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:05:02,636 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:05:02,643 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:05:02,645 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+23:05:02,646 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:05:02,646 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:05:02,647 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:05:02,648 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+23:05:02,650 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:05:02,651 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:05:02,658 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:05:02,659 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+23:05:02,660 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:05:02,660 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+23:05:02,661 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+23:05:02,661 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+23:05:02,662 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+23:05:02,663 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:05:02,663 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:05:02,664 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+23:05:02,664 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:05:02,665 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+23:05:02,667 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+23:05:02,670 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+23:05:02,675 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+23:05:02,682 DEBUG XmlWebApplicationContext:807 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@3db6ca90]
+23:05:02,683 DEBUG XmlWebApplicationContext:831 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@5f7774e7]
+23:05:02,684 DEBUG UiApplicationContextUtils:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@259a19c1]
+23:05:02,712  INFO DefaultListableBeanFactory:596 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@265def14: defining beans [dataSource,sessionFactory,generalController,arrangementController,arrangementService,arrangementRepositoryHibernateImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionManager,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,jspViewResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@5070b2f8
+23:05:02,717 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'dataSource'
+23:05:02,718 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'dataSource'
+23:05:02,720 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+23:05:02,723  INFO DriverManagerDataSource:153 - Loaded JDBC driver: com.mysql.jdbc.Driver
+23:05:02,736 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:02,742 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:02,744 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
+23:05:02,745 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+23:05:02,746 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+23:05:02,751 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' to allow for resolving potential circular references
+23:05:02,752 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+23:05:02,754 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:02,761 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'dataSource'
+23:05:02,767 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'sessionFactory'
+23:05:02,768 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'sessionFactory'
+23:05:02,770 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'sessionFactory' to allow for resolving potential circular references
+23:05:02,771 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'dataSource'
+23:05:02,779 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+23:05:02,780 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+23:05:02,781 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+23:05:02,781 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+23:05:02,783 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+23:05:02,786 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+23:05:02,787 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+23:05:02,788 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+23:05:02,792 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+23:05:02,793 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+23:05:02,794 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+23:05:02,802 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+23:05:02,803 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+23:05:02,804 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+23:05:02,805 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+23:05:02,805 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+23:05:02,807 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+23:05:02,808 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+23:05:02,808 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+23:05:02,810 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+23:05:02,812 DEBUG DefaultListableBeanFactory:1531 - Invoking afterPropertiesSet() on bean with name 'sessionFactory'
+23:05:02,814 DEBUG BasicTypeRegistry:148 - Adding type registration boolean -> org.hibernate.type.BooleanType@7d0e027a
+23:05:02,817 DEBUG BasicTypeRegistry:148 - Adding type registration boolean -> org.hibernate.type.BooleanType@7d0e027a
+23:05:02,818 DEBUG BasicTypeRegistry:148 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@7d0e027a
+23:05:02,822 DEBUG BasicTypeRegistry:148 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@5d5ab993
+23:05:02,823 DEBUG BasicTypeRegistry:148 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@15ed4d71
+23:05:02,824 DEBUG BasicTypeRegistry:148 - Adding type registration yes_no -> org.hibernate.type.YesNoType@66c9cfd2
+23:05:02,824 DEBUG BasicTypeRegistry:148 - Adding type registration byte -> org.hibernate.type.ByteType@3b8b780f
+23:05:02,825 DEBUG BasicTypeRegistry:148 - Adding type registration byte -> org.hibernate.type.ByteType@3b8b780f
+23:05:02,825 DEBUG BasicTypeRegistry:148 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@3b8b780f
+23:05:02,828 DEBUG BasicTypeRegistry:148 - Adding type registration character -> org.hibernate.type.CharacterType@25bbf0b7
+23:05:02,829 DEBUG BasicTypeRegistry:148 - Adding type registration char -> org.hibernate.type.CharacterType@25bbf0b7
+23:05:02,831 DEBUG BasicTypeRegistry:148 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@25bbf0b7
+23:05:02,832 DEBUG BasicTypeRegistry:148 - Adding type registration short -> org.hibernate.type.ShortType@146bbdfb
+23:05:02,834 DEBUG BasicTypeRegistry:148 - Adding type registration short -> org.hibernate.type.ShortType@146bbdfb
+23:05:02,835 DEBUG BasicTypeRegistry:148 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@146bbdfb
+23:05:02,841 DEBUG BasicTypeRegistry:148 - Adding type registration integer -> org.hibernate.type.IntegerType@7a8f0bf2
+23:05:02,842 DEBUG BasicTypeRegistry:148 - Adding type registration int -> org.hibernate.type.IntegerType@7a8f0bf2
+23:05:02,843 DEBUG BasicTypeRegistry:148 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@7a8f0bf2
+23:05:02,843 DEBUG BasicTypeRegistry:148 - Adding type registration long -> org.hibernate.type.LongType@6c74076a
+23:05:02,844 DEBUG BasicTypeRegistry:148 - Adding type registration long -> org.hibernate.type.LongType@6c74076a
+23:05:02,844 DEBUG BasicTypeRegistry:148 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@6c74076a
+23:05:02,845 DEBUG BasicTypeRegistry:148 - Adding type registration float -> org.hibernate.type.FloatType@104272b2
+23:05:02,845 DEBUG BasicTypeRegistry:148 - Adding type registration float -> org.hibernate.type.FloatType@104272b2
+23:05:02,846 DEBUG BasicTypeRegistry:148 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@104272b2
+23:05:02,847 DEBUG BasicTypeRegistry:148 - Adding type registration double -> org.hibernate.type.DoubleType@4afaf224
+23:05:02,851 DEBUG BasicTypeRegistry:148 - Adding type registration double -> org.hibernate.type.DoubleType@4afaf224
+23:05:02,851 DEBUG BasicTypeRegistry:148 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@4afaf224
+23:05:02,852 DEBUG BasicTypeRegistry:148 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@761b3712
+23:05:02,852 DEBUG BasicTypeRegistry:148 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@761b3712
+23:05:02,853 DEBUG BasicTypeRegistry:148 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@16131f89
+23:05:02,854 DEBUG BasicTypeRegistry:148 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@16131f89
+23:05:02,858 DEBUG BasicTypeRegistry:148 - Adding type registration string -> org.hibernate.type.StringType@46b74cdd
+23:05:02,858 DEBUG BasicTypeRegistry:148 - Adding type registration java.lang.String -> org.hibernate.type.StringType@46b74cdd
+23:05:02,859 DEBUG BasicTypeRegistry:148 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@7d349786
+23:05:02,866 DEBUG BasicTypeRegistry:148 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@6cb9c3de
+23:05:02,867 DEBUG BasicTypeRegistry:148 - Adding type registration url -> org.hibernate.type.UrlType@3fa84c82
+23:05:02,868 DEBUG BasicTypeRegistry:148 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@3fa84c82
+23:05:02,868 DEBUG BasicTypeRegistry:148 - Adding type registration date -> org.hibernate.type.DateType@13793140
+23:05:02,869 DEBUG BasicTypeRegistry:148 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@13793140
+23:05:02,870 DEBUG BasicTypeRegistry:148 - Adding type registration time -> org.hibernate.type.TimeType@15b1b6f0
+23:05:02,870 DEBUG BasicTypeRegistry:148 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@15b1b6f0
+23:05:02,871 DEBUG BasicTypeRegistry:148 - Adding type registration timestamp -> org.hibernate.type.TimestampType@4941ca7
+23:05:02,871 DEBUG BasicTypeRegistry:148 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@4941ca7
+23:05:02,872 DEBUG BasicTypeRegistry:148 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@4941ca7
+23:05:02,872 DEBUG BasicTypeRegistry:148 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@2ded32cd
+23:05:02,873 DEBUG BasicTypeRegistry:148 - Adding type registration calendar -> org.hibernate.type.CalendarType@6d950dca
+23:05:02,877 DEBUG BasicTypeRegistry:148 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@6d950dca
+23:05:02,878 DEBUG BasicTypeRegistry:148 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@6d950dca
+23:05:02,879 DEBUG BasicTypeRegistry:148 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@29836d32
+23:05:02,879 DEBUG BasicTypeRegistry:148 - Adding type registration locale -> org.hibernate.type.LocaleType@6df4d55e
+23:05:02,880 DEBUG BasicTypeRegistry:148 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@6df4d55e
+23:05:02,881 DEBUG BasicTypeRegistry:148 - Adding type registration currency -> org.hibernate.type.CurrencyType@4607fddb
+23:05:02,881 DEBUG BasicTypeRegistry:148 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@4607fddb
+23:05:02,883 DEBUG BasicTypeRegistry:148 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@7c161c95
+23:05:02,890 DEBUG BasicTypeRegistry:148 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@7c161c95
+23:05:02,892 DEBUG BasicTypeRegistry:148 - Adding type registration class -> org.hibernate.type.ClassType@7e5a4580
+23:05:02,892 DEBUG BasicTypeRegistry:148 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@7e5a4580
+23:05:02,893 DEBUG BasicTypeRegistry:148 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@6bff8c9a
+23:05:02,893 DEBUG BasicTypeRegistry:148 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@6bff8c9a
+23:05:02,894 DEBUG BasicTypeRegistry:148 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@2a3cf3cb
+23:05:02,894 DEBUG BasicTypeRegistry:148 - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@7577b5d0
+23:05:02,895 DEBUG BasicTypeRegistry:148 - Adding type registration binary -> org.hibernate.type.BinaryType@4f845892
+23:05:02,895 DEBUG BasicTypeRegistry:148 - Adding type registration byte[] -> org.hibernate.type.BinaryType@4f845892
+23:05:02,896 DEBUG BasicTypeRegistry:148 - Adding type registration [B -> org.hibernate.type.BinaryType@4f845892
+23:05:02,897 DEBUG BasicTypeRegistry:148 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@25dd47eb
+23:05:02,897 DEBUG BasicTypeRegistry:148 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@25dd47eb
+23:05:02,900 DEBUG BasicTypeRegistry:148 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@25dd47eb
+23:05:02,902 DEBUG BasicTypeRegistry:148 - Adding type registration image -> org.hibernate.type.ImageType@3e52a475
+23:05:02,903 DEBUG BasicTypeRegistry:148 - Adding type registration characters -> org.hibernate.type.CharArrayType@2e57327
+23:05:02,904 DEBUG BasicTypeRegistry:148 - Adding type registration char[] -> org.hibernate.type.CharArrayType@2e57327
+23:05:02,906 DEBUG BasicTypeRegistry:148 - Adding type registration [C -> org.hibernate.type.CharArrayType@2e57327
+23:05:02,907 DEBUG BasicTypeRegistry:148 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@4e9706b6
+23:05:02,914 DEBUG BasicTypeRegistry:148 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@4e9706b6
+23:05:02,915 DEBUG BasicTypeRegistry:148 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@4e9706b6
+23:05:02,916 DEBUG BasicTypeRegistry:148 - Adding type registration text -> org.hibernate.type.TextType@267cae35
+23:05:02,916 DEBUG BasicTypeRegistry:148 - Adding type registration ntext -> org.hibernate.type.NTextType@dc76d78
+23:05:02,917 DEBUG BasicTypeRegistry:148 - Adding type registration blob -> org.hibernate.type.BlobType@24d0bcec
+23:05:02,917 DEBUG BasicTypeRegistry:148 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@24d0bcec
+23:05:02,918 DEBUG BasicTypeRegistry:148 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@1341b138
+23:05:02,919 DEBUG BasicTypeRegistry:148 - Adding type registration clob -> org.hibernate.type.ClobType@618e490f
+23:05:02,919 DEBUG BasicTypeRegistry:148 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@618e490f
+23:05:02,920 DEBUG BasicTypeRegistry:148 - Adding type registration nclob -> org.hibernate.type.NClobType@514c15d
+23:05:02,920 DEBUG BasicTypeRegistry:148 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@514c15d
+23:05:02,921 DEBUG BasicTypeRegistry:148 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@41d2ee03
+23:05:02,921 DEBUG BasicTypeRegistry:148 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@1f42ace
+23:05:02,926 DEBUG BasicTypeRegistry:148 - Adding type registration serializable -> org.hibernate.type.SerializableType@43e87b75
+23:05:02,927 DEBUG BasicTypeRegistry:148 - Adding type registration object -> org.hibernate.type.ObjectType@18c70816
+23:05:02,928 DEBUG BasicTypeRegistry:148 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@18c70816
+23:05:02,929 DEBUG BasicTypeRegistry:148 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@69e73514
+23:05:02,930 DEBUG BasicTypeRegistry:148 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@4155a5c7
+23:05:02,930 DEBUG BasicTypeRegistry:148 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@76223456
+23:05:02,931 DEBUG BasicTypeRegistry:148 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@257cbf16
+23:05:02,933 DEBUG BasicTypeRegistry:148 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@2f0d356b
+23:05:02,934 DEBUG BasicTypeRegistry:148 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@272bee28
+23:05:02,935 DEBUG BasicTypeRegistry:148 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@6ee750e8
+23:05:02,938 DEBUG BasicTypeRegistry:148 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@9e4252
+23:05:02,940 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+23:05:02,940 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+23:05:02,942 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+23:05:02,943 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+23:05:02,950 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [hilo] -> [org.hibernate.id.TableHiLoGenerator]
+23:05:02,951 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+23:05:02,952 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+23:05:02,953 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+23:05:02,953 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.SequenceGenerator]
+23:05:02,954 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+23:05:02,954 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+23:05:02,955 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+23:05:02,955 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+23:05:02,956 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+23:05:02,962 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+23:05:02,964 DEBUG PathMatchingResourcePatternResolver:550 - Looking for matching resources in directory tree [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories]
+23:05:02,965 DEBUG PathMatchingResourcePatternResolver:612 - Searching directory [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories] for files matching pattern [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/**/*.class]
+23:05:02,976 DEBUG PathMatchingResourcePatternResolver:351 - Resolved location pattern [classpath*:com/dataart/project/repositories/**/*.class] to resources [file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/TicketRepositoryHibernateImpl.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/Customer.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/ArrangementRepository.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/Ticket.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/TicketStatus.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/SectorRepository.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/TicketRepository.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/Sector.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/SectorRepositoryHibernateImpl.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/CustomerRepositoryHibernateImpl.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/ArrangementRepositoryHibernateImpl.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/Arrangement.class], file [/home/lester/Desktop/EEprojects/DataartProject/target/classes/com/dataart/project/repositories/CustomerRepository.class]]
+23:05:02,988 DEBUG IntegratorServiceImpl:59 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+23:05:02,990 DEBUG Configuration:1745 - Preparing to build session factory with filters : {}
+23:05:02,991 DEBUG Configuration:3426 - Processing hbm.xml files
+23:05:02,992 DEBUG Configuration:3456 - Process annotated classes
+23:05:02,992 DEBUG AnnotationBinder:532 - Binding entity from annotated class: com.dataart.project.repositories.Customer
+23:05:02,993 DEBUG Ejb3Column:196 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+23:05:02,994 DEBUG AnnotationBinder:990 - No value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+23:05:02,995 DEBUG EntityBinder:394 - Import with entity name Customer
+23:05:02,996 DEBUG EntityBinder:564 - Bind entity com.dataart.project.repositories.Customer on table Customers
+23:05:03,002 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Customers), mappingColumn=customer_id, insertable=true, updatable=true, unique=false}
+23:05:03,013 DEBUG PropertyBinder:179 - MetadataSourceProcessor property id with lazy=false
+23:05:03,014 DEBUG SimpleValueBinder:331 - building SimpleValue for id
+23:05:03,015 DEBUG PropertyBinder:260 - Building property id
+23:05:03,015 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Customers), mappingColumn=firstName, insertable=true, updatable=true, unique=false}
+23:05:03,018 DEBUG PropertyBinder:179 - MetadataSourceProcessor property firstName with lazy=false
+23:05:03,020 DEBUG SimpleValueBinder:331 - building SimpleValue for firstName
+23:05:03,021 DEBUG PropertyBinder:260 - Building property firstName
+23:05:03,022 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Customers), mappingColumn=lastName, insertable=true, updatable=true, unique=false}
+23:05:03,026 DEBUG PropertyBinder:179 - MetadataSourceProcessor property lastName with lazy=false
+23:05:03,028 DEBUG SimpleValueBinder:331 - building SimpleValue for lastName
+23:05:03,030 DEBUG PropertyBinder:260 - Building property lastName
+23:05:03,031 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Customers), mappingColumn=reservationTime, insertable=true, updatable=true, unique=false}
+23:05:03,034 DEBUG PropertyBinder:179 - MetadataSourceProcessor property reservationTime with lazy=false
+23:05:03,035 DEBUG SimpleValueBinder:331 - building SimpleValue for reservationTime
+23:05:03,035 DEBUG PropertyBinder:260 - Building property reservationTime
+23:05:03,037 DEBUG Ejb3Column:196 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='customer'}
+23:05:03,037 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Customers), mappingColumn=tickets, insertable=true, updatable=true, unique=false}
+23:05:03,038 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Customers), mappingColumn=null, insertable=true, updatable=true, unique=false}
+23:05:03,039 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Customers), mappingColumn=element, insertable=true, updatable=true, unique=false}
+23:05:03,040 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Customers), mappingColumn=tickets_KEY, insertable=true, updatable=true, unique=false}
+23:05:03,040 DEBUG Ejb3Column:196 - Binding column: Ejb3JoinColumn{logicalColumnName='tickets_KEY', referencedColumn='null', mappedBy='null'}
+23:05:03,041 DEBUG Ejb3Column:196 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='customer'}
+23:05:03,042 DEBUG Ejb3Column:196 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='customer'}
+23:05:03,042 DEBUG CollectionBinder:400 - Collection role: com.dataart.project.repositories.Customer.tickets
+23:05:03,043 DEBUG PropertyBinder:260 - Building property tickets
+23:05:03,044 DEBUG AnnotationBinder:532 - Binding entity from annotated class: com.dataart.project.repositories.Ticket
+23:05:03,045 DEBUG Ejb3Column:196 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+23:05:03,046 DEBUG AnnotationBinder:990 - No value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+23:05:03,047 DEBUG EntityBinder:394 - Import with entity name Ticket
+23:05:03,047 DEBUG EntityBinder:564 - Bind entity com.dataart.project.repositories.Ticket on table Tickets
+23:05:03,053 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Tickets), mappingColumn=ticket_id, insertable=true, updatable=true, unique=false}
+23:05:03,054 DEBUG PropertyBinder:179 - MetadataSourceProcessor property id with lazy=false
+23:05:03,054 DEBUG SimpleValueBinder:331 - building SimpleValue for id
+23:05:03,055 DEBUG PropertyBinder:260 - Building property id
+23:05:03,056 DEBUG Ejb3Column:196 - Binding column: Ejb3JoinColumn{logicalColumnName='customer_id', referencedColumn='', mappedBy=''}
+23:05:03,056 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Tickets), mappingColumn=customer, insertable=true, updatable=true, unique=false}
+23:05:03,057 DEBUG PropertyBinder:260 - Building property customer
+23:05:03,057 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Tickets), mappingColumn=row, insertable=true, updatable=true, unique=false}
+23:05:03,058 DEBUG PropertyBinder:179 - MetadataSourceProcessor property row with lazy=false
+23:05:03,059 DEBUG SimpleValueBinder:331 - building SimpleValue for row
+23:05:03,059 DEBUG PropertyBinder:260 - Building property row
+23:05:03,060 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Tickets), mappingColumn=seat, insertable=true, updatable=true, unique=false}
+23:05:03,060 DEBUG PropertyBinder:179 - MetadataSourceProcessor property seat with lazy=false
+23:05:03,061 DEBUG SimpleValueBinder:331 - building SimpleValue for seat
+23:05:03,061 DEBUG PropertyBinder:260 - Building property seat
+23:05:03,062 DEBUG Ejb3Column:196 - Binding column: Ejb3JoinColumn{logicalColumnName='sector_id', referencedColumn='', mappedBy=''}
+23:05:03,063 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Tickets), mappingColumn=sector, insertable=true, updatable=true, unique=false}
+23:05:03,063 DEBUG PropertyBinder:260 - Building property sector
+23:05:03,064 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Tickets), mappingColumn=status, insertable=true, updatable=true, unique=false}
+23:05:03,065 DEBUG PropertyBinder:179 - MetadataSourceProcessor property status with lazy=false
+23:05:03,065 DEBUG SimpleValueBinder:331 - building SimpleValue for status
+23:05:03,066 DEBUG PropertyBinder:260 - Building property status
+23:05:03,066 DEBUG AnnotationBinder:532 - Binding entity from annotated class: com.dataart.project.repositories.Sector
+23:05:03,067 DEBUG Ejb3Column:196 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+23:05:03,067 DEBUG AnnotationBinder:990 - No value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+23:05:03,068 DEBUG EntityBinder:394 - Import with entity name Sector
+23:05:03,069 DEBUG EntityBinder:564 - Bind entity com.dataart.project.repositories.Sector on table Sectors
+23:05:03,073 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Sectors), mappingColumn=sector_id, insertable=true, updatable=true, unique=false}
+23:05:03,075 DEBUG PropertyBinder:179 - MetadataSourceProcessor property id with lazy=false
+23:05:03,075 DEBUG SimpleValueBinder:331 - building SimpleValue for id
+23:05:03,076 DEBUG PropertyBinder:260 - Building property id
+23:05:03,077 DEBUG Ejb3Column:196 - Binding column: Ejb3JoinColumn{logicalColumnName='arrangement_id', referencedColumn='', mappedBy=''}
+23:05:03,078 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Sectors), mappingColumn=arrangement, insertable=true, updatable=true, unique=false}
+23:05:03,079 DEBUG PropertyBinder:260 - Building property arrangement
+23:05:03,080 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Sectors), mappingColumn=name, insertable=true, updatable=true, unique=false}
+23:05:03,081 DEBUG PropertyBinder:179 - MetadataSourceProcessor property name with lazy=false
+23:05:03,081 DEBUG SimpleValueBinder:331 - building SimpleValue for name
+23:05:03,082 DEBUG PropertyBinder:260 - Building property name
+23:05:03,083 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Sectors), mappingColumn=price, insertable=true, updatable=true, unique=false}
+23:05:03,084 DEBUG PropertyBinder:179 - MetadataSourceProcessor property price with lazy=false
+23:05:03,084 DEBUG SimpleValueBinder:331 - building SimpleValue for price
+23:05:03,085 DEBUG PropertyBinder:260 - Building property price
+23:05:03,085 DEBUG Ejb3Column:196 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='sector'}
+23:05:03,086 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Sectors), mappingColumn=tickets, insertable=true, updatable=true, unique=false}
+23:05:03,087 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Sectors), mappingColumn=null, insertable=true, updatable=true, unique=false}
+23:05:03,088 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Sectors), mappingColumn=element, insertable=true, updatable=true, unique=false}
+23:05:03,088 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Sectors), mappingColumn=tickets_KEY, insertable=true, updatable=true, unique=false}
+23:05:03,089 DEBUG Ejb3Column:196 - Binding column: Ejb3JoinColumn{logicalColumnName='tickets_KEY', referencedColumn='null', mappedBy='null'}
+23:05:03,089 DEBUG Ejb3Column:196 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='sector'}
+23:05:03,090 DEBUG Ejb3Column:196 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='sector'}
+23:05:03,090 DEBUG CollectionBinder:400 - Collection role: com.dataart.project.repositories.Sector.tickets
+23:05:03,091 DEBUG PropertyBinder:260 - Building property tickets
+23:05:03,091 DEBUG AnnotationBinder:532 - Binding entity from annotated class: com.dataart.project.repositories.Arrangement
+23:05:03,092 DEBUG Ejb3Column:196 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+23:05:03,092 DEBUG AnnotationBinder:990 - No value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+23:05:03,093 DEBUG EntityBinder:394 - Import with entity name Arrangement
+23:05:03,094 DEBUG EntityBinder:564 - Bind entity com.dataart.project.repositories.Arrangement on table Arrangements
+23:05:03,097 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Arrangements), mappingColumn=arrangement_id, insertable=true, updatable=true, unique=false}
+23:05:03,098 DEBUG PropertyBinder:179 - MetadataSourceProcessor property id with lazy=false
+23:05:03,099 DEBUG SimpleValueBinder:331 - building SimpleValue for id
+23:05:03,100 DEBUG PropertyBinder:260 - Building property id
+23:05:03,101 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Arrangements), mappingColumn=date, insertable=true, updatable=true, unique=false}
+23:05:03,101 DEBUG PropertyBinder:179 - MetadataSourceProcessor property date with lazy=false
+23:05:03,102 DEBUG SimpleValueBinder:331 - building SimpleValue for date
+23:05:03,102 DEBUG PropertyBinder:260 - Building property date
+23:05:03,103 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Arrangements), mappingColumn=name, insertable=true, updatable=true, unique=false}
+23:05:03,104 DEBUG PropertyBinder:179 - MetadataSourceProcessor property name with lazy=false
+23:05:03,104 DEBUG SimpleValueBinder:331 - building SimpleValue for name
+23:05:03,104 DEBUG PropertyBinder:260 - Building property name
+23:05:03,105 DEBUG Ejb3Column:196 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='arrangement'}
+23:05:03,106 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Arrangements), mappingColumn=sectors, insertable=true, updatable=true, unique=false}
+23:05:03,106 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Arrangements), mappingColumn=null, insertable=true, updatable=true, unique=false}
+23:05:03,107 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Arrangements), mappingColumn=element, insertable=true, updatable=true, unique=false}
+23:05:03,108 DEBUG Ejb3Column:196 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Arrangements), mappingColumn=sectors_KEY, insertable=true, updatable=true, unique=false}
+23:05:03,108 DEBUG Ejb3Column:196 - Binding column: Ejb3JoinColumn{logicalColumnName='sectors_KEY', referencedColumn='null', mappedBy='null'}
+23:05:03,109 DEBUG Ejb3Column:196 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='arrangement'}
+23:05:03,110 DEBUG Ejb3Column:196 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='arrangement'}
+23:05:03,110 DEBUG CollectionBinder:400 - Collection role: com.dataart.project.repositories.Arrangement.sectors
+23:05:03,111 DEBUG PropertyBinder:260 - Building property sectors
+23:05:03,111 DEBUG SimpleValueBinder:369 - Setting SimpleValue typeName for id
+23:05:03,112 DEBUG SimpleValueBinder:369 - Setting SimpleValue typeName for firstName
+23:05:03,112 DEBUG SimpleValueBinder:369 - Setting SimpleValue typeName for lastName
+23:05:03,113 DEBUG SimpleValueBinder:369 - Setting SimpleValue typeName for reservationTime
+23:05:03,113 DEBUG SimpleValueBinder:369 - Setting SimpleValue typeName for id
+23:05:03,113 DEBUG SimpleValueBinder:369 - Setting SimpleValue typeName for row
+23:05:03,114 DEBUG SimpleValueBinder:369 - Setting SimpleValue typeName for seat
+23:05:03,115 DEBUG SimpleValueBinder:369 - Setting SimpleValue typeName for status
+23:05:03,115 DEBUG SimpleValueBinder:369 - Setting SimpleValue typeName for id
+23:05:03,116 DEBUG SimpleValueBinder:369 - Setting SimpleValue typeName for name
+23:05:03,116 DEBUG SimpleValueBinder:369 - Setting SimpleValue typeName for price
+23:05:03,117 DEBUG SimpleValueBinder:369 - Setting SimpleValue typeName for id
+23:05:03,117 DEBUG SimpleValueBinder:369 - Setting SimpleValue typeName for date
+23:05:03,118 DEBUG SimpleValueBinder:369 - Setting SimpleValue typeName for name
+23:05:03,118 DEBUG Configuration:1416 - Processing fk mappings (*ToOne and JoinedSubclass)
+23:05:03,119 DEBUG Configuration:1595 - Processing extends queue
+23:05:03,120 DEBUG Configuration:1653 - Processing extends queue
+23:05:03,120 DEBUG Configuration:1598 - Processing collection mappings
+23:05:03,121 DEBUG CollectionSecondPass:66 - Second pass for collection: com.dataart.project.repositories.Customer.tickets
+23:05:03,121 DEBUG CollectionBinder:761 - Binding a OneToMany: com.dataart.project.repositories.Customer.tickets through a foreign key
+23:05:03,122 DEBUG CollectionBinder:790 - Mapping collection: com.dataart.project.repositories.Customer.tickets -> Tickets
+23:05:03,123 DEBUG TableBinder:332 - Retrieving property com.dataart.project.repositories.Ticket.customer
+23:05:03,123 DEBUG CollectionSecondPass:83 - Mapped collection key: customer_id, one-to-many: com.dataart.project.repositories.Ticket
+23:05:03,124 DEBUG CollectionSecondPass:66 - Second pass for collection: com.dataart.project.repositories.Sector.tickets
+23:05:03,124 DEBUG CollectionBinder:761 - Binding a OneToMany: com.dataart.project.repositories.Sector.tickets through a foreign key
+23:05:03,125 DEBUG CollectionBinder:790 - Mapping collection: com.dataart.project.repositories.Sector.tickets -> Tickets
+23:05:03,126 DEBUG TableBinder:332 - Retrieving property com.dataart.project.repositories.Ticket.sector
+23:05:03,126 DEBUG CollectionSecondPass:83 - Mapped collection key: sector_id, one-to-many: com.dataart.project.repositories.Ticket
+23:05:03,127 DEBUG CollectionSecondPass:66 - Second pass for collection: com.dataart.project.repositories.Arrangement.sectors
+23:05:03,128 DEBUG CollectionBinder:761 - Binding a OneToMany: com.dataart.project.repositories.Arrangement.sectors through a foreign key
+23:05:03,128 DEBUG CollectionBinder:790 - Mapping collection: com.dataart.project.repositories.Arrangement.sectors -> Sectors
+23:05:03,129 DEBUG TableBinder:332 - Retrieving property com.dataart.project.repositories.Sector.arrangement
+23:05:03,129 DEBUG CollectionSecondPass:83 - Mapped collection key: arrangement_id, one-to-many: com.dataart.project.repositories.Sector
+23:05:03,130 DEBUG Configuration:1608 - Processing native query and ResultSetMapping mappings
+23:05:03,130 DEBUG Configuration:1616 - Processing association property references
+23:05:03,131 DEBUG Configuration:1638 - Creating tables' unique integer identifiers
+23:05:03,131 DEBUG Configuration:1639 - Processing foreign key constraints
+23:05:03,132 DEBUG Configuration:1710 - Resolving reference to class: com.dataart.project.repositories.Arrangement
+23:05:03,132 DEBUG Configuration:1710 - Resolving reference to class: com.dataart.project.repositories.Customer
+23:05:03,133 DEBUG Configuration:1710 - Resolving reference to class: com.dataart.project.repositories.Sector
+23:05:03,136 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/LOGDB]
+23:05:03,161 DEBUG JdbcServicesImpl:121 - Database ->
+       name : MySQL
+    version : 5.5.37-0ubuntu0.13.10.1
+      major : 5
+      minor : 5
+23:05:03,161 DEBUG JdbcServicesImpl:127 - Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+      major : 5
+      minor : 1
+23:05:03,162 DEBUG JdbcServicesImpl:133 - JDBC version : 3.0
+23:05:03,174  INFO Dialect:128 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+23:05:03,175  INFO LobCreatorBuilder:94 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+23:05:03,177 DEBUG SettingsFactory:114 - Automatic flush during beforeCompletion(): disabled
+23:05:03,178 DEBUG SettingsFactory:120 - Automatic session close at end of transaction: disabled
+23:05:03,178 DEBUG SettingsFactory:131 - JDBC batch size: 15
+23:05:03,179 DEBUG SettingsFactory:137 - JDBC batch updates for versioned data: disabled
+23:05:03,179 DEBUG SettingsFactory:147 - Scrollable result sets: enabled
+23:05:03,180 DEBUG SettingsFactory:153 - Wrap result sets: disabled
+23:05:03,180 DEBUG SettingsFactory:159 - JDBC3 getGeneratedKeys(): enabled
+23:05:03,181 DEBUG SettingsFactory:171 - multi-tenancy strategy : NONE
+23:05:03,181 DEBUG SettingsFactory:177 - Connection release mode: auto
+23:05:03,182  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+23:05:03,182 DEBUG SettingsFactory:199 - Using BatchFetchStyle : LEGACY
+23:05:03,183 DEBUG SettingsFactory:218 - Maximum outer join fetch depth: 2
+23:05:03,183 DEBUG SettingsFactory:224 - Default batch fetch size: 1
+23:05:03,184 DEBUG SettingsFactory:230 - Generate SQL with comments: disabled
+23:05:03,184 DEBUG SettingsFactory:236 - Order SQL updates by primary key: disabled
+23:05:03,185 DEBUG SettingsFactory:242 - Order SQL inserts for batching: disabled
+23:05:03,186 DEBUG SettingsFactory:250 - Default null ordering: none
+23:05:03,186 DEBUG SettingsFactory:541 - Query translator: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory
+23:05:03,187  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+23:05:03,188 DEBUG SettingsFactory:260 - Query language substitutions: {}
+23:05:03,188 DEBUG SettingsFactory:266 - JPA-QL strict compliance: disabled
+23:05:03,189 DEBUG SettingsFactory:274 - Second-level cache: enabled
+23:05:03,189 DEBUG SettingsFactory:280 - Query cache: disabled
+23:05:03,190 DEBUG SettingsFactory:481 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+23:05:03,191 DEBUG SettingsFactory:491 - org.hibernate.cache.internal.NoCachingRegionFactory did not provide constructor accepting java.util.Properties; attempting no-arg constructor.
+23:05:03,191 DEBUG SettingsFactory:295 - Optimize cache for minimal puts: disabled
+23:05:03,192 DEBUG SettingsFactory:310 - Structured second-level cache entries: disabled
+23:05:03,192 DEBUG SettingsFactory:320 - Second-level cache direct-reference entries: disabled
+23:05:03,193 DEBUG SettingsFactory:328 - Statistics: disabled
+23:05:03,193 DEBUG SettingsFactory:334 - Deleted entity synthetic identifier rollback: disabled
+23:05:03,194 DEBUG SettingsFactory:358 - Default entity-mode: pojo
+23:05:03,194 DEBUG SettingsFactory:364 - Named query checking : enabled
+23:05:03,195 DEBUG SettingsFactory:370 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+23:05:03,195 DEBUG SettingsFactory:388 - Allow initialization of lazy state outside session : : disabled
+23:05:03,196 DEBUG SettingsFactory:398 - JTA Track by Thread: enabled
+23:05:03,196 DEBUG SessionFactoryImpl:225 - Building session factory
+23:05:03,198 DEBUG SessionFactoryImpl:277 - Session factory constructed with filter configurations : {}
+23:05:03,199 DEBUG SessionFactoryImpl:278 - Instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=/usr/lib/jvm/jdk1.7.0_51/jre/lib/amd64, java.vm.version=24.51-b03, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/home/lester/Desktop/EEprojects/DataartProject, java.runtime.version=1.7.0_51-b13, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, hibernate.current_session_context_class=org.springframework.orm.hibernate4.SpringSessionContext, java.endorsed.dirs=/usr/lib/jvm/jdk1.7.0_51/jre/lib/endorsed, os.arch=amd64, java.io.tmpdir=/tmp, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, os.name=Linux, sun.jnu.encoding=UTF-8, java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, hibernate.connection.datasource=org.springframework.jdbc.datasource.DriverManagerDataSource@735035de, sun.awt.enableExtraMouseButtons=true, java.specification.name=Java Platform API Specification, java.class.version=51.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=3.11.0-12-generic, user.home=/home/lester, user.timezone=Europe/Kiev, java.awt.printerjob=sun.print.PSPrinterJob, file.encoding=UTF-8, java.specification.version=1.7, java.class.path=/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/eclipse-jetty-starters-common.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/eclipse-jetty-starters-util.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/eclipse-jetty-starters-console.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/eclipse-jetty-starters-embedded.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/jetty/javax.servlet.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/jetty/jetty-server.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/jetty/jetty-continuation.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/jetty/jetty-http.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/jetty/jetty-io.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/jetty/jetty-util.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/jetty/jetty-security.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/jetty/jetty-servlet.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/jetty/jetty-webapp.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/jetty/jetty-xml.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/jetty/jetty-jsp.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/jetty/javax.servlet.jsp.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/jetty/org.apache.jasper.glassfish.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/jetty/javax.servlet.jsp.jstl.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/jetty/org.apache.taglibs.standard.glassfish.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/jetty/javax.el.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/jetty/com.sun.el.jar:/home/lester/soft/eclipse/configuration/org.eclipse.osgi/bundles/1038/1/.cp/lib/jetty/org.eclipse.jdt.core.jar, user.name=lester, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.classLoader.application=WebAppClassLoader=Spring MVC Application@47658cfb, java.vm.specification.version=1.7, sun.arch.data.model=64, java.home=/usr/lib/jvm/jdk1.7.0_51/jre, sun.java.command=net.sourceforge.eclipsejetty.starter.embedded.JettyEmbeddedLauncherMain, jetty.launcher.configuration=/tmp/eclipseJettyPlugin.config.DataartProject.xml, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, java.specification.vendor=Oracle Corporation, user.language=en, awt.toolkit=sun.awt.X11.XToolkit, java.vm.info=mixed mode, java.version=1.7.0_51, java.ext.dirs=/usr/lib/jvm/jdk1.7.0_51/jre/lib/ext:/usr/java/packages/lib/ext, sun.boot.class.path=/usr/lib/jvm/jdk1.7.0_51/jre/lib/resources.jar:/usr/lib/jvm/jdk1.7.0_51/jre/lib/rt.jar:/usr/lib/jvm/jdk1.7.0_51/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.7.0_51/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.7.0_51/jre/lib/jce.jar:/usr/lib/jvm/jdk1.7.0_51/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.7.0_51/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.7.0_51/jre/classes, java.vendor=Oracle Corporation, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, hibernate.hbm2ddl.auto=update, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.font.fontmanager=sun.awt.X11FontManager, sun.desktop=gnome, sun.cpu.isalist=}
+23:05:03,201 DEBUG DefaultIdentifierGeneratorFactory:107 - Setting dialect [org.hibernate.dialect.MySQL5Dialect]
+23:05:03,203 DEBUG DefaultIdentifierGeneratorFactory:107 - Setting dialect [org.hibernate.dialect.MySQL5Dialect]
+23:05:03,204 DEBUG DefaultIdentifierGeneratorFactory:107 - Setting dialect [org.hibernate.dialect.MySQL5Dialect]
+23:05:03,205 DEBUG DefaultIdentifierGeneratorFactory:107 - Setting dialect [org.hibernate.dialect.MySQL5Dialect]
+23:05:03,209 DEBUG AbstractEntityPersister:3592 - Static SQL for entity: com.dataart.project.repositories.Customer
+23:05:03,209 DEBUG AbstractEntityPersister:3597 -  Version select: select customer_id from Customers where customer_id =?
+23:05:03,210 DEBUG AbstractEntityPersister:3600 -  Snapshot select: select customer_.customer_id, customer_.firstName as firstNam2_1_, customer_.lastName as lastName3_1_, customer_.reservationTime as reservat4_1_ from Customers customer_ where customer_.customer_id=?
+23:05:03,210 DEBUG AbstractEntityPersister:3603 -  Insert 0: insert into Customers (firstName, lastName, reservationTime, customer_id) values (?, ?, ?, ?)
+23:05:03,211 DEBUG AbstractEntityPersister:3604 -  Update 0: update Customers set firstName=?, lastName=?, reservationTime=? where customer_id=?
+23:05:03,211 DEBUG AbstractEntityPersister:3605 -  Delete 0: delete from Customers where customer_id=?
+23:05:03,212 DEBUG AbstractEntityPersister:3608 -  Identity insert: insert into Customers (firstName, lastName, reservationTime) values (?, ?, ?)
+23:05:03,216 DEBUG AbstractEntityPersister:3592 - Static SQL for entity: com.dataart.project.repositories.Ticket
+23:05:03,216 DEBUG AbstractEntityPersister:3597 -  Version select: select ticket_id from Tickets where ticket_id =?
+23:05:03,217 DEBUG AbstractEntityPersister:3600 -  Snapshot select: select ticket_.ticket_id, ticket_.customer_id as customer5_3_, ticket_.row as row2_3_, ticket_.seat as seat3_3_, ticket_.sector_id as sector6_3_, ticket_.status as status4_3_ from Tickets ticket_ where ticket_.ticket_id=?
+23:05:03,217 DEBUG AbstractEntityPersister:3603 -  Insert 0: insert into Tickets (customer_id, row, seat, sector_id, status, ticket_id) values (?, ?, ?, ?, ?, ?)
+23:05:03,218 DEBUG AbstractEntityPersister:3604 -  Update 0: update Tickets set customer_id=?, row=?, seat=?, sector_id=?, status=? where ticket_id=?
+23:05:03,218 DEBUG AbstractEntityPersister:3605 -  Delete 0: delete from Tickets where ticket_id=?
+23:05:03,219 DEBUG AbstractEntityPersister:3608 -  Identity insert: insert into Tickets (customer_id, row, seat, sector_id, status) values (?, ?, ?, ?, ?)
+23:05:03,222 DEBUG AbstractEntityPersister:3592 - Static SQL for entity: com.dataart.project.repositories.Sector
+23:05:03,223 DEBUG AbstractEntityPersister:3597 -  Version select: select sector_id from Sectors where sector_id =?
+23:05:03,223 DEBUG AbstractEntityPersister:3600 -  Snapshot select: select sector_.sector_id, sector_.arrangement_id as arrangem4_2_, sector_.name as name2_2_, sector_.price as price3_2_ from Sectors sector_ where sector_.sector_id=?
+23:05:03,224 DEBUG AbstractEntityPersister:3603 -  Insert 0: insert into Sectors (arrangement_id, name, price, sector_id) values (?, ?, ?, ?)
+23:05:03,224 DEBUG AbstractEntityPersister:3604 -  Update 0: update Sectors set arrangement_id=?, name=?, price=? where sector_id=?
+23:05:03,224 DEBUG AbstractEntityPersister:3605 -  Delete 0: delete from Sectors where sector_id=?
+23:05:03,225 DEBUG AbstractEntityPersister:3608 -  Identity insert: insert into Sectors (arrangement_id, name, price) values (?, ?, ?)
+23:05:03,228 DEBUG AbstractEntityPersister:3592 - Static SQL for entity: com.dataart.project.repositories.Arrangement
+23:05:03,229 DEBUG AbstractEntityPersister:3597 -  Version select: select arrangement_id from Arrangements where arrangement_id =?
+23:05:03,229 DEBUG AbstractEntityPersister:3600 -  Snapshot select: select arrangemen_.arrangement_id, arrangemen_.date as date2_0_, arrangemen_.name as name3_0_ from Arrangements arrangemen_ where arrangemen_.arrangement_id=?
+23:05:03,230 DEBUG AbstractEntityPersister:3603 -  Insert 0: insert into Arrangements (date, name, arrangement_id) values (?, ?, ?)
+23:05:03,230 DEBUG AbstractEntityPersister:3604 -  Update 0: update Arrangements set date=?, name=? where arrangement_id=?
+23:05:03,231 DEBUG AbstractEntityPersister:3605 -  Delete 0: delete from Arrangements where arrangement_id=?
+23:05:03,238 DEBUG AbstractEntityPersister:3608 -  Identity insert: insert into Arrangements (date, name) values (?, ?)
+23:05:03,240 DEBUG AbstractCollectionPersister:665 - Static SQL for collection: com.dataart.project.repositories.Arrangement.sectors
+23:05:03,241 DEBUG AbstractCollectionPersister:666 -  Row insert: update Sectors set arrangement_id=? where sector_id=?
+23:05:03,242 DEBUG AbstractCollectionPersister:667 -  Row update: update Sectors set  where sector_id=?
+23:05:03,244 DEBUG AbstractCollectionPersister:668 -  Row delete: update Sectors set arrangement_id=null where arrangement_id=? and sector_id=?
+23:05:03,245 DEBUG AbstractCollectionPersister:669 -  One-shot delete: update Sectors set arrangement_id=null where arrangement_id=?
+23:05:03,246 DEBUG AbstractCollectionPersister:665 - Static SQL for collection: com.dataart.project.repositories.Sector.tickets
+23:05:03,246 DEBUG AbstractCollectionPersister:666 -  Row insert: update Tickets set sector_id=? where ticket_id=?
+23:05:03,247 DEBUG AbstractCollectionPersister:667 -  Row update: update Tickets set  where ticket_id=?
+23:05:03,248 DEBUG AbstractCollectionPersister:668 -  Row delete: update Tickets set sector_id=null where sector_id=? and ticket_id=?
+23:05:03,248 DEBUG AbstractCollectionPersister:669 -  One-shot delete: update Tickets set sector_id=null where sector_id=?
+23:05:03,249 DEBUG AbstractCollectionPersister:665 - Static SQL for collection: com.dataart.project.repositories.Customer.tickets
+23:05:03,250 DEBUG AbstractCollectionPersister:666 -  Row insert: update Tickets set customer_id=? where ticket_id=?
+23:05:03,250 DEBUG AbstractCollectionPersister:667 -  Row update: update Tickets set  where ticket_id=?
+23:05:03,251 DEBUG AbstractCollectionPersister:668 -  Row delete: update Tickets set customer_id=null where customer_id=? and ticket_id=?
+23:05:03,251 DEBUG AbstractCollectionPersister:669 -  One-shot delete: update Tickets set customer_id=null where customer_id=?
+23:05:03,253 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Customer [NONE]: select customer0_.customer_id as customer1_1_0_, customer0_.firstName as firstNam2_1_0_, customer0_.lastName as lastName3_1_0_, customer0_.reservationTime as reservat4_1_0_ from Customers customer0_ where customer0_.customer_id=?
+23:05:03,254 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Customer [READ]: select customer0_.customer_id as customer1_1_0_, customer0_.firstName as firstNam2_1_0_, customer0_.lastName as lastName3_1_0_, customer0_.reservationTime as reservat4_1_0_ from Customers customer0_ where customer0_.customer_id=?
+23:05:03,255 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Customer [UPGRADE]: select customer0_.customer_id as customer1_1_0_, customer0_.firstName as firstNam2_1_0_, customer0_.lastName as lastName3_1_0_, customer0_.reservationTime as reservat4_1_0_ from Customers customer0_ where customer0_.customer_id=? for update
+23:05:03,256 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Customer [UPGRADE_NOWAIT]: select customer0_.customer_id as customer1_1_0_, customer0_.firstName as firstNam2_1_0_, customer0_.lastName as lastName3_1_0_, customer0_.reservationTime as reservat4_1_0_ from Customers customer0_ where customer0_.customer_id=? for update
+23:05:03,257 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Customer [FORCE]: select customer0_.customer_id as customer1_1_0_, customer0_.firstName as firstNam2_1_0_, customer0_.lastName as lastName3_1_0_, customer0_.reservationTime as reservat4_1_0_ from Customers customer0_ where customer0_.customer_id=? for update
+23:05:03,258 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Customer [PESSIMISTIC_READ]: select customer0_.customer_id as customer1_1_0_, customer0_.firstName as firstNam2_1_0_, customer0_.lastName as lastName3_1_0_, customer0_.reservationTime as reservat4_1_0_ from Customers customer0_ where customer0_.customer_id=? lock in share mode
+23:05:03,259 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Customer [PESSIMISTIC_WRITE]: select customer0_.customer_id as customer1_1_0_, customer0_.firstName as firstNam2_1_0_, customer0_.lastName as lastName3_1_0_, customer0_.reservationTime as reservat4_1_0_ from Customers customer0_ where customer0_.customer_id=? for update
+23:05:03,260 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Customer [PESSIMISTIC_FORCE_INCREMENT]: select customer0_.customer_id as customer1_1_0_, customer0_.firstName as firstNam2_1_0_, customer0_.lastName as lastName3_1_0_, customer0_.reservationTime as reservat4_1_0_ from Customers customer0_ where customer0_.customer_id=? for update
+23:05:03,261 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Customer [OPTIMISTIC]: select customer0_.customer_id as customer1_1_0_, customer0_.firstName as firstNam2_1_0_, customer0_.lastName as lastName3_1_0_, customer0_.reservationTime as reservat4_1_0_ from Customers customer0_ where customer0_.customer_id=?
+23:05:03,262 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Customer [OPTIMISTIC_FORCE_INCREMENT]: select customer0_.customer_id as customer1_1_0_, customer0_.firstName as firstNam2_1_0_, customer0_.lastName as lastName3_1_0_, customer0_.reservationTime as reservat4_1_0_ from Customers customer0_ where customer0_.customer_id=?
+23:05:03,263 DEBUG Loader:56 - Static select for action ACTION_MERGE on entity com.dataart.project.repositories.Customer: select customer0_.customer_id as customer1_1_0_, customer0_.firstName as firstNam2_1_0_, customer0_.lastName as lastName3_1_0_, customer0_.reservationTime as reservat4_1_0_ from Customers customer0_ where customer0_.customer_id=?
+23:05:03,264 DEBUG Loader:56 - Static select for action ACTION_REFRESH on entity com.dataart.project.repositories.Customer: select customer0_.customer_id as customer1_1_0_, customer0_.firstName as firstNam2_1_0_, customer0_.lastName as lastName3_1_0_, customer0_.reservationTime as reservat4_1_0_ from Customers customer0_ where customer0_.customer_id=?
+23:05:03,266 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Ticket [NONE]: select ticket0_.ticket_id as ticket1_3_3_, ticket0_.customer_id as customer5_3_3_, ticket0_.row as row2_3_3_, ticket0_.seat as seat3_3_3_, ticket0_.sector_id as sector6_3_3_, ticket0_.status as status4_3_3_, customer1_.customer_id as customer1_1_0_, customer1_.firstName as firstNam2_1_0_, customer1_.lastName as lastName3_1_0_, customer1_.reservationTime as reservat4_1_0_, sector2_.sector_id as sector1_2_1_, sector2_.arrangement_id as arrangem4_2_1_, sector2_.name as name2_2_1_, sector2_.price as price3_2_1_, arrangemen3_.arrangement_id as arrangem1_0_2_, arrangemen3_.date as date2_0_2_, arrangemen3_.name as name3_0_2_ from Tickets ticket0_ left outer join Customers customer1_ on ticket0_.customer_id=customer1_.customer_id left outer join Sectors sector2_ on ticket0_.sector_id=sector2_.sector_id left outer join Arrangements arrangemen3_ on sector2_.arrangement_id=arrangemen3_.arrangement_id where ticket0_.ticket_id=?
+23:05:03,267 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Ticket [READ]: select ticket0_.ticket_id as ticket1_3_3_, ticket0_.customer_id as customer5_3_3_, ticket0_.row as row2_3_3_, ticket0_.seat as seat3_3_3_, ticket0_.sector_id as sector6_3_3_, ticket0_.status as status4_3_3_, customer1_.customer_id as customer1_1_0_, customer1_.firstName as firstNam2_1_0_, customer1_.lastName as lastName3_1_0_, customer1_.reservationTime as reservat4_1_0_, sector2_.sector_id as sector1_2_1_, sector2_.arrangement_id as arrangem4_2_1_, sector2_.name as name2_2_1_, sector2_.price as price3_2_1_, arrangemen3_.arrangement_id as arrangem1_0_2_, arrangemen3_.date as date2_0_2_, arrangemen3_.name as name3_0_2_ from Tickets ticket0_ left outer join Customers customer1_ on ticket0_.customer_id=customer1_.customer_id left outer join Sectors sector2_ on ticket0_.sector_id=sector2_.sector_id left outer join Arrangements arrangemen3_ on sector2_.arrangement_id=arrangemen3_.arrangement_id where ticket0_.ticket_id=?
+23:05:03,268 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Ticket [UPGRADE]: select ticket0_.ticket_id as ticket1_3_0_, ticket0_.customer_id as customer5_3_0_, ticket0_.row as row2_3_0_, ticket0_.seat as seat3_3_0_, ticket0_.sector_id as sector6_3_0_, ticket0_.status as status4_3_0_ from Tickets ticket0_ where ticket0_.ticket_id=? for update
+23:05:03,270 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Ticket [UPGRADE_NOWAIT]: select ticket0_.ticket_id as ticket1_3_0_, ticket0_.customer_id as customer5_3_0_, ticket0_.row as row2_3_0_, ticket0_.seat as seat3_3_0_, ticket0_.sector_id as sector6_3_0_, ticket0_.status as status4_3_0_ from Tickets ticket0_ where ticket0_.ticket_id=? for update
+23:05:03,271 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Ticket [FORCE]: select ticket0_.ticket_id as ticket1_3_0_, ticket0_.customer_id as customer5_3_0_, ticket0_.row as row2_3_0_, ticket0_.seat as seat3_3_0_, ticket0_.sector_id as sector6_3_0_, ticket0_.status as status4_3_0_ from Tickets ticket0_ where ticket0_.ticket_id=? for update
+23:05:03,272 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Ticket [PESSIMISTIC_READ]: select ticket0_.ticket_id as ticket1_3_0_, ticket0_.customer_id as customer5_3_0_, ticket0_.row as row2_3_0_, ticket0_.seat as seat3_3_0_, ticket0_.sector_id as sector6_3_0_, ticket0_.status as status4_3_0_ from Tickets ticket0_ where ticket0_.ticket_id=? lock in share mode
+23:05:03,273 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Ticket [PESSIMISTIC_WRITE]: select ticket0_.ticket_id as ticket1_3_0_, ticket0_.customer_id as customer5_3_0_, ticket0_.row as row2_3_0_, ticket0_.seat as seat3_3_0_, ticket0_.sector_id as sector6_3_0_, ticket0_.status as status4_3_0_ from Tickets ticket0_ where ticket0_.ticket_id=? for update
+23:05:03,274 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Ticket [PESSIMISTIC_FORCE_INCREMENT]: select ticket0_.ticket_id as ticket1_3_0_, ticket0_.customer_id as customer5_3_0_, ticket0_.row as row2_3_0_, ticket0_.seat as seat3_3_0_, ticket0_.sector_id as sector6_3_0_, ticket0_.status as status4_3_0_ from Tickets ticket0_ where ticket0_.ticket_id=? for update
+23:05:03,275 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Ticket [OPTIMISTIC]: select ticket0_.ticket_id as ticket1_3_0_, ticket0_.customer_id as customer5_3_0_, ticket0_.row as row2_3_0_, ticket0_.seat as seat3_3_0_, ticket0_.sector_id as sector6_3_0_, ticket0_.status as status4_3_0_ from Tickets ticket0_ where ticket0_.ticket_id=?
+23:05:03,276 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Ticket [OPTIMISTIC_FORCE_INCREMENT]: select ticket0_.ticket_id as ticket1_3_0_, ticket0_.customer_id as customer5_3_0_, ticket0_.row as row2_3_0_, ticket0_.seat as seat3_3_0_, ticket0_.sector_id as sector6_3_0_, ticket0_.status as status4_3_0_ from Tickets ticket0_ where ticket0_.ticket_id=?
+23:05:03,276 DEBUG Loader:56 - Static select for action ACTION_MERGE on entity com.dataart.project.repositories.Ticket: select ticket0_.ticket_id as ticket1_3_0_, ticket0_.customer_id as customer5_3_0_, ticket0_.row as row2_3_0_, ticket0_.seat as seat3_3_0_, ticket0_.sector_id as sector6_3_0_, ticket0_.status as status4_3_0_ from Tickets ticket0_ where ticket0_.ticket_id=?
+23:05:03,277 DEBUG Loader:56 - Static select for action ACTION_REFRESH on entity com.dataart.project.repositories.Ticket: select ticket0_.ticket_id as ticket1_3_0_, ticket0_.customer_id as customer5_3_0_, ticket0_.row as row2_3_0_, ticket0_.seat as seat3_3_0_, ticket0_.sector_id as sector6_3_0_, ticket0_.status as status4_3_0_ from Tickets ticket0_ where ticket0_.ticket_id=?
+23:05:03,278 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Sector [NONE]: select sector0_.sector_id as sector1_2_1_, sector0_.arrangement_id as arrangem4_2_1_, sector0_.name as name2_2_1_, sector0_.price as price3_2_1_, arrangemen1_.arrangement_id as arrangem1_0_0_, arrangemen1_.date as date2_0_0_, arrangemen1_.name as name3_0_0_ from Sectors sector0_ left outer join Arrangements arrangemen1_ on sector0_.arrangement_id=arrangemen1_.arrangement_id where sector0_.sector_id=?
+23:05:03,279 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Sector [READ]: select sector0_.sector_id as sector1_2_1_, sector0_.arrangement_id as arrangem4_2_1_, sector0_.name as name2_2_1_, sector0_.price as price3_2_1_, arrangemen1_.arrangement_id as arrangem1_0_0_, arrangemen1_.date as date2_0_0_, arrangemen1_.name as name3_0_0_ from Sectors sector0_ left outer join Arrangements arrangemen1_ on sector0_.arrangement_id=arrangemen1_.arrangement_id where sector0_.sector_id=?
+23:05:03,280 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Sector [UPGRADE]: select sector0_.sector_id as sector1_2_0_, sector0_.arrangement_id as arrangem4_2_0_, sector0_.name as name2_2_0_, sector0_.price as price3_2_0_ from Sectors sector0_ where sector0_.sector_id=? for update
+23:05:03,281 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Sector [UPGRADE_NOWAIT]: select sector0_.sector_id as sector1_2_0_, sector0_.arrangement_id as arrangem4_2_0_, sector0_.name as name2_2_0_, sector0_.price as price3_2_0_ from Sectors sector0_ where sector0_.sector_id=? for update
+23:05:03,282 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Sector [FORCE]: select sector0_.sector_id as sector1_2_0_, sector0_.arrangement_id as arrangem4_2_0_, sector0_.name as name2_2_0_, sector0_.price as price3_2_0_ from Sectors sector0_ where sector0_.sector_id=? for update
+23:05:03,283 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Sector [PESSIMISTIC_READ]: select sector0_.sector_id as sector1_2_0_, sector0_.arrangement_id as arrangem4_2_0_, sector0_.name as name2_2_0_, sector0_.price as price3_2_0_ from Sectors sector0_ where sector0_.sector_id=? lock in share mode
+23:05:03,284 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Sector [PESSIMISTIC_WRITE]: select sector0_.sector_id as sector1_2_0_, sector0_.arrangement_id as arrangem4_2_0_, sector0_.name as name2_2_0_, sector0_.price as price3_2_0_ from Sectors sector0_ where sector0_.sector_id=? for update
+23:05:03,285 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Sector [PESSIMISTIC_FORCE_INCREMENT]: select sector0_.sector_id as sector1_2_0_, sector0_.arrangement_id as arrangem4_2_0_, sector0_.name as name2_2_0_, sector0_.price as price3_2_0_ from Sectors sector0_ where sector0_.sector_id=? for update
+23:05:03,286 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Sector [OPTIMISTIC]: select sector0_.sector_id as sector1_2_0_, sector0_.arrangement_id as arrangem4_2_0_, sector0_.name as name2_2_0_, sector0_.price as price3_2_0_ from Sectors sector0_ where sector0_.sector_id=?
+23:05:03,287 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Sector [OPTIMISTIC_FORCE_INCREMENT]: select sector0_.sector_id as sector1_2_0_, sector0_.arrangement_id as arrangem4_2_0_, sector0_.name as name2_2_0_, sector0_.price as price3_2_0_ from Sectors sector0_ where sector0_.sector_id=?
+23:05:03,288 DEBUG Loader:56 - Static select for action ACTION_MERGE on entity com.dataart.project.repositories.Sector: select sector0_.sector_id as sector1_2_0_, sector0_.arrangement_id as arrangem4_2_0_, sector0_.name as name2_2_0_, sector0_.price as price3_2_0_ from Sectors sector0_ where sector0_.sector_id=?
+23:05:03,289 DEBUG Loader:56 - Static select for action ACTION_REFRESH on entity com.dataart.project.repositories.Sector: select sector0_.sector_id as sector1_2_0_, sector0_.arrangement_id as arrangem4_2_0_, sector0_.name as name2_2_0_, sector0_.price as price3_2_0_ from Sectors sector0_ where sector0_.sector_id=?
+23:05:03,290 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Arrangement [NONE]: select arrangemen0_.arrangement_id as arrangem1_0_0_, arrangemen0_.date as date2_0_0_, arrangemen0_.name as name3_0_0_ from Arrangements arrangemen0_ where arrangemen0_.arrangement_id=?
+23:05:03,291 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Arrangement [READ]: select arrangemen0_.arrangement_id as arrangem1_0_0_, arrangemen0_.date as date2_0_0_, arrangemen0_.name as name3_0_0_ from Arrangements arrangemen0_ where arrangemen0_.arrangement_id=?
+23:05:03,292 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Arrangement [UPGRADE]: select arrangemen0_.arrangement_id as arrangem1_0_0_, arrangemen0_.date as date2_0_0_, arrangemen0_.name as name3_0_0_ from Arrangements arrangemen0_ where arrangemen0_.arrangement_id=? for update
+23:05:03,293 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Arrangement [UPGRADE_NOWAIT]: select arrangemen0_.arrangement_id as arrangem1_0_0_, arrangemen0_.date as date2_0_0_, arrangemen0_.name as name3_0_0_ from Arrangements arrangemen0_ where arrangemen0_.arrangement_id=? for update
+23:05:03,294 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Arrangement [FORCE]: select arrangemen0_.arrangement_id as arrangem1_0_0_, arrangemen0_.date as date2_0_0_, arrangemen0_.name as name3_0_0_ from Arrangements arrangemen0_ where arrangemen0_.arrangement_id=? for update
+23:05:03,295 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Arrangement [PESSIMISTIC_READ]: select arrangemen0_.arrangement_id as arrangem1_0_0_, arrangemen0_.date as date2_0_0_, arrangemen0_.name as name3_0_0_ from Arrangements arrangemen0_ where arrangemen0_.arrangement_id=? lock in share mode
+23:05:03,296 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Arrangement [PESSIMISTIC_WRITE]: select arrangemen0_.arrangement_id as arrangem1_0_0_, arrangemen0_.date as date2_0_0_, arrangemen0_.name as name3_0_0_ from Arrangements arrangemen0_ where arrangemen0_.arrangement_id=? for update
+23:05:03,297 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Arrangement [PESSIMISTIC_FORCE_INCREMENT]: select arrangemen0_.arrangement_id as arrangem1_0_0_, arrangemen0_.date as date2_0_0_, arrangemen0_.name as name3_0_0_ from Arrangements arrangemen0_ where arrangemen0_.arrangement_id=? for update
+23:05:03,298 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Arrangement [OPTIMISTIC]: select arrangemen0_.arrangement_id as arrangem1_0_0_, arrangemen0_.date as date2_0_0_, arrangemen0_.name as name3_0_0_ from Arrangements arrangemen0_ where arrangemen0_.arrangement_id=?
+23:05:03,299 DEBUG Loader:123 - Static select for entity com.dataart.project.repositories.Arrangement [OPTIMISTIC_FORCE_INCREMENT]: select arrangemen0_.arrangement_id as arrangem1_0_0_, arrangemen0_.date as date2_0_0_, arrangemen0_.name as name3_0_0_ from Arrangements arrangemen0_ where arrangemen0_.arrangement_id=?
+23:05:03,300 DEBUG Loader:56 - Static select for action ACTION_MERGE on entity com.dataart.project.repositories.Arrangement: select arrangemen0_.arrangement_id as arrangem1_0_0_, arrangemen0_.date as date2_0_0_, arrangemen0_.name as name3_0_0_ from Arrangements arrangemen0_ where arrangemen0_.arrangement_id=?
+23:05:03,301 DEBUG Loader:56 - Static select for action ACTION_REFRESH on entity com.dataart.project.repositories.Arrangement: select arrangemen0_.arrangement_id as arrangem1_0_0_, arrangemen0_.date as date2_0_0_, arrangemen0_.name as name3_0_0_ from Arrangements arrangemen0_ where arrangemen0_.arrangement_id=?
+23:05:03,302 DEBUG OneToManyLoader:82 - Static select for one-to-many com.dataart.project.repositories.Arrangement.sectors: select sectors0_.arrangement_id as arrangem4_0_1_, sectors0_.sector_id as sector1_2_1_, sectors0_.sector_id as sector1_2_0_, sectors0_.arrangement_id as arrangem4_2_0_, sectors0_.name as name2_2_0_, sectors0_.price as price3_2_0_ from Sectors sectors0_ where sectors0_.arrangement_id=?
+23:05:03,303 DEBUG OneToManyLoader:82 - Static select for one-to-many com.dataart.project.repositories.Sector.tickets: select tickets0_.sector_id as sector6_2_2_, tickets0_.ticket_id as ticket1_3_2_, tickets0_.ticket_id as ticket1_3_1_, tickets0_.customer_id as customer5_3_1_, tickets0_.row as row2_3_1_, tickets0_.seat as seat3_3_1_, tickets0_.sector_id as sector6_3_1_, tickets0_.status as status4_3_1_, customer1_.customer_id as customer1_1_0_, customer1_.firstName as firstNam2_1_0_, customer1_.lastName as lastName3_1_0_, customer1_.reservationTime as reservat4_1_0_ from Tickets tickets0_ left outer join Customers customer1_ on tickets0_.customer_id=customer1_.customer_id where tickets0_.sector_id=?
+23:05:03,305 DEBUG OneToManyLoader:82 - Static select for one-to-many com.dataart.project.repositories.Customer.tickets: select tickets0_.customer_id as customer5_1_3_, tickets0_.ticket_id as ticket1_3_3_, tickets0_.ticket_id as ticket1_3_2_, tickets0_.customer_id as customer5_3_2_, tickets0_.row as row2_3_2_, tickets0_.seat as seat3_3_2_, tickets0_.sector_id as sector6_3_2_, tickets0_.status as status4_3_2_, sector1_.sector_id as sector1_2_0_, sector1_.arrangement_id as arrangem4_2_0_, sector1_.name as name2_2_0_, sector1_.price as price3_2_0_, arrangemen2_.arrangement_id as arrangem1_0_1_, arrangemen2_.date as date2_0_1_, arrangemen2_.name as name3_0_1_ from Tickets tickets0_ left outer join Sectors sector1_ on tickets0_.sector_id=sector1_.sector_id left outer join Arrangements arrangemen2_ on sector1_.arrangement_id=arrangemen2_.arrangement_id where tickets0_.customer_id=?
+23:05:03,305 DEBUG SessionFactoryRegistry:75 - Registering SessionFactory: 41672ff5-aac0-434f-a574-e94b754035d4 (<unnamed>)
+23:05:03,306 DEBUG SessionFactoryRegistry:82 - Not binding SessionFactory to JNDI, no JNDI name configured
+23:05:03,307 DEBUG SessionFactoryImpl:488 - Instantiated session factory
+23:05:03,307  INFO SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+23:05:03,307  INFO SchemaUpdate:193 - HHH000102: Fetching database metadata
+23:05:03,308 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/LOGDB]
+23:05:03,350  INFO SchemaUpdate:205 - HHH000396: Updating schema
+23:05:03,354 DEBUG Configuration:3426 - Processing hbm.xml files
+23:05:03,358 DEBUG Configuration:3456 - Process annotated classes
+23:05:03,359 DEBUG Configuration:1416 - Processing fk mappings (*ToOne and JoinedSubclass)
+23:05:03,359 DEBUG Configuration:1595 - Processing extends queue
+23:05:03,360 DEBUG Configuration:1653 - Processing extends queue
+23:05:03,360 DEBUG Configuration:1598 - Processing collection mappings
+23:05:03,361 DEBUG Configuration:1608 - Processing native query and ResultSetMapping mappings
+23:05:03,362 DEBUG Configuration:1616 - Processing association property references
+23:05:03,363 DEBUG Configuration:1638 - Creating tables' unique integer identifiers
+23:05:03,370 DEBUG Configuration:1639 - Processing foreign key constraints
+23:05:03,371 DEBUG Configuration:1710 - Resolving reference to class: com.dataart.project.repositories.Arrangement
+23:05:03,372 DEBUG Configuration:1710 - Resolving reference to class: com.dataart.project.repositories.Customer
+23:05:03,372 DEBUG Configuration:1710 - Resolving reference to class: com.dataart.project.repositories.Sector
+23:05:03,382  INFO TableMetadata:65 - HHH000261: Table found: LOGDB.Arrangements
+23:05:03,383  INFO TableMetadata:66 - HHH000037: Columns: [arrangement_id, name, date]
+23:05:03,384  INFO TableMetadata:68 - HHH000108: Foreign keys: []
+23:05:03,384  INFO TableMetadata:69 - HHH000126: Indexes: [primary]
+23:05:03,398  INFO TableMetadata:65 - HHH000261: Table found: LOGDB.Customers
+23:05:03,406  INFO TableMetadata:66 - HHH000037: Columns: [reservationtime, lastname, firstname, customer_id]
+23:05:03,407  INFO TableMetadata:68 - HHH000108: Foreign keys: []
+23:05:03,408  INFO TableMetadata:69 - HHH000126: Indexes: [primary]
+23:05:03,419  INFO TableMetadata:65 - HHH000261: Table found: LOGDB.Sectors
+23:05:03,420  INFO TableMetadata:66 - HHH000037: Columns: [price, sector_id, arrangement_id, name]
+23:05:03,421  INFO TableMetadata:68 - HHH000108: Foreign keys: [fk_a551ff00ede4456d868f7950590]
+23:05:03,421  INFO TableMetadata:69 - HHH000126: Indexes: [fk_a551ff00ede4456d868f7950590, primary]
+23:05:03,439  INFO TableMetadata:65 - HHH000261: Table found: LOGDB.Tickets
+23:05:03,440  INFO TableMetadata:66 - HHH000037: Columns: [ticket_id, sector_id, status, seat, customer_id, row]
+23:05:03,441  INFO TableMetadata:68 - HHH000108: Foreign keys: [fk_01d262606c524a97a28206fa6ce, fk_ea2c9190015d4f0fa903d7f046a]
+23:05:03,441  INFO TableMetadata:69 - HHH000126: Indexes: [fk_01d262606c524a97a28206fa6ce, primary, fk_ea2c9190015d4f0fa903d7f046a]
+23:05:03,442 DEBUG DefaultIdentifierGeneratorFactory:107 - Setting dialect [org.hibernate.dialect.MySQL5Dialect]
+23:05:03,442 DEBUG DefaultIdentifierGeneratorFactory:107 - Setting dialect [org.hibernate.dialect.MySQL5Dialect]
+23:05:03,443 DEBUG DefaultIdentifierGeneratorFactory:107 - Setting dialect [org.hibernate.dialect.MySQL5Dialect]
+23:05:03,443 DEBUG DefaultIdentifierGeneratorFactory:107 - Setting dialect [org.hibernate.dialect.MySQL5Dialect]
+23:05:03,444  INFO SchemaUpdate:242 - HHH000232: Schema update complete
+23:05:03,445 DEBUG SessionFactoryImpl:1068 - Checking 0 named HQL queries
+23:05:03,446 DEBUG SessionFactoryImpl:1091 - Checking 0 named SQL queries
+23:05:03,447 DEBUG StatisticsInitiator:110 - Statistics initialized [enabled=false]
+23:05:03,447 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,450 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'sessionFactory'
+23:05:03,450 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'generalController'
+23:05:03,451 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'generalController'
+23:05:03,456 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'generalController' to allow for resolving potential circular references
+23:05:03,457 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,459 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'generalController'
+23:05:03,460 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'arrangementController'
+23:05:03,460 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'arrangementController'
+23:05:03,467 DEBUG InjectionMetadata:71 - Registered injected element on class [com.dataart.project.controllers.ArrangementController]: AutowiredFieldElement for protected com.dataart.project.services.ArrangementService com.dataart.project.controllers.ArrangementController.service
+23:05:03,468 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'arrangementController' to allow for resolving potential circular references
+23:05:03,469 DEBUG InjectionMetadata:85 - Processing injected method of bean 'arrangementController': AutowiredFieldElement for protected com.dataart.project.services.ArrangementService com.dataart.project.controllers.ArrangementController.service
+23:05:03,471 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'arrangementService'
+23:05:03,472 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'arrangementService'
+23:05:03,473 DEBUG InjectionMetadata:71 - Registered injected element on class [com.dataart.project.services.ArrangementService]: AutowiredFieldElement for protected com.dataart.project.repositories.ArrangementRepository com.dataart.project.services.ArrangementService.repository
+23:05:03,474 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'arrangementService' to allow for resolving potential circular references
+23:05:03,474 DEBUG InjectionMetadata:85 - Processing injected method of bean 'arrangementService': AutowiredFieldElement for protected com.dataart.project.repositories.ArrangementRepository com.dataart.project.services.ArrangementService.repository
+23:05:03,477 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'arrangementRepositoryHibernateImpl'
+23:05:03,478 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'arrangementRepositoryHibernateImpl'
+23:05:03,480 DEBUG InjectionMetadata:71 - Registered injected element on class [com.dataart.project.repositories.ArrangementRepositoryHibernateImpl]: AutowiredFieldElement for protected org.hibernate.SessionFactory com.dataart.project.repositories.ArrangementRepositoryHibernateImpl.sessionFactory
+23:05:03,481 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'arrangementRepositoryHibernateImpl' to allow for resolving potential circular references
+23:05:03,481 DEBUG InjectionMetadata:85 - Processing injected method of bean 'arrangementRepositoryHibernateImpl': AutowiredFieldElement for protected org.hibernate.SessionFactory com.dataart.project.repositories.ArrangementRepositoryHibernateImpl.sessionFactory
+23:05:03,484 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'sessionFactory'
+23:05:03,485 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,503 DEBUG AutowiredAnnotationBeanPostProcessor:433 - Autowiring by type from bean name 'arrangementRepositoryHibernateImpl' to bean named 'sessionFactory'
+23:05:03,504 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,505 DEBUG AnnotationTransactionAttributeSource:106 - Adding transactional method 'createArrangement' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+23:05:03,505 DEBUG InfrastructureAdvisorAutoProxyCreator:538 - Creating implicit proxy for bean 'arrangementRepositoryHibernateImpl' with 0 common interceptors and 1 specific interceptors
+23:05:03,506 DEBUG JdkDynamicAopProxy:115 - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.dataart.project.repositories.ArrangementRepositoryHibernateImpl@339a86e6]
+23:05:03,507 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'arrangementRepositoryHibernateImpl'
+23:05:03,507 DEBUG AutowiredAnnotationBeanPostProcessor:433 - Autowiring by type from bean name 'arrangementService' to bean named 'arrangementRepositoryHibernateImpl'
+23:05:03,508 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,509 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'arrangementService'
+23:05:03,509 DEBUG AutowiredAnnotationBeanPostProcessor:433 - Autowiring by type from bean name 'arrangementController' to bean named 'arrangementService'
+23:05:03,510 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,527 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'arrangementController'
+23:05:03,528 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'arrangementService'
+23:05:03,529 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'arrangementRepositoryHibernateImpl'
+23:05:03,530 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:05:03,531 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:05:03,531 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:05:03,532 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:05:03,532 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+23:05:03,533 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+23:05:03,533 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+23:05:03,536 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0' to allow for resolving potential circular references
+23:05:03,539 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+23:05:03,539 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+23:05:03,540 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean '(inner bean)'
+23:05:03,541 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+23:05:03,541 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+23:05:03,544 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0' to allow for resolving potential circular references
+23:05:03,544 DEBUG DefaultListableBeanFactory:1531 - Invoking afterPropertiesSet() on bean with name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+23:05:03,546 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,548 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+23:05:03,549 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,554 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,556 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean '(inner bean)'
+23:05:03,559 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+23:05:03,560 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+23:05:03,561 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+23:05:03,562 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+23:05:03,563 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+23:05:03,564 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+23:05:03,565 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+23:05:03,566 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+23:05:03,568 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+23:05:03,568 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+23:05:03,569 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+23:05:03,570 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+23:05:03,571 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+23:05:03,572 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+23:05:03,573 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+23:05:03,574 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+23:05:03,575 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+23:05:03,576 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+23:05:03,577 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+23:05:03,578 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+23:05:03,580 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#0' to allow for resolving potential circular references
+23:05:03,581 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,582 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+23:05:03,584 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+23:05:03,585 DEBUG DefaultAnnotationHandlerMapping:71 - Looking for URL mappings in application context: WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Wed Jul 16 23:05:02 EEST 2014]; parent: Root WebApplicationContext
+23:05:03,586 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'dataSource': no URL paths identified
+23:05:03,587 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'sessionFactory': no URL paths identified
+23:05:03,588 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'generalController'
+23:05:03,589  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/home] onto handler 'generalController'
+23:05:03,589 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'generalController'
+23:05:03,590  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/home.*] onto handler 'generalController'
+23:05:03,590 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'generalController'
+23:05:03,591  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/home/] onto handler 'generalController'
+23:05:03,591 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'generalController'
+23:05:03,591  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/welcome] onto handler 'generalController'
+23:05:03,592 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'generalController'
+23:05:03,592  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/welcome.*] onto handler 'generalController'
+23:05:03,593 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'generalController'
+23:05:03,593  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/welcome/] onto handler 'generalController'
+23:05:03,594 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'generalController'
+23:05:03,594  INFO DefaultAnnotationHandlerMapping:302 - Root mapping to handler 'generalController'
+23:05:03,595 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'generalController'
+23:05:03,595  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/stadium] onto handler 'generalController'
+23:05:03,595 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'generalController'
+23:05:03,596  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/stadium.*] onto handler 'generalController'
+23:05:03,596 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'generalController'
+23:05:03,597  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/stadium/] onto handler 'generalController'
+23:05:03,599 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'arrangementController'
+23:05:03,600  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/create-arrangement] onto handler 'arrangementController'
+23:05:03,600 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'arrangementController'
+23:05:03,601  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/create-arrangement.*] onto handler 'arrangementController'
+23:05:03,601 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'arrangementController'
+23:05:03,601  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/create-arrangement/] onto handler 'arrangementController'
+23:05:03,603 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'arrangementController'
+23:05:03,605  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/arrangements] onto handler 'arrangementController'
+23:05:03,607 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'arrangementController'
+23:05:03,609  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/arrangements.*] onto handler 'arrangementController'
+23:05:03,610 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'arrangementController'
+23:05:03,611  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/arrangements/] onto handler 'arrangementController'
+23:05:03,611 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'arrangementController'
+23:05:03,612  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/delete-arrangement] onto handler 'arrangementController'
+23:05:03,612 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'arrangementController'
+23:05:03,613  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/delete-arrangement.*] onto handler 'arrangementController'
+23:05:03,614 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'arrangementController'
+23:05:03,615  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/delete-arrangement/] onto handler 'arrangementController'
+23:05:03,615 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'arrangementController'
+23:05:03,616  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/edit-arrangement] onto handler 'arrangementController'
+23:05:03,616 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'arrangementController'
+23:05:03,617  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/edit-arrangement.*] onto handler 'arrangementController'
+23:05:03,617 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'arrangementController'
+23:05:03,617  INFO DefaultAnnotationHandlerMapping:315 - Mapped URL path [/edit-arrangement/] onto handler 'arrangementController'
+23:05:03,618 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'arrangementService': no URL paths identified
+23:05:03,619 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'arrangementRepositoryHibernateImpl': no URL paths identified
+23:05:03,619 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+23:05:03,620 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+23:05:03,620 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+23:05:03,621 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+23:05:03,621 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor': no URL paths identified
+23:05:03,622 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0': no URL paths identified
+23:05:03,623 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+23:05:03,623 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0': no URL paths identified
+23:05:03,624 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
+23:05:03,625 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0': no URL paths identified
+23:05:03,625 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
+23:05:03,626 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0': no URL paths identified
+23:05:03,626 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0': no URL paths identified
+23:05:03,627 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0': no URL paths identified
+23:05:03,628 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping': no URL paths identified
+23:05:03,628 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter': no URL paths identified
+23:05:03,629 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter': no URL paths identified
+23:05:03,629 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.aop.config.internalAutoProxyCreator': no URL paths identified
+23:05:03,630 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': no URL paths identified
+23:05:03,631 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.transaction.interceptor.TransactionInterceptor#0': no URL paths identified
+23:05:03,631 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.transaction.config.internalTransactionAdvisor': no URL paths identified
+23:05:03,632 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'transactionManager': no URL paths identified
+23:05:03,633 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.view.InternalResourceViewResolver#0': no URL paths identified
+23:05:03,633 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0': no URL paths identified
+23:05:03,634 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0': no URL paths identified
+23:05:03,635 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'jspViewResolver': no URL paths identified
+23:05:03,636 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+23:05:03,636 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'environment': no URL paths identified
+23:05:03,637 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'systemProperties': no URL paths identified
+23:05:03,637 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'systemEnvironment': no URL paths identified
+23:05:03,638 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'servletConfig': no URL paths identified
+23:05:03,639 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+23:05:03,639 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'messageSource': no URL paths identified
+23:05:03,640 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+23:05:03,641 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,646 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+23:05:03,647 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+23:05:03,647 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'mvcContentNegotiationManager'
+23:05:03,649 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'mvcContentNegotiationManager' to allow for resolving potential circular references
+23:05:03,650 DEBUG DefaultListableBeanFactory:1531 - Invoking afterPropertiesSet() on bean with name 'mvcContentNegotiationManager'
+23:05:03,651 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,660 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'mvcContentNegotiationManager'
+23:05:03,662 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+23:05:03,663 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+23:05:03,676 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0' to allow for resolving potential circular references
+23:05:03,678 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+23:05:03,679 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,681 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+23:05:03,683 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+23:05:03,684 DEBUG DefaultListableBeanFactory:1531 - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+23:05:03,684 DEBUG RequestMappingHandlerMapping:105 - Looking for request mappings in application context: WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Wed Jul 16 23:05:02 EEST 2014]; parent: Root WebApplicationContext
+23:05:03,687  INFO RequestMappingHandlerMapping:185 - Mapped "{[/home],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.dataart.project.controllers.GeneralController.handleRequest()
+23:05:03,689  INFO RequestMappingHandlerMapping:185 - Mapped "{[/welcome],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.dataart.project.controllers.GeneralController.getdata()
+23:05:03,690  INFO RequestMappingHandlerMapping:185 - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.dataart.project.controllers.GeneralController.handleRequest1(org.springframework.ui.Model)
+23:05:03,691  INFO RequestMappingHandlerMapping:185 - Mapped "{[/stadium],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.dataart.project.controllers.GeneralController.handleRequestStadium(org.springframework.ui.Model)
+23:05:03,695  INFO RequestMappingHandlerMapping:185 - Mapped "{[/create-arrangement],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.dataart.project.controllers.ArrangementController.createArrangementGet(org.springframework.ui.Model)
+23:05:03,696  INFO RequestMappingHandlerMapping:185 - Mapped "{[/create-arrangement],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.dataart.project.controllers.ArrangementController.createArrangementPost(javax.servlet.http.HttpServletRequest)
+23:05:03,697  INFO RequestMappingHandlerMapping:185 - Mapped "{[/arrangements],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.dataart.project.controllers.ArrangementController.getArrangements(org.springframework.ui.Model)
+23:05:03,698  INFO RequestMappingHandlerMapping:185 - Mapped "{[/delete-arrangement],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.dataart.project.controllers.ArrangementController.deleteArrangementGet(org.springframework.ui.Model)
+23:05:03,700  INFO RequestMappingHandlerMapping:185 - Mapped "{[/delete-arrangement],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.dataart.project.controllers.ArrangementController.deleteArrangementPost(javax.servlet.http.HttpServletRequest)
+23:05:03,701  INFO RequestMappingHandlerMapping:185 - Mapped "{[/edit-arrangement],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.dataart.project.controllers.ArrangementController.editArrangementGet(org.springframework.ui.Model)
+23:05:03,702  INFO RequestMappingHandlerMapping:185 - Mapped "{[/edit-arrangement],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.dataart.project.controllers.ArrangementController.editArrangementPost(javax.servlet.http.HttpServletRequest)
+23:05:03,705 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,708 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+23:05:03,709 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+23:05:03,709 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+23:05:03,710 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+23:05:03,733 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0' to allow for resolving potential circular references
+23:05:03,742 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+23:05:03,743 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean '(inner bean)#1'
+23:05:03,745 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+23:05:03,746 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,748 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean '(inner bean)#1'
+23:05:03,749 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean '(inner bean)#2'
+23:05:03,752 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,756 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean '(inner bean)#2'
+23:05:03,757 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean '(inner bean)#3'
+23:05:03,767 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,769 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean '(inner bean)#3'
+23:05:03,769 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean '(inner bean)#4'
+23:05:03,772 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,774 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean '(inner bean)#4'
+23:05:03,775 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean '(inner bean)#5'
+23:05:03,780 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,782 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean '(inner bean)#5'
+23:05:03,783 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean '(inner bean)#6'
+23:05:03,799 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,802 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean '(inner bean)#6'
+23:05:03,803 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean '(inner bean)#7'
+23:05:03,806 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,808 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean '(inner bean)#7'
+23:05:03,809 DEBUG DefaultListableBeanFactory:1531 - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+23:05:03,811 DEBUG RequestMappingHandlerAdapter:618 - Looking for controller advice: WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Wed Jul 16 23:05:02 EEST 2014]; parent: Root WebApplicationContext
+23:05:03,814 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,817 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+23:05:03,818 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+23:05:03,818 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+23:05:03,819 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+23:05:03,840 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0' to allow for resolving potential circular references
+23:05:03,841 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+23:05:03,841 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean '(inner bean)#8'
+23:05:03,842 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,843 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean '(inner bean)#8'
+23:05:03,844 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean '(inner bean)#9'
+23:05:03,851 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,852 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean '(inner bean)#9'
+23:05:03,853 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean '(inner bean)#10'
+23:05:03,854 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,859 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean '(inner bean)#10'
+23:05:03,861 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean '(inner bean)#11'
+23:05:03,863 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,864 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean '(inner bean)#11'
+23:05:03,865 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean '(inner bean)#12'
+23:05:03,944 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,945 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean '(inner bean)#12'
+23:05:03,946 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean '(inner bean)#13'
+23:05:03,948 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,950 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean '(inner bean)#13'
+23:05:03,951 DEBUG DefaultListableBeanFactory:1531 - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+23:05:03,952 DEBUG ExceptionHandlerExceptionResolver:284 - Looking for exception mappings: WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Wed Jul 16 23:05:02 EEST 2014]; parent: Root WebApplicationContext
+23:05:03,955 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,957 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+23:05:03,958 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+23:05:03,958 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+23:05:03,960 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0' to allow for resolving potential circular references
+23:05:03,961 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,963 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+23:05:03,963 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+23:05:03,964 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+23:05:03,965 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0' to allow for resolving potential circular references
+23:05:03,966 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,968 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+23:05:03,968 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+23:05:03,969 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+23:05:03,971 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping' to allow for resolving potential circular references
+23:05:03,974 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+23:05:03,975 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+23:05:03,976 DEBUG BeanNameUrlHandlerMapping:71 - Looking for URL mappings in application context: WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Wed Jul 16 23:05:02 EEST 2014]; parent: Root WebApplicationContext
+23:05:03,976 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'dataSource': no URL paths identified
+23:05:03,977 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'sessionFactory': no URL paths identified
+23:05:03,977 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'generalController': no URL paths identified
+23:05:03,977 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'arrangementController': no URL paths identified
+23:05:03,978 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'arrangementService': no URL paths identified
+23:05:03,979 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'arrangementRepositoryHibernateImpl': no URL paths identified
+23:05:03,979 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+23:05:03,980 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+23:05:03,980 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+23:05:03,981 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+23:05:03,981 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor': no URL paths identified
+23:05:03,982 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0': no URL paths identified
+23:05:03,982 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+23:05:03,983 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0': no URL paths identified
+23:05:03,983 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
+23:05:03,984 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0': no URL paths identified
+23:05:03,984 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
+23:05:03,985 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0': no URL paths identified
+23:05:03,985 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0': no URL paths identified
+23:05:03,985 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0': no URL paths identified
+23:05:03,986 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping': no URL paths identified
+23:05:03,986 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter': no URL paths identified
+23:05:03,987 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter': no URL paths identified
+23:05:03,987 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.aop.config.internalAutoProxyCreator': no URL paths identified
+23:05:03,988 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': no URL paths identified
+23:05:03,988 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.transaction.interceptor.TransactionInterceptor#0': no URL paths identified
+23:05:03,989 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.transaction.config.internalTransactionAdvisor': no URL paths identified
+23:05:03,989 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'transactionManager': no URL paths identified
+23:05:03,990 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.view.InternalResourceViewResolver#0': no URL paths identified
+23:05:03,990 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0': no URL paths identified
+23:05:03,991 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0': no URL paths identified
+23:05:03,991 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'jspViewResolver': no URL paths identified
+23:05:03,991 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+23:05:03,992 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'environment': no URL paths identified
+23:05:03,993 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'systemProperties': no URL paths identified
+23:05:03,993 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'systemEnvironment': no URL paths identified
+23:05:03,993 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'servletConfig': no URL paths identified
+23:05:03,994 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+23:05:03,994 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'messageSource': no URL paths identified
+23:05:03,995 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+23:05:03,995 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:03,997 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+23:05:03,998 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+23:05:03,998 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+23:05:03,999 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter' to allow for resolving potential circular references
+23:05:04,000 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:04,001 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+23:05:04,001 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+23:05:04,002 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+23:05:04,003 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter' to allow for resolving potential circular references
+23:05:04,003 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:04,004 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+23:05:04,005 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+23:05:04,005 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+23:05:04,006 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+23:05:04,006 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+23:05:04,009 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0' to allow for resolving potential circular references
+23:05:04,010 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+23:05:04,011 DEBUG DefaultListableBeanFactory:1531 - Invoking afterPropertiesSet() on bean with name 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+23:05:04,012 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+23:05:04,012 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:04,013 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'transactionManager'
+23:05:04,013 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'transactionManager'
+23:05:04,015 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+23:05:04,016 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'sessionFactory'
+23:05:04,017 DEBUG DefaultListableBeanFactory:1531 - Invoking afterPropertiesSet() on bean with name 'transactionManager'
+23:05:04,018  INFO HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@735035de] of Hibernate SessionFactory for HibernateTransactionManager
+23:05:04,018 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:04,021 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'transactionManager'
+23:05:04,022 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+23:05:04,022 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+23:05:04,028 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0' to allow for resolving potential circular references
+23:05:04,044 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:04,046 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+23:05:04,047 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+23:05:04,047 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+23:05:04,049 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' to allow for resolving potential circular references
+23:05:04,053 DEBUG DefaultListableBeanFactory:1531 - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+23:05:04,053 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:04,057 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+23:05:04,058 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+23:05:04,058 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+23:05:04,061 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0' to allow for resolving potential circular references
+23:05:04,064 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+23:05:04,066 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+23:05:04,067 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+23:05:04,067  INFO SimpleUrlHandlerMapping:315 - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+23:05:04,068 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:04,070 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+23:05:04,071 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'jspViewResolver'
+23:05:04,071 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'jspViewResolver'
+23:05:04,072 DEBUG DefaultListableBeanFactory:509 - Eagerly caching bean 'jspViewResolver' to allow for resolving potential circular references
+23:05:04,073 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:04,074 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'jspViewResolver'
+23:05:04,075 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:05:04,075 DEBUG XmlWebApplicationContext:858 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@6c59562f]
+23:05:04,076 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'lifecycleProcessor'
+23:05:04,079 DEBUG DispatcherServlet:467 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+23:05:04,080 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+23:05:04,086 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:04,087 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+23:05:04,087 DEBUG DispatcherServlet:489 - Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@71c20878]
+23:05:04,089 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+23:05:04,097 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:04,098 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+23:05:04,099 DEBUG DispatcherServlet:511 - Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@7a2c93ed]
+23:05:04,100 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+23:05:04,100 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+23:05:04,101 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+23:05:04,101 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+23:05:04,102 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+23:05:04,103 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+23:05:04,103 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+23:05:04,103 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+23:05:04,105 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+23:05:04,105 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+23:05:04,106 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+23:05:04,107 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+23:05:04,107 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+23:05:04,108 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+23:05:04,109 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+23:05:04,110 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+23:05:04,110 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+23:05:04,112 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+23:05:04,112 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+23:05:04,113 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+23:05:04,115 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+23:05:04,122 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:04,123 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+23:05:04,124 DEBUG DispatcherServlet:649 - Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@340408e4]
+23:05:04,125 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+23:05:04,126 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'jspViewResolver'
+23:05:04,127 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+23:05:04,128 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'jspViewResolver'
+23:05:04,130 DEBUG DefaultListableBeanFactory:435 - Creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+23:05:04,157 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:04,160 DEBUG DefaultListableBeanFactory:463 - Finished creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+23:05:04,161 DEBUG DispatcherServlet:711 - Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@2cef10dc]
+23:05:04,169 DEBUG PropertySourcesPropertyResolver:70 - Searching for key 'spring.liveBeansView.mbeanDomain' in [servletConfigInitParams]
+23:05:04,169 DEBUG PropertySourcesPropertyResolver:70 - Searching for key 'spring.liveBeansView.mbeanDomain' in [servletContextInitParams]
+23:05:04,170 DEBUG PropertySourcesPropertyResolver:70 - Searching for key 'spring.liveBeansView.mbeanDomain' in [jndiProperties]
+23:05:04,170 DEBUG JndiTemplate:150 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+23:05:04,171 DEBUG JndiLocatorDelegate:101 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+23:05:04,171 DEBUG JndiTemplate:150 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+23:05:04,172 DEBUG JndiPropertySource:87 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial. Returning null.
+23:05:04,173 DEBUG PropertySourcesPropertyResolver:70 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+23:05:04,174 DEBUG PropertySourcesPropertyResolver:70 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+23:05:04,176 DEBUG PropertySourcesPropertyResolver:93 - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+23:05:04,178 DEBUG DispatcherServlet:533 - Published WebApplicationContext of servlet 'mvc-dispatcher' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.mvc-dispatcher]
+23:05:04,179  INFO DispatcherServlet:473 - FrameworkServlet 'mvc-dispatcher': initialization completed in 2041 ms
+23:05:04,179 DEBUG DispatcherServlet:139 - Servlet 'mvc-dispatcher' configured successfully
+23:05:10,540 DEBUG DispatcherServlet:823 - DispatcherServlet with name 'mvc-dispatcher' processing GET request for [/]
+23:05:10,545 DEBUG RequestMappingHandlerMapping:226 - Looking up handler method for path /
+23:05:10,550 DEBUG RequestMappingHandlerMapping:233 - Returning handler method [public org.springframework.web.servlet.ModelAndView com.dataart.project.controllers.GeneralController.handleRequest1(org.springframework.ui.Model)]
+23:05:10,550 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'generalController'
+23:05:10,552 DEBUG DispatcherServlet:912 - Last-Modified value for [/] is: -1
+23:05:10,587 DEBUG DefaultListableBeanFactory:1531 - Invoking afterPropertiesSet() on bean with name 'template'
+23:05:10,588 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+23:05:10,591 DEBUG DispatcherServlet:1206 - Rendering view [org.springframework.web.servlet.view.JstlView: name 'template'; URL [/WEB-INF/pages/template.jsp]] in DispatcherServlet with name 'mvc-dispatcher'
+23:05:10,592 DEBUG JstlView:373 - Added model object 'partial' of type [java.lang.String] to request in view with name 'template'
+23:05:10,592 DEBUG JstlView:373 - Added model object 'title' of type [java.lang.String] to request in view with name 'template'
+23:05:10,602 DEBUG JstlView:236 - Forwarding to resource [/WEB-INF/pages/template.jsp] in InternalResourceView 'template'
+23:05:15,189 DEBUG DispatcherServlet:966 - Successfully completed request
+23:05:15,239 DEBUG DispatcherServlet:823 - DispatcherServlet with name 'mvc-dispatcher' processing GET request for [/resources/css/style.css]
+23:05:15,240 DEBUG RequestMappingHandlerMapping:226 - Looking up handler method for path /resources/css/style.css
+23:05:15,249 DEBUG DispatcherServlet:823 - DispatcherServlet with name 'mvc-dispatcher' processing GET request for [/resources/images/1331728310_21907583.gif]
+23:05:15,250 DEBUG RequestMappingHandlerMapping:226 - Looking up handler method for path /resources/images/1331728310_21907583.gif
+23:05:15,259 DEBUG RequestMappingHandlerMapping:236 - Did not find handler method for [/resources/images/1331728310_21907583.gif]
+23:05:15,267 DEBUG RequestMappingHandlerMapping:236 - Did not find handler method for [/resources/css/style.css]
+23:05:15,267 DEBUG SimpleUrlHandlerMapping:169 - Matching patterns for request [/resources/images/1331728310_21907583.gif] are [/resources/**]
+23:05:15,271 DEBUG SimpleUrlHandlerMapping:194 - URI Template variables for request [/resources/images/1331728310_21907583.gif] are {}
+23:05:15,273 DEBUG SimpleUrlHandlerMapping:124 - Mapping [/resources/images/1331728310_21907583.gif] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@613c530] and 1 interceptor
+23:05:15,271 DEBUG SimpleUrlHandlerMapping:169 - Matching patterns for request [/resources/css/style.css] are [/resources/**]
+23:05:15,276 DEBUG SimpleUrlHandlerMapping:194 - URI Template variables for request [/resources/css/style.css] are {}
+23:05:15,277 DEBUG SimpleUrlHandlerMapping:124 - Mapping [/resources/css/style.css] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@613c530] and 1 interceptor
+23:05:15,278 DEBUG DispatcherServlet:912 - Last-Modified value for [/resources/css/style.css] is: -1
+23:05:15,279 DEBUG ResourceHttpRequestHandler:165 - Trying relative path [css/style.css] against base location: ServletContext resource [/resources/mytheme/]
+23:05:15,283 DEBUG ResourceHttpRequestHandler:170 - Found matching resource: ServletContext resource [/resources/mytheme/css/style.css]
+23:05:15,279 DEBUG DispatcherServlet:912 - Last-Modified value for [/resources/images/1331728310_21907583.gif] is: -1
+23:05:15,287 DEBUG ResourceHttpRequestHandler:165 - Trying relative path [images/1331728310_21907583.gif] against base location: ServletContext resource [/resources/mytheme/]
+23:05:15,288 DEBUG ResourceHttpRequestHandler:170 - Found matching resource: ServletContext resource [/resources/mytheme/images/1331728310_21907583.gif]
+23:05:15,289 DEBUG ResourceHttpRequestHandler:124 - Determined media type 'image/gif' for ServletContext resource [/resources/mytheme/images/1331728310_21907583.gif]
+23:05:15,290 DEBUG ResourceHttpRequestHandler:124 - Determined media type 'text/css' for ServletContext resource [/resources/mytheme/css/style.css]
+23:05:15,296 DEBUG ResourceHttpRequestHandler:135 - Resource not modified - returning 304
+23:05:15,298 DEBUG DispatcherServlet:999 - Null ModelAndView returned to DispatcherServlet with name 'mvc-dispatcher': assuming HandlerAdapter completed request handling
+23:05:15,302 DEBUG DispatcherServlet:966 - Successfully completed request
+23:05:15,303 DEBUG ResourceHttpRequestHandler:135 - Resource not modified - returning 304
+23:05:15,304 DEBUG DispatcherServlet:999 - Null ModelAndView returned to DispatcherServlet with name 'mvc-dispatcher': assuming HandlerAdapter completed request handling
+23:05:15,305 DEBUG DispatcherServlet:966 - Successfully completed request
+23:05:20,505 DEBUG DispatcherServlet:823 - DispatcherServlet with name 'mvc-dispatcher' processing GET request for [/arrangements.html]
+23:05:20,507 DEBUG RequestMappingHandlerMapping:226 - Looking up handler method for path /arrangements.html
+23:05:20,519 DEBUG RequestMappingHandlerMapping:233 - Returning handler method [public java.lang.String com.dataart.project.controllers.ArrangementController.getArrangements(org.springframework.ui.Model)]
+23:05:20,520 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'arrangementController'
+23:05:20,522 DEBUG DispatcherServlet:912 - Last-Modified value for [/arrangements.html] is: -1
+23:05:20,529 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+23:05:20,533 DEBUG AnnotationTransactionAttributeSource:106 - Adding transactional method 'getArrangements' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+23:05:20,537 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'transactionManager'
+23:05:20,546 DEBUG HibernateTransactionManager:366 - Creating new transaction with name [com.dataart.project.repositories.ArrangementRepositoryHibernateImpl.getArrangements]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+23:05:20,641 DEBUG HibernateTransactionManager:416 - Opened new Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])] for Hibernate transaction
+23:05:20,653 DEBUG HibernateTransactionManager:426 - Preparing JDBC Connection of Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])]
+23:05:20,657 DEBUG LogicalConnectionImpl:212 - Obtaining JDBC connection
+23:05:20,657 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/LOGDB]
+23:05:20,677 DEBUG LogicalConnectionImpl:218 - Obtained JDBC connection
+23:05:20,686 DEBUG AbstractTransactionImpl:158 - begin
+23:05:20,687 DEBUG JdbcTransaction:69 - initial autocommit status: true
+23:05:20,688 DEBUG JdbcTransaction:71 - disabling autocommit
+23:05:20,693 DEBUG HibernateTransactionManager:487 - Exposing Hibernate transaction as JDBC transaction [com.mysql.jdbc.JDBC4Connection@168d5433]
+23:05:20,815 DEBUG QueryTranslatorImpl:265 - parse() - HQL: FROM com.dataart.project.repositories.Arrangement a
+23:05:20,840 DEBUG QueryTranslatorImpl:283 - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       \-[FROM] Node: 'FROM'
+          \-[RANGE] Node: 'RANGE'
+             +-[DOT] Node: '.'
+             |  +-[DOT] Node: '.'
+             |  |  +-[DOT] Node: '.'
+             |  |  |  +-[DOT] Node: '.'
+             |  |  |  |  +-[IDENT] Node: 'com'
+             |  |  |  |  \-[IDENT] Node: 'dataart'
+             |  |  |  \-[IDENT] Node: 'project'
+             |  |  \-[IDENT] Node: 'repositories'
+             |  \-[IDENT] Node: 'Arrangement'
+             \-[ALIAS] Node: 'a'
+
+23:05:20,841 DEBUG ErrorCounter:82 - throwQueryException() : no errors
+23:05:20,898 DEBUG HqlSqlBaseWalker:121 - select << begin [level=1, statement=select]
+23:05:20,932 DEBUG FromElement:157 - FromClause{level=1} : com.dataart.project.repositories.Arrangement (a) -> arrangemen0_
+23:05:20,933 DEBUG HqlSqlBaseWalker:125 - select : finishing up [level=1, statement=select]
+23:05:20,935 DEBUG HqlSqlWalker:629 - processQuery() :  ( SELECT ( FromClause{level=1} Arrangements arrangemen0_ ) )
+23:05:20,944 DEBUG HqlSqlWalker:869 - Derived SELECT clause created.
+23:05:20,954 DEBUG JoinProcessor:175 - Using FROM fragment [Arrangements arrangemen0_]
+23:05:20,959 DEBUG HqlSqlBaseWalker:129 - select >> end [level=1, statement=select]
+23:05:20,962 DEBUG QueryTranslatorImpl:252 - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Arrangements)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'arrangemen0_.arrangement_id as arrangem1_0_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=a,role=null,tableName=Arrangements,tableAlias=arrangemen0_,origin=null,columns={,className=com.dataart.project.repositories.Arrangement}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'arrangemen0_.date as date2_0_, arrangemen0_.name as name3_0_'
+    \-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[a], fromElementByTableAlias=[arrangemen0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'Arrangements arrangemen0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=a,role=null,tableName=Arrangements,tableAlias=arrangemen0_,origin=null,columns={,className=com.dataart.project.repositories.Arrangement}}
+
+23:05:20,963 DEBUG ErrorCounter:82 - throwQueryException() : no errors
+23:05:20,980 DEBUG QueryTranslatorImpl:235 - HQL: FROM com.dataart.project.repositories.Arrangement a
+23:05:20,981 DEBUG QueryTranslatorImpl:236 - SQL: select arrangemen0_.arrangement_id as arrangem1_0_, arrangemen0_.date as date2_0_, arrangemen0_.name as name3_0_ from Arrangements arrangemen0_
+23:05:20,982 DEBUG ErrorCounter:82 - throwQueryException() : no errors
+23:05:21,087 DEBUG SQL:104 - select arrangemen0_.arrangement_id as arrangem1_0_, arrangemen0_.date as date2_0_, arrangemen0_.name as name3_0_ from Arrangements arrangemen0_
+23:05:21,117 DEBUG Loader:941 - Result set row: 0
+23:05:21,126 DEBUG Loader:1475 - Result row: EntityKey[com.dataart.project.repositories.Arrangement#1]
+23:05:21,183 DEBUG TwoPhaseLoad:158 - Resolving associations for [com.dataart.project.repositories.Arrangement#1]
+23:05:21,203 DEBUG TwoPhaseLoad:277 - Done materializing entity [com.dataart.project.repositories.Arrangement#1]
+23:05:21,207 DEBUG HibernateTransactionManager:753 - Initiating transaction commit
+23:05:21,208 DEBUG HibernateTransactionManager:550 - Committing Hibernate transaction on Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.dataart.project.repositories.Arrangement#1]],collectionKeys=[CollectionKey[com.dataart.project.repositories.Arrangement.sectors#1]]];ActionQueue[insertions=[] updates=[] deletions=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])]
+23:05:21,210 DEBUG AbstractTransactionImpl:173 - committing
+23:05:21,212 DEBUG AbstractFlushingEventListener:143 - Processing flush-time cascades
+23:05:21,217 DEBUG AbstractFlushingEventListener:184 - Dirty checking collections
+23:05:21,229 DEBUG Collections:195 - Collection found: [com.dataart.project.repositories.Arrangement.sectors#1], was: [com.dataart.project.repositories.Arrangement.sectors#1] (uninitialized)
+23:05:21,231 DEBUG AbstractFlushingEventListener:117 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+23:05:21,233 DEBUG AbstractFlushingEventListener:124 - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+23:05:21,236 DEBUG EntityPrinter:114 - Listing entities:
+23:05:21,238 DEBUG EntityPrinter:121 - com.dataart.project.repositories.Arrangement{id=1, name=test, sectors=<uninitialized>, date=2014-01-16 13:00:00.0}
+23:05:21,240 DEBUG JdbcTransaction:113 - committed JDBC Connection
+23:05:21,241 DEBUG JdbcTransaction:126 - re-enabling autocommit
+23:05:21,247 DEBUG HibernateTransactionManager:632 - Closing Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.dataart.project.repositories.Arrangement#1]],collectionKeys=[CollectionKey[com.dataart.project.repositories.Arrangement.sectors#1]]];ActionQueue[insertions=[] updates=[] deletions=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])] after transaction
+23:05:21,248 DEBUG LogicalConnectionImpl:232 - Releasing JDBC connection
+23:05:21,249 DEBUG LogicalConnectionImpl:250 - Released JDBC connection
+23:05:21,256 DEBUG DispatcherServlet:1206 - Rendering view [org.springframework.web.servlet.view.JstlView: name 'template'; URL [/WEB-INF/pages/template.jsp]] in DispatcherServlet with name 'mvc-dispatcher'
+23:05:21,257 DEBUG JstlView:373 - Added model object 'partial' of type [java.lang.String] to request in view with name 'template'
+23:05:21,259 DEBUG JstlView:373 - Added model object 'arrangements' of type [java.util.ArrayList] to request in view with name 'template'
+23:05:21,263 DEBUG JstlView:373 - Added model object 'title' of type [java.lang.String] to request in view with name 'template'
+23:05:21,264 DEBUG JstlView:236 - Forwarding to resource [/WEB-INF/pages/template.jsp] in InternalResourceView 'template'
+23:05:21,824 DEBUG DispatcherServlet:966 - Successfully completed request
+23:05:21,869 DEBUG DispatcherServlet:823 - DispatcherServlet with name 'mvc-dispatcher' processing GET request for [/resources/css/site.css]
+23:05:21,870 DEBUG RequestMappingHandlerMapping:226 - Looking up handler method for path /resources/css/site.css
+23:05:21,874 DEBUG RequestMappingHandlerMapping:236 - Did not find handler method for [/resources/css/site.css]
+23:05:21,875 DEBUG SimpleUrlHandlerMapping:169 - Matching patterns for request [/resources/css/site.css] are [/resources/**]
+23:05:21,880 DEBUG SimpleUrlHandlerMapping:194 - URI Template variables for request [/resources/css/site.css] are {}
+23:05:21,880 DEBUG SimpleUrlHandlerMapping:124 - Mapping [/resources/css/site.css] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@613c530] and 1 interceptor
+23:05:21,882 DEBUG DispatcherServlet:912 - Last-Modified value for [/resources/css/site.css] is: -1
+23:05:21,882 DEBUG ResourceHttpRequestHandler:165 - Trying relative path [css/site.css] against base location: ServletContext resource [/resources/mytheme/]
+23:05:21,884 DEBUG ResourceHttpRequestHandler:170 - Found matching resource: ServletContext resource [/resources/mytheme/css/site.css]
+23:05:21,884 DEBUG ResourceHttpRequestHandler:124 - Determined media type 'text/css' for ServletContext resource [/resources/mytheme/css/site.css]
+23:05:21,890 DEBUG ResourceHttpRequestHandler:135 - Resource not modified - returning 304
+23:05:21,890 DEBUG DispatcherServlet:999 - Null ModelAndView returned to DispatcherServlet with name 'mvc-dispatcher': assuming HandlerAdapter completed request handling
+23:05:21,891 DEBUG DispatcherServlet:966 - Successfully completed request
+23:05:27,167  INFO XmlWebApplicationContext:1042 - Closing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Wed Jul 16 23:05:02 EEST 2014]; parent: Root WebApplicationContext
+23:05:27,169 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'lifecycleProcessor'
+23:05:27,170  INFO DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@265def14: defining beans [dataSource,sessionFactory,generalController,arrangementController,arrangementService,arrangementRepositoryHibernateImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionManager,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,jspViewResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@5070b2f8
+23:05:27,184 DEBUG DefaultListableBeanFactory:500 - Retrieved dependent beans for bean '(inner bean)#8': [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0]
+23:05:27,187 DEBUG DefaultListableBeanFactory:500 - Retrieved dependent beans for bean '(inner bean)#1': [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0]
+23:05:27,191 DEBUG DefaultListableBeanFactory:500 - Retrieved dependent beans for bean '(inner bean)': [org.springframework.web.servlet.handler.MappedInterceptor#0]
+23:05:27,192 DEBUG DisposableBeanAdapter:226 - Invoking destroy() on bean with name 'sessionFactory'
+23:05:27,193 DEBUG SessionFactoryImpl:1369 - HHH000031: Closing
+23:05:27,207  INFO XmlWebApplicationContext:1042 - Closing Root WebApplicationContext: startup date [Wed Jul 16 23:04:55 EEST 2014]; root of context hierarchy
+23:05:27,208 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'lifecycleProcessor'
+23:05:27,209  INFO DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5070b2f8: defining beans [dataSource,sessionFactory,generalController,arrangementController,arrangementService,arrangementRepositoryHibernateImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionManager,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,jspViewResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+23:05:27,212 DEBUG DefaultListableBeanFactory:500 - Retrieved dependent beans for bean '(inner bean)#8': [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0]
+23:05:27,222 DEBUG DefaultListableBeanFactory:500 - Retrieved dependent beans for bean '(inner bean)#1': [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0]
+23:05:27,232 DEBUG DefaultListableBeanFactory:500 - Retrieved dependent beans for bean '(inner bean)': [org.springframework.web.servlet.handler.MappedInterceptor#0]
+23:05:27,236 DEBUG DisposableBeanAdapter:226 - Invoking destroy() on bean with name 'sessionFactory'
+23:05:27,236 DEBUG SessionFactoryImpl:1369 - HHH000031: Closing

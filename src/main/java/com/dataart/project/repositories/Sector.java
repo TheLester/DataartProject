@@ -22,8 +22,9 @@ public class Sector {
 	private String name;
 	@Column(columnDefinition = "Decimal(10,2) default '100.00'")
 	private double price;
-	@ManyToMany(mappedBy = "sectors")
-	private Set<Arrangement> arrangements = new HashSet<Arrangement>();
+	@ManyToOne
+ 	@JoinColumn(name = "arrangement_id")
+ 	private Arrangement arrangement;
 	@OneToMany(mappedBy = "sector")
 	private Set<Ticket> tickets = new HashSet<Ticket>();
 
@@ -65,12 +66,12 @@ public class Sector {
 		this.price = price;
 	}
 
-	public Set<Arrangement> getArrangements() {
-		return arrangements;
+	public Arrangement getArrangement() {
+		return arrangement;
 	}
 
-	public void setArrangements(Set<Arrangement> arrangements) {
-		this.arrangements = arrangements;
+	public void setArrangement(Arrangement arrangement) {
+		this.arrangement = arrangement;
 	}
 
 	public Set<Ticket> getTickets() {
