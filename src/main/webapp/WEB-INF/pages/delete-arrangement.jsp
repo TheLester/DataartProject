@@ -9,8 +9,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Language" content="English" />
-<link rel="stylesheet" media="all"
-	href="<c:url value="/resources/css/site.css"/>">
 <script
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script
@@ -22,13 +20,17 @@
 	src="<c:url value="/resources/js/bootstrap.js"/>"></script>
 <script type="text/javascript"
 	src="<c:url value="/resources/js/jquery.js"/>"></script>
-
+<link rel="stylesheet" media="all"
+	href="<c:url value="/resources/css/site.css"/>">
 <script>
 	$(function() {
 		document.getElementById("warn").style.display = 'none';
 		document.getElementById("suc").style.display = 'none';
 		document.getElementById('warn').addEventListener('click', function(e) {
 			document.getElementById("warn").style.display = 'none';
+		});
+		document.getElementById('suc').addEventListener('click', function(e) {
+			document.getElementById("suc").style.display = 'none';
 		});
 	});
 </script>
@@ -68,15 +70,14 @@
 </div>
 	<h2>Delete Event</h2>
 	<form:form id="reviewForm" method="post">
-		<select name="selector" id="selector">
+		<select name="selector" id="selector" class="selectpicker">
 			<c:forEach items="${arrangements}" var="arrangements">
 				<option value="${arrangements.id}">${arrangements.name}</option>
 			</c:forEach>
 		</select>
-		<br />
+		<br/>
 		<input type="hidden" id="NotNull" name="NotNull" value="true">
-		<input type="submit" id="submitDemo" onclick="checkNotNull();"
-			value="Delete" />
+		<button type="submit" id="submitDemo" onclick="checkNotNull();"  class="btn btn-primary btn-lg">Delete</button>
 	</form:form>
 </body>
 </html>
