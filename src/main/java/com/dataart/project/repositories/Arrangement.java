@@ -26,8 +26,7 @@ public class Arrangement {
 
 	@Column
 	private Date date;
-	@ManyToMany(cascade = CascadeType.ALL)
-	@JoinTable(name = "Arrangement_sector", joinColumns = { @JoinColumn(name = "arrangement_id") }, inverseJoinColumns = { @JoinColumn(name = "sector_id") })
+	@OneToMany(mappedBy = "arrangement")
 	private Set<Sector> sectors = new HashSet<Sector>();
 
 	public Arrangement(int id, String name, Date date) {
