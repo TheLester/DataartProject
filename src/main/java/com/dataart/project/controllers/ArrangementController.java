@@ -46,7 +46,7 @@ public class ArrangementController {
 		String name = request.getParameter("name");
 		String check = request.getParameter("NotNull");
 		System.out
-				.println("=============================================================================");
+				.println("\n=============================================================================");
 		System.out.println(name);
 		System.out.println(date);
 		System.out.println(time);
@@ -64,8 +64,8 @@ public class ArrangementController {
 				e.printStackTrace();
 			}
 			return "redirect:arrangements";
-		} else
-			return "redirect:create-arrangement";
+		}
+		return "redirect:create-arrangement";
 	}
 
 	@RequestMapping(value = { "/delete-arrangement" })
@@ -78,15 +78,16 @@ public class ArrangementController {
 	}
 
 	@RequestMapping(value = "/delete-arrangement", method = RequestMethod.POST)
-	public String deleteArrangementPost(HttpServletRequest request) {		
+	public String deleteArrangementPost(HttpServletRequest request) {
 		String check = request.getParameter("NotNull");
 		if (check.equals("true")) {
 			String id = request.getParameter("selector");
 			service.deleteArrangement(Integer.parseInt(id));
+			return "redirect:arrangements";
 		}
-		return "redirect:arrangements";
+		return "redirect:delete-arrangement";
 	}
-	
+
 	@RequestMapping(value = { "/edit-arrangement" })
 	public String editArrangementGet(Model model) {
 		List<Arrangement> arrangements = service.getArrangements();
@@ -95,28 +96,26 @@ public class ArrangementController {
 		model.addAttribute("arrangements", arrangements);
 		return "template";
 	}
-	
+
 	@RequestMapping(value = "edit-arrangement", method = RequestMethod.POST)
 	public String editArrangementPost(HttpServletRequest request) {
 		String time = request.getParameter("time");
 		String date = request.getParameter("date");
 		String name = request.getParameter("name");
-		int arrangement_id=Integer.parseInt(request.getParameter("arrangement_id"));
-		String check = request.getParameter("NotNull");
-		
+		String arrangement_ID = request.getParameter("arrangement_id");
 		System.out
-				.println("=============================================================================");
+				.println("\n=============================================================================");
 		System.out.println(name);
 		System.out.println(date);
 		System.out.println(time);
-		System.out.println(check);
-		System.out.println(arrangement_id);
 		System.out
 				.println("=============================================================================");
-		if (check.equals("true")) {
+		if (!arrangement_ID.equals("true")) {
+			int arrangement_id = Integer.parseInt(request
+					.getParameter("arrangement_id"));
 			SimpleDateFormat format = new SimpleDateFormat("yyyy-mm-dd HH:mm");
 			try {
-				Date dateDate = format.parse(date + " " + time);				
+				Date dateDate = format.parse(date + " " + time);
 				service.updateArrangement(arrangement_id, name, dateDate);
 			} catch (ParseException e) {
 				// TODO Auto-generated catch block
