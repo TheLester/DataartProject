@@ -16,6 +16,16 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="<c:url value="/resources/js/jquery.js"/>"></script>
+		<link rel="stylesheet" type="text/css"
+	href="<c:url value="/resources/css/bootstrap.min.css"/>">
+<script type="text/javascript"
+	src="<c:url value="/resources/js/bootstrap.js"/>"></script>
+<script type="text/javascript"
+	src="<c:url value="/resources/js/jquery.js"/>"></script>
+	<link rel="stylesheet" media="all"
+	href="<c:url value="/resources/css/bootstrap-combined.min.css"/>">
+<link rel="stylesheet" media="all"
+	href="<c:url value="/resources/css/site.css"/>">
 <script language="JavaScript">
 	function point_it(event) {
 		pos_x = event.offsetX ? (event.offsetX) : event.pageX

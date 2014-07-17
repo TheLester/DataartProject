@@ -5,6 +5,16 @@
 	<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
+	<link rel="stylesheet" type="text/css"
+	href="<c:url value="/resources/css/bootstrap.min.css"/>">
+<script type="text/javascript"
+	src="<c:url value="/resources/js/bootstrap.js"/>"></script>
+<script type="text/javascript"
+	src="<c:url value="/resources/js/jquery.js"/>"></script>
+	<link rel="stylesheet" media="all"
+	href="<c:url value="/resources/css/bootstrap-combined.min.css"/>">
+<link rel="stylesheet" media="all"
+	href="<c:url value="/resources/css/site.css"/>">
 </head>
 <body>
 	<div class="header">

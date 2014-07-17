@@ -20,6 +20,8 @@
 	src="<c:url value="/resources/js/bootstrap.js"/>"></script>
 <script type="text/javascript"
 	src="<c:url value="/resources/js/jquery.js"/>"></script>
+	<link rel="stylesheet" media="all"
+	href="<c:url value="/resources/css/bootstrap-combined.min.css"/>">
 <link rel="stylesheet" media="all"
 	href="<c:url value="/resources/css/site.css"/>">
 <script>
@@ -70,11 +72,11 @@
 </div>
 	<h2>Delete Event</h2>
 	<form:form id="reviewForm" method="post">
-		<select name="selector" id="selector" class="selectpicker">
+		<select name="selector" onclick="var selector_value=document.forms["reviewForm"].selector.value;">
 			<c:forEach items="${arrangements}" var="arrangements">
 				<option value="${arrangements.id}">${arrangements.name}</option>
 			</c:forEach>
-		</select>
+		</select>				
 		<br/>
 		<input type="hidden" id="NotNull" name="NotNull" value="true">
 		<button type="submit" id="submitDemo" onclick="checkNotNull();"  class="btn btn-primary btn-lg">Delete</button>

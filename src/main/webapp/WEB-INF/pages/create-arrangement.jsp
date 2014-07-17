@@ -25,6 +25,8 @@
 	src="<c:url value="/resources/js/jquery.jalert.js"/>"></script>
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/css/jalert.css"/>">
+	<link rel="stylesheet" media="all"
+	href="<c:url value="/resources/css/bootstrap-combined.min.css"/>">
 <link rel="stylesheet" media="all"
 	href="<c:url value="/resources/css/site.css"/>">
 <script>
