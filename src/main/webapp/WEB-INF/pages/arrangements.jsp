@@ -20,7 +20,12 @@
     <title>Arrangements</title>
 </head>
 <body>
-<h2>Events</h2>
+	<div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title"><h2>Events</h2></h3>
+      </div>
+      <div class="panel-body">      
+
 <table id="events">
     <tr>
         <th>Name</th>
@@ -36,5 +41,7 @@
 <br/>
 <a href="<c:url value="/create-arrangement"/>">Create Event</a>
 <a href="<c:url value="/delete-arrangement"/>">Delete Event</a>
+</div>
+</div>
 </body>
 </html>

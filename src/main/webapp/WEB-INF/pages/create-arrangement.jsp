@@ -70,7 +70,7 @@
 </head>
 <body>
 	<div class="bs-example" id="warn">
-    <div class="alert alert-info">
+  <div class="alert alert-error">
         <a href="#" class="close" data-dismiss="alert">&times;</a>
         <strong>Note!</strong> Please fill all fields.
     </div>
@@ -82,7 +82,12 @@
     </div>
 </div>
 
-	<h2 id="myHead">Create Event</h2>
+<div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title"><h2>Create Event</h2></h3>
+      </div>
+      <div class="panel-body"> 
+	  
 	<form:form id="reviewForm" method="post">
 		<table>
 			<tr>
@@ -100,6 +105,7 @@
 		<input type="hidden" id="NotNull" name="NotNull" value="true">
 		<button type="submit" id="submitDemo" onclick="checkForNull();"  class="btn btn-primary btn-lg">Create</button>
 	</form:form>
-
+</div>
+</div>
 </body>
 </html>

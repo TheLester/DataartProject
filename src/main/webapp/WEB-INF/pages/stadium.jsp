@@ -40,7 +40,14 @@
 <title>Scheme of stadium</title>
 </head>
 <body>	
-		<h2>Stadium</h2>
+
+<div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title"><h2>Stadium</h2></h3>
+      </div>
+      <div class="panel-body"> 
+	  
+		
 		<div class="schema">
 			<form name="pointform" id="pointform" method="post">
 				<div id="pointer_div" onclick="point_it(event)"></div>
@@ -48,5 +55,7 @@
 				<input type="text" id="form_y" size="4" />
 			</form>
 		</div>	
+		</div>
+		</div>
 </body>
 </html>

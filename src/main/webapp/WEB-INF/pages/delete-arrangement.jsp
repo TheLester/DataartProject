@@ -59,7 +59,7 @@
 </head>
 <body>
 	<div class="bs-example" id="warn">
-    <div class="alert alert-info">
+  <div class="alert alert-error">
         <a href="#" class="close" data-dismiss="alert">&times;</a>
         <strong>Note!</strong> Cannot delete event. List of events is empty.
     </div>
@@ -70,7 +70,14 @@
         <strong>Success!</strong> Event has been deleted successfully.
     </div>
 </div>
-	<h2>Delete Event</h2>
+
+<div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title"><h2>Delete Event</h2></h3>
+      </div>
+      <div class="panel-body"> 
+	  
+	
 	<form:form id="reviewForm" method="post">
 		<select name="selector" onclick="var selector_value=document.forms["reviewForm"].selector.value;">
 			<c:forEach items="${arrangements}" var="arrangements">
@@ -81,5 +88,7 @@
 		<input type="hidden" id="NotNull" name="NotNull" value="true">
 		<button type="submit" id="submitDemo" onclick="checkNotNull();"  class="btn btn-primary btn-lg">Delete</button>
 	</form:form>
+	</div>
+	</div>
 </body>
 </html>

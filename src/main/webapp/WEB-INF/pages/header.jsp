@@ -18,10 +18,10 @@
 </head>
 <body>
 	<div class="header">
-		<div class="logo">
+	<!--	<div class="logo">
 			<img
 				src="<c:url value="/resources/images/1331728310_21907583.gif" />">
-		</div>
+		</div>-->
 	</div>
 	<div class="afterHeaderSpace"></div>
 	<div class="navigation">
