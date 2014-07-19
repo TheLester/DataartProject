@@ -29,18 +29,12 @@ public class Arrangement {
 	@OneToMany(mappedBy = "arrangement")
 	private Set<Sector> sectors = new HashSet<Sector>();
 
-	public Arrangement(int id, String name, Date date) {
-		this.id = id;
+	public Arrangement(String name, Date date) {
 		this.name = name;
 		this.date = date;
 	}
 
 	public Arrangement() {
-	}
-
-	public Arrangement(String name2, Date date2) {
-		this.date = date2;
-		this.name = name2;
 	}
 
 	public void setId(int id) {
@@ -76,4 +70,22 @@ public class Arrangement {
 	public void setSectors(Set<Sector> sectors) {
 		this.sectors = sectors;
 	}
+
+	public boolean equals(Object obj) {
+		// null instanceof Object will always return false
+		if (!(obj instanceof Arrangement))
+			return false;
+		if (obj == this)
+			return true;
+		return this.id == ((Arrangement) obj).id
+				&& this.name.equals(((Arrangement) obj).name)
+				&& this.date.equals(((Arrangement) obj).date);
+	}
+
+	public int hashCode() {
+		int result = 0;
+		result = (int) (name.length()+100);
+		return result;
+	}
+
 }

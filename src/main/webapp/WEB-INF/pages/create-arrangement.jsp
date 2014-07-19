@@ -21,91 +21,55 @@
 	src="<c:url value="/resources/js/bootstrap.js"/>"></script>
 <script type="text/javascript"
 	src="<c:url value="/resources/js/jquery.js"/>"></script>
-<script type="text/javascript"
-	src="<c:url value="/resources/js/jquery.jalert.js"/>"></script>
-<link rel="stylesheet" type="text/css"
-	href="<c:url value="/resources/css/jalert.css"/>">
-	<link rel="stylesheet" media="all"
+<link rel="stylesheet" media="all"
 	href="<c:url value="/resources/css/bootstrap-combined.min.css"/>">
 <link rel="stylesheet" media="all"
 	href="<c:url value="/resources/css/site.css"/>">
-<script>
-	$(function() {
-		document.getElementById("warn").style.display = 'none';
-		document.getElementById("suc").style.display = 'none';
-		/*	document.getElementById('warn').addEventListener('click',function(e){	
-			document.getElementById("warn").style.display = 'none';
-		});*/
-	});
-</script>
-<script>
-	function checkForNull() {
-		document.getElementById("submitDemo").disabled = true;
+<script type="text/javascript"
+	src="<c:url value="/resources/js/custom-js/create-arrangement.js"/>"></script>
 
-		var nameSel = document.forms["reviewForm"].name.value;
-		var dateSel = document.forms["reviewForm"].date.value;
-		var timeSel = document.forms["reviewForm"].time.value;
-		var check = document.forms["reviewForm"].NotNull.value;
-
-		if (!nameSel || !dateSel || !timeSel) {
-			document.getElementById("warn").style.display = 'block';
-			setTimeout(function() {
-				document.getElementById("warn").style.display = 'none';
-				document.forms["reviewForm"].submit();
-			}, 1500);
-
-			document.forms["reviewForm"].NotNull.value = "false";
-		}else{
-		console.log(check);
-		document.getElementById("suc").style.display = 'block';
-		setTimeout(function() {
-			document.getElementById("suc").style.display = 'none';
-			document.forms["reviewForm"].submit();
-		}, 1500);
-
-		
-		}
-	}
-</script>
 </head>
 <body>
 	<div class="bs-example" id="warn">
-  <div class="alert alert-error">
-        <a href="#" class="close" data-dismiss="alert">&times;</a>
-        <strong>Note!</strong> Please fill all fields.
-    </div>
-</div>
-<div class="bs-example1" id="suc" >
-    <div class="alert alert-success">
-        <a href="#" class="close" data-dismiss="alert">&times;</a>
-        <strong>Success!</strong> Event has been created successfully.
-    </div>
-</div>
+		<div class="alert alert-error">
+			<a href="#" class="close" data-dismiss="alert">&times;</a> <strong>Note!</strong>
+			Please fill all fields.
+		</div>
+	</div>
+	<div class="bs-example1" id="suc">
+		<div class="alert alert-success">
+			<a href="#" class="close" data-dismiss="alert">&times;</a> <strong>Success!</strong>
+			Event has been created successfully.
+		</div>
+	</div>
 
-<div class="panel panel-info">
-      <div class="panel-heading">
-        <h3 class="panel-title"><h2>Create Event</h2></h3>
-      </div>
-      <div class="panel-body"> 
-	  
-	<form:form id="reviewForm" method="post">
-		<table>
-			<tr>
-				<td>Name:</td>
-				<td><input type="text" id="name" name="name" /></td>
-			</tr>
-			<tr>
-				<td>Date:</td>
-				<td><input type="date" id="date" name="date" /></td>
-			</tr>
-			<td>Time:</td>
-			<td><input type="time" id="time" name="time" /></td>
-		</table>
-		<br />
-		<input type="hidden" id="NotNull" name="NotNull" value="true">
-		<button type="submit" id="submitDemo" onclick="checkForNull();"  class="btn btn-primary btn-lg">Create</button>
-	</form:form>
-</div>
-</div>
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h3 class="panel-title">
+				<h2>Create Event</h2>
+			</h3>
+		</div>
+		<div class="panel-body">
+
+			<form:form id="reviewForm" method="post">
+				<table>
+					<tr>
+						<td>Name:</td>
+						<td><input type="text" id="name" name="name" /></td>
+					</tr>
+					<tr>
+						<td>Date:</td>
+						<td><input type="date" id="date" name="date" /></td>
+					</tr>
+					<td>Time:</td>
+					<td><input type="time" id="time" name="time" /></td>
+				</table>
+				<br />
+				<input type="hidden" id="NotNull" name="NotNull" value="true">
+				<button type="submit" id="submitDemo" onclick="checkForNull();"
+					class="btn btn-primary btn-lg">Create</button>
+			</form:form>
+		</div>
+	</div>
 </body>
 </html>

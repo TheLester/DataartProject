@@ -41,8 +41,5 @@
 		</property>
 	</bean>
 
-	<mvc:resources mapping="/resources/**" location="/resources/mytheme/" />
-
-	<bean id="repository" class="com.dataart.project.repositories.ArrangementRepository">
-	</bean>
+	<mvc:resources mapping="/resources/**" location="/resources/mytheme/" />	
 </beans>
