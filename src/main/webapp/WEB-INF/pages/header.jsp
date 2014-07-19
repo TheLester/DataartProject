@@ -1,36 +1,76 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<link rel="stylesheet" type="text/css"
+<meta charset="utf-8" />
+<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/css/bootstrap.min.css"/>">
 <script type="text/javascript"
 	src="<c:url value="/resources/js/bootstrap.js"/>"></script>
 <script type="text/javascript"
 	src="<c:url value="/resources/js/jquery.js"/>"></script>
-	<link rel="stylesheet" media="all"
+<link rel="stylesheet" media="all"
 	href="<c:url value="/resources/css/bootstrap-combined.min.css"/>">
 <link rel="stylesheet" media="all"
 	href="<c:url value="/resources/css/site.css"/>">
+<script>
+	$(function() {
+
+		$('.subM').click(function() {
+			return false;
+		});
+
+		$('.subM').hover(function() {
+			$(this).next().show();
+			$(this).addClass('selected');
+		}, function() {
+			$(this).next().hide();
+			$(this).removeClass('selected');
+		});
+
+		$('.subMenu').hover(function() {
+			$(this).prev().addClass('selected');
+			$(this).show();
+		}, function() {
+			$(this).prev().removeClass('selected');
+			$(this).hide();
+		});
+
+		var wd = 0;
+
+		$('.topLvl>li').each(function() {
+			wd += $(this).outerWidth();
+
+		});
+		wd += 4;
+	});
+</script>
 </head>
 <body>
 	<div class="header">
-	<!--	<div class="logo">
+		<!--	<div class="logo">
 			<img
 				src="<c:url value="/resources/images/1331728310_21907583.gif" />">
 		</div>-->
 	</div>
 	<div class="afterHeaderSpace"></div>
-	<div class="navigation">
-		<ul>
-			<li><a href="arrangements.html">Events</a></li>
-			<li><a href="create-arrangement.html">Create Event</a></li>
-			<li><a href="delete-arrangement.html">Delete Event</a></li>
-			<li><a href="edit-arrangement.html">Edit Event</a></li>	
-			<li><a href="stadium.html">Scheme of stadium</a></li>				
+
+	<div class="menu">
+		<ul class="topLvl">
+			<li><a href="arrangements.html" class="subM">Events</a>
+				<ul class="subMenu sub_1">
+					<li><a href="arrangements.html">Show events</a></li>
+					<br>
+					<li><a href="create-arrangement.html">Create Event</a></li>
+					<br>
+					<li><a href="delete-arrangement.html">Delete Event</a></li>
+					<br>
+					<li><a href="edit-arrangement.html">Edit Event</a></li>
+					<br>
+				</ul></li>
+			<li><a href="stadium.html">Scheme of stadium</a></li>
 		</ul>
 	</div>
 </body>

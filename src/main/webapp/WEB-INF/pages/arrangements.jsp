@@ -41,6 +41,7 @@
 <br/>
 <a href="<c:url value="/create-arrangement"/>">Create Event</a>
 <a href="<c:url value="/delete-arrangement"/>">Delete Event</a>
+<a href="<c:url value="/edit-arrangement"/>">Edit Event</a>
 </div>
 </div>
 </body>
