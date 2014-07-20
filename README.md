@@ -15,3 +15,9 @@ Tests
 
 https://code.google.com/p/selenium/wiki/PageObjects
 http://docs.seleniumhq.org/docs/index.jsp
+
+==============
+
+Example of seats scheme
+
+https://tickets.shakhtar.com/ru/
