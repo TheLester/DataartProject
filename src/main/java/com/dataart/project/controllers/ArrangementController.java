@@ -27,7 +27,7 @@ public class ArrangementController {
 	public String getArrangements(Model model) {
 		List<Arrangement> arrangements = service.getArrangements();
 		model.addAttribute("partial", "arrangements.jsp");
-		model.addAttribute("title", "Template");
+		model.addAttribute("title", "Events");
 		model.addAttribute("arrangements", arrangements);
 		return "template";
 	}
@@ -35,7 +35,7 @@ public class ArrangementController {
 	@RequestMapping(value = "create-arrangement")
 	public String createArrangementGet(Model model) {
 		model.addAttribute("partial", "create-arrangement.jsp");
-		model.addAttribute("title", "Template");
+		model.addAttribute("title", "Create Event");
 		return "template";
 	}
 
@@ -72,7 +72,7 @@ public class ArrangementController {
 	public String deleteArrangementGet(Model model) {
 		List<Arrangement> arrangements = service.getArrangements();
 		model.addAttribute("partial", "delete-arrangement.jsp");
-		model.addAttribute("title", "Template");
+		model.addAttribute("title", "Delete Event");
 		model.addAttribute("arrangements", arrangements);
 		return "template";
 	}
@@ -92,7 +92,7 @@ public class ArrangementController {
 	public String editArrangementGet(Model model) {
 		List<Arrangement> arrangements = service.getArrangements();
 		model.addAttribute("partial", "edit-arrangement.jsp");
-		model.addAttribute("title", "Edit");
+		model.addAttribute("title", "Edit Event");
 		model.addAttribute("arrangements", arrangements);
 		return "template";
 	}

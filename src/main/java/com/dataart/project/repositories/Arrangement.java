@@ -84,7 +84,7 @@ public class Arrangement {
 
 	public int hashCode() {
 		int result = 0;
-		result = (int) (name.length()+100);
+		result = (int) (name.length()+100+date.getDay()+date.getDate());
 		return result;
 	}
 

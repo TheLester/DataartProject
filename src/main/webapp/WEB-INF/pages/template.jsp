@@ -16,6 +16,7 @@
 		<div class="content">
 		<jsp:include page="${partial}" />
 		</div>
+		<div class="afterHeaderSpace"></div>
 		<jsp:include page="footer.jsp" />
 	</div>
 </body>

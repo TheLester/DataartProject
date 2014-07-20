@@ -27,7 +27,6 @@
 	href="<c:url value="/resources/css/site.css"/>">
 <script type="text/javascript"
 	src="<c:url value="/resources/js/custom-js/create-arrangement.js"/>"></script>
-
 </head>
 <body>
 	<div class="bs-example" id="warn">
@@ -69,7 +68,66 @@
 				<button type="submit" id="submitDemo" onclick="checkForNull();"
 					class="btn btn-primary btn-lg">Create</button>
 			</form:form>
+			<div class="DemoBS2">
+<div class="panel-group" id="accordion">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion"
+                href="#accordionOne">
+              Collapsible Accordion 1
+            </a>
+          </h4>
+        </div>
+        <div id="accordionOne" class="panel-collapse collapse in">
+          <div class="panel-body">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat
+            </div>
+        </div>
+      </div>
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion"
+               href="#accordionTwo">
+              Collapsible Accordion 2
+            </a>
+          </h4>
+        </div>
+        <div id="accordionTwo" class="panel-collapse collapse">
+          <div class="panel-body">
+            Change does not roll in on the wheels of inevitability,
+            but comes through continuous struggle.
+            And so we must straighten our backs and work for
+            our freedom. A man can't ride you unless your back is bent.
+      </div>
+        </div>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" 
+               href="#accordionThree">
+              Collapsible Accordion 3
+            </a>
+          </h4>
+        </div>
+		
+        <div id="accordionThree" class="panel-collapse collapse">
+          <div class="panel-body">
+          You must take personal responsibility.
+            You cannot change the circumstances,
+            the seasons, or the wind, but you can change yourself.
+            That is something you have charge of.
+      </div>
+        </div>
+      </div>
+    </div></div>
+</div>
 		</div>
-	</div>
+	
 </body>
 </html>

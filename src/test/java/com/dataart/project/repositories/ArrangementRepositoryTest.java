@@ -9,6 +9,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.hibernate.Criteria;
+import org.hibernate.SQLQuery;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.dataart.project.repositories.Arrangement;
@@ -19,6 +24,7 @@ import org.springframework.test.context.ContextLoader;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.annotation.DirtiesContext.ClassMode;
+import org.springframework.transaction.annotation.Transactional;
 import org.junit.runner.RunWith;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -29,27 +35,49 @@ public class ArrangementRepositoryTest {
 	@Autowired
 	ArrangementService repository;
 
-	@Test
-	public void testcreateArrangement() {
-		repository.createArrangement(new Arrangement("Match", new
-		Date()));
-		List<Arrangement> real=repository.getArrangements();
-		List<Arrangement> list = new ArrayList<Arrangement>() {{
-		    add(new Arrangement("Match", new
-		    		Date()));
-		}};
-		System.out.println(real.get(0).getId()+" "+real.get(0).getName().toString());
-		assertEquals(list.toString(),real.toString());
+	@Autowired
+	SessionFactory sessionFactory;
 
+	@Test
+	@Transactional
+	public void testcreateArrangement() {
+		repository.createArrangement(new Arrangement("Match", getDate("1992", "05", "24")));
+		List real = getArrangementsSql();
+		List<Arrangement> list = new ArrayList<Arrangement>() {
+			{
+				add(new Arrangement("Match", getDate("1992", "05", "24")));
+			}
+		};
+		assertEquals(list.toString(), real.toString());
 	}
-	
+
+	@Ignore
+	@Transactional
+	public void testDeleteArrangement() {
+		repository.createArrangement(new Arrangement("Match", new Date()));
+		String sql = "SELECT * FROM Arrangements";
+		SQLQuery query = currentSession().createSQLQuery(sql);
+		query.addEntity(Arrangement.class);
+		List results = query.list();
+		System.out.println(results.toString());
+	}
+
 	/* Returns date from its string representation */
 	private Date getDate(String year, String month, String day) {
-		 GregorianCalendar newGregCal = new GregorianCalendar(
-		     Integer.parseInt(year),
-		     Integer.parseInt(month) - 1,
-		     Integer.parseInt(day)
-		 );
+		GregorianCalendar newGregCal = new GregorianCalendar(
+				Integer.parseInt(year), Integer.parseInt(month) - 1,
+				Integer.parseInt(day));
 		return newGregCal.getTime();
+	}
+
+	private Session currentSession() {
+		return sessionFactory.getCurrentSession();
+	}
+	
+	private List getArrangementsSql() {
+		String sql = "SELECT * FROM Arrangements";
+		SQLQuery query = currentSession().createSQLQuery(sql);
+		query.addEntity(Arrangement.class);
+		return query.list();
 	}
 }
