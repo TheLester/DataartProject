@@ -21,3 +21,5 @@ http://docs.seleniumhq.org/docs/index.jsp
 Example of seats scheme
 
 https://tickets.shakhtar.com/ru/
+http://www.circus.dp.ua/bilety.php
+http://metalist.ua/stadium-scheme.html
