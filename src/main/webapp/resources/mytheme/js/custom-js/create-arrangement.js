@@ -7,7 +7,7 @@ $(function() {
 	 */
 });
 function checkForNull() {
-	document.getElementById("submitDemo").disabled = true;
+	document.getElementById("submitButton").disabled = true;
 
 	var nameSel = document.forms["reviewForm"].name.value;
 	var dateSel = document.forms["reviewForm"].date.value;

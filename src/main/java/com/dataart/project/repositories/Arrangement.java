@@ -24,7 +24,7 @@ public class Arrangement {
 	@Column(nullable = false, length = 255)
 	private String name;
 
-	@Column
+	@Column(nullable = false)
 	private Date date;
 	@OneToMany(mappedBy = "arrangement")
 	private Set<Sector> sectors = new HashSet<Sector>();

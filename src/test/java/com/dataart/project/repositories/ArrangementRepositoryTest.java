@@ -49,6 +49,7 @@ public class ArrangementRepositoryTest {
 			}
 		};
 		assertEquals(list.toString(), real.toString());
+		System.out.println(real.size());
 	}
 
 	@Ignore
@@ -59,7 +60,7 @@ public class ArrangementRepositoryTest {
 		SQLQuery query = currentSession().createSQLQuery(sql);
 		query.addEntity(Arrangement.class);
 		List results = query.list();
-		System.out.println(results.toString());
+		System.out.println(results.size());
 	}
 
 	/* Returns date from its string representation */

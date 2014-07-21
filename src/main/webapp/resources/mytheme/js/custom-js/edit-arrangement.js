@@ -43,6 +43,7 @@ function checkForNull() {
 	var selector_value = document.forms["reviewForm"].selector.value;
 
 	if (!nameSel || !dateSel || !timeSel || !selector_value) {
+		document.forms["reviewForm"].arrangement_id.value ="true";
 		document.getElementById("warn").style.display = 'block';
 		setTimeout(function() {
 			document.getElementById("warn").style.display = 'none';

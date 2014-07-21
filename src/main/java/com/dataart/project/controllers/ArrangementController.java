@@ -54,9 +54,12 @@ public class ArrangementController {
 		System.out
 				.println("=============================================================================");
 		if (check.equals("true")) {
-			SimpleDateFormat format = new SimpleDateFormat("yyyy-mm-dd HH:mm");
+			SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 			try {
 				Date dateDate = format.parse(date + " " + time);
+				System.out.println(dateDate.getDay());
+				System.out.println(dateDate.getMonth());
+				System.out.println(dateDate.getYear());
 				Arrangement a = new Arrangement(name, dateDate);
 				service.createArrangement(a);
 			} catch (ParseException e) {

@@ -65,7 +65,7 @@
 				</table>
 				<br />
 				<input type="hidden" id="NotNull" name="NotNull" value="true">
-				<button type="submit" id="submitDemo" onclick="checkForNull();"
+				<button type="submit" id="submitButton" onclick="checkForNull();"
 					class="btn btn-primary btn-lg">Create</button>
 			</form:form>
 			<div class="DemoBS2">
