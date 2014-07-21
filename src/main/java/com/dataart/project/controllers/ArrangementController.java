@@ -10,13 +10,11 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
-
 import com.dataart.project.repositories.Arrangement;
 import com.dataart.project.services.ArrangementService;
+import com.dataart.project.services.Utilities;
 
 @Controller
 public class ArrangementController {
@@ -49,23 +47,12 @@ public class ArrangementController {
 				.println("\n=============================================================================");
 		System.out.println(name);
 		System.out.println(date);
-		System.out.println(time);
-		System.out.println(check);
+		System.out.println(time);	
 		System.out
 				.println("=============================================================================");
 		if (check.equals("true")) {
-			SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-			try {
-				Date dateDate = format.parse(date + " " + time);
-				System.out.println(dateDate.getDay());
-				System.out.println(dateDate.getMonth());
-				System.out.println(dateDate.getYear());
-				Arrangement a = new Arrangement(name, dateDate);
-				service.createArrangement(a);
-			} catch (ParseException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			Arrangement a = new Arrangement(name, Utilities.getDate(date, time));
+			service.createArrangement(a);
 			return "redirect:arrangements";
 		}
 		return "redirect:create-arrangement";
@@ -116,14 +103,7 @@ public class ArrangementController {
 		if (!arrangement_ID.equals("true")) {
 			int arrangement_id = Integer.parseInt(request
 					.getParameter("arrangement_id"));
-			SimpleDateFormat format = new SimpleDateFormat("yyyy-mm-dd HH:mm");
-			try {
-				Date dateDate = format.parse(date + " " + time);
-				service.updateArrangement(arrangement_id, name, dateDate);
-			} catch (ParseException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			service.updateArrangement(arrangement_id, name, Utilities.getDate(date, time));
 			return "redirect:arrangements";
 		} else
 			return "redirect:edit-arrangement";

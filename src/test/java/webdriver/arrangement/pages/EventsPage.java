@@ -72,11 +72,7 @@ public class EventsPage {
 
 	public boolean checkForEvent(String name, String date, String time) {
 		WebElement table = driver.findElement(tableLocator);
-		String content = table.getText();
-		System.out.println(content.contains(name));
-		System.out.println(content.contains(date));
-		System.out.println(content);
-		
+		String content = table.getText();				
 		return content.contains(name) && content.contains(date)
 				&& content.contains(time);
 	}

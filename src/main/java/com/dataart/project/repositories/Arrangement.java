@@ -6,6 +6,8 @@ import java.util.Set;
 
 import javax.persistence.*;
 
+import com.dataart.project.services.Utilities;
+
 /**
  * Defines a name and date of any arrangement (like match, concert etc)
  * 
@@ -27,13 +29,18 @@ public class Arrangement {
 	@Column(nullable = false)
 	private Date date;
 	@OneToMany(mappedBy = "arrangement")
-	private Set<Sector> sectors = new HashSet<Sector>();
+	private Set<Sector> sectors;
 
 	public Arrangement(String name, Date date) {
 		this.name = name;
 		this.date = date;
 	}
 
+	public Arrangement(String name, String date, String time) {
+		this.name=name;
+		this.date=Utilities.getDate(date, time);
+	}
+	
 	public Arrangement() {
 	}
 
@@ -77,8 +84,7 @@ public class Arrangement {
 			return false;
 		if (obj == this)
 			return true;
-		return this.id == ((Arrangement) obj).id
-				&& this.name.equals(((Arrangement) obj).name)
+		return this.name.equals(((Arrangement) obj).name)
 				&& this.date.equals(((Arrangement) obj).date);
 	}
 

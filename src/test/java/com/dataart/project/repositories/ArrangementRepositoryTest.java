@@ -27,6 +27,8 @@ import org.springframework.test.annotation.DirtiesContext.ClassMode;
 import org.springframework.transaction.annotation.Transactional;
 import org.junit.runner.RunWith;
 
+import service.TestUtilities;
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "classpath:ApplicationContext-servlet.xml" }, loader = ContextLoader.class)
 @DirtiesContext(classMode = ClassMode.AFTER_EACH_TEST_METHOD)
@@ -34,22 +36,21 @@ public class ArrangementRepositoryTest {
 
 	@Autowired
 	ArrangementService repository;
-
 	@Autowired
 	SessionFactory sessionFactory;
+	TestUtilities utilities=TestUtilities.getInstance();
 
 	@Test
 	@Transactional
 	public void testcreateArrangement() {
-		repository.createArrangement(new Arrangement("Match", getDate("1992", "05", "24")));
+		repository.createArrangement(new Arrangement("Match", utilities.getDate("1992", "05", "24")));
 		List real = getArrangementsSql();
 		List<Arrangement> list = new ArrayList<Arrangement>() {
 			{
-				add(new Arrangement("Match", getDate("1992", "05", "24")));
+				add(new Arrangement("Match", utilities.getDate("1992", "05", "24")));
 			}
 		};
 		assertEquals(list.toString(), real.toString());
-		System.out.println(real.size());
 	}
 
 	@Ignore
@@ -60,15 +61,7 @@ public class ArrangementRepositoryTest {
 		SQLQuery query = currentSession().createSQLQuery(sql);
 		query.addEntity(Arrangement.class);
 		List results = query.list();
-		System.out.println(results.size());
-	}
-
-	/* Returns date from its string representation */
-	private Date getDate(String year, String month, String day) {
-		GregorianCalendar newGregCal = new GregorianCalendar(
-				Integer.parseInt(year), Integer.parseInt(month) - 1,
-				Integer.parseInt(day));
-		return newGregCal.getTime();
+		
 	}
 
 	private Session currentSession() {

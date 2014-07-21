@@ -73,4 +73,5 @@ public class EditEventPage {
 		submitEvent();
 		return new EventsPage(driver);
 	}
+	
 }

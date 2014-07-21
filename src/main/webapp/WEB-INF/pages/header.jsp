@@ -41,6 +41,7 @@
 					<br>
 				</ul></li>
 			<li><a href="stadium.html">Scheme of stadium</a></li>
+			<li><a href="tickets.html">Tickets</a></li>
 		</ul>
 	</div>
 </body>

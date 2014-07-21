@@ -81,4 +81,20 @@ public class Sector {
 	public void setTickets(Set<Ticket> tickets) {
 		this.tickets = tickets;
 	}
+	
+	public boolean equals(Object obj) {
+		// null instanceof Object will always return false
+		if (!(obj instanceof Sector))
+			return false;
+		if (obj == this)
+			return true;
+		return  this.name.equals(((Sector) obj).name)
+				&& (Double.compare(this.price,((Sector) obj).price)==0);
+	}
+
+	public int hashCode() {
+		int result = 0;
+		result = (int) (name.length()+100+price);
+		return result;
+	}
 }
