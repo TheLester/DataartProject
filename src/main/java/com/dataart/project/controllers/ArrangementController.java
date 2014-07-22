@@ -47,7 +47,7 @@ public class ArrangementController {
 				.println("\n=============================================================================");
 		System.out.println(name);
 		System.out.println(date);
-		System.out.println(time);	
+		System.out.println(time);
 		System.out
 				.println("=============================================================================");
 		if (check.equals("true")) {
@@ -72,7 +72,7 @@ public class ArrangementController {
 		String check = request.getParameter("NotNull");
 		if (check.equals("true")) {
 			String id = request.getParameter("selector");
-			service.deleteArrangement(Integer.parseInt(id));
+			new service.deleteArrangement(Integer.parseInt(id)); // /!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 			return "redirect:arrangements";
 		}
 		return "redirect:delete-arrangement";
@@ -103,9 +103,17 @@ public class ArrangementController {
 		if (!arrangement_ID.equals("true")) {
 			int arrangement_id = Integer.parseInt(request
 					.getParameter("arrangement_id"));
-			service.updateArrangement(arrangement_id, name, Utilities.getDate(date, time));
+			service.updateArrangement(arrangement_id, name,
+					Utilities.getDate(date, time));
 			return "redirect:arrangements";
 		} else
 			return "redirect:edit-arrangement";
 	}
+
+	/*	Example of updating dependencies 
+	 * 
+	 * Session session = getHibernateSessionFromSomewhere(); Car car = (Car)
+	 * session.load(Car.class, "ford"); Tire tire = new Tire();
+	 * car.addTire(tire); session.update(car);
+	 */
 }

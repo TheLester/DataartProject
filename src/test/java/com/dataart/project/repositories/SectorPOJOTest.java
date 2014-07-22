@@ -18,50 +18,44 @@ import service.TestUtilities;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "classpath:ApplicationContext-servlet.xml" }, loader = ContextLoader.class)
-public class ArrangementTest {
+public class SectorPOJOTest {
 	TestUtilities utilities=TestUtilities.getInstance();
 	
 	@Test
 	public void testHashCodeEquals() {
-		 Map<Arrangement, String> m = new HashMap<Arrangement, String>();
-		 m.put(new Arrangement("Name",utilities.getDate("1992", "05", "01")),"Jeff Smith");
-		 assertEquals("Jeff Smith", m.get(new Arrangement("Name",utilities.getDate("1992", "05", "01"))));
+		 Map<Sector, String> m = new HashMap<Sector, String>();
+		 m.put(new Sector("Name",10.36),"Jeff Smith");
+		 assertEquals("Jeff Smith", m.get(new Sector("Name",10.36)));
 	}
 	
 	@Test
 	public void testHashCodeNotequals() {
-		 Map<Arrangement, String> m = new HashMap<Arrangement, String>();
-		 m.put(new Arrangement("Name",utilities.getDate("1992", "05", "01")),"Jeff Smith");
-		 assertEquals(null, m.get(new Arrangement("Name",utilities.getDate("1992", "05", "10"))));
+		 Map<Sector, String> m = new HashMap<Sector, String>();
+		 m.put(new Sector("Name",10.36),"Jeff Smith");
+		 assertEquals(null, m.get(new Sector("Name1",10.36)));
 	}
 	
 	@Test
 	public void testEventsEqual() {
-		Arrangement a=new Arrangement("A", "2014-05-12","03:45");
+		Sector a=new Sector("A",100.25);
 		a.setId(10);
-		Arrangement b=new Arrangement("A", "2014-05-12","03:45");
+		Sector b=new Sector("A", 100.25);
 		b.setId(2);
 		assertEquals(a, b);
 	}
 	
 	@Test
 	public void testEventsNotEqual_1() {
-		Arrangement a=new Arrangement("A", "2014-05-12","03:45");
-		Arrangement b=new Arrangement("B", "2014-05-12","03:45");
+		Sector a=new Sector("A",100.25);
+		Sector b=new Sector("B", 100.25);
 		assertEquals(false, b.equals(a));
 	}
 	
 	@Test
 	public void testEventsNotEqual_2() {
-		Arrangement a=new Arrangement("A", "2014-05-12","03:45");
-		Arrangement b=new Arrangement("A", "2009-05-11","03:45");
+		Sector a=new Sector("A",100.25);
+		Sector b=new Sector("A", 10.20);
 		assertEquals(false, b.equals(a));
 	}
 	
-	@Test
-	public void testEventsNotEqual_3() {
-		Arrangement a=new Arrangement("A", "2014-05-12","03:45");
-		Arrangement b=new Arrangement("A", "2014-05-12","10:45");
-		assertEquals(false, b.equals(a));
-	}
 }

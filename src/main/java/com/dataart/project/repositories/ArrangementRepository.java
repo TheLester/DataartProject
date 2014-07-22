@@ -8,7 +8,7 @@ public interface ArrangementRepository {
 
 	public void createArrangement(Arrangement arrangement);
 
-	public void deleteArrangement(int id);
+	public void deleteArrangement(Arrangement arrangement);
 
-	public void updateArrangement(int id, String name, Date date);
+	public void updateArrangement(Arrangement arrangement, String name, Date date);
 }

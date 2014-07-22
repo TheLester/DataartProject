@@ -27,22 +27,21 @@ public class ArrangementRepositoryHibernateImpl implements
 	@Override
 	public void createArrangement(Arrangement arrangement) {
 		currentSession().save(arrangement);
+		
 	}
 
 	@Override
-	public void deleteArrangement(int id) {
-		Arrangement arrangement = (Arrangement) sessionFactory
-				.getCurrentSession().get(Arrangement.class, id);
+	public void deleteArrangement(Arrangement arrangement) {
+		/*Arrangement arrangement = (Arrangement) sessionFactory
+				.getCurrentSession().get(Arrangement.class, id);*/
 		currentSession().delete(arrangement);
 	}
 
 	@Override
-	public void updateArrangement(int id, String name, Date date) {
-		Arrangement a = (Arrangement) currentSession().get(Arrangement.class,
-				id);
-		a.setName(name);
-		a.setDate(date);
-		currentSession().update(a);	
+	public void updateArrangement(Arrangement arrangement, String name, Date date) {
+		arrangement.setName(name);
+		arrangement.setDate(date);
+		currentSession().update(arrangement);	
 	}
 
 	private Session currentSession() {

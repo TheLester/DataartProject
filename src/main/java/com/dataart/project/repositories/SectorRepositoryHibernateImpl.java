@@ -33,8 +33,10 @@ public class SectorRepositoryHibernateImpl implements SectorRepository {
 	}
 
 	@Override
-	public void updateSector(Sector sector) {
-		currentSession().update(sector);
+	public void updateSector(Sector sector, String name, double price) {
+		sector.setName(name);
+		sector.setPrice(price);
+		currentSession().update(sector);	
 	}
 
 	private Session currentSession() {

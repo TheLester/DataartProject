@@ -9,5 +9,5 @@ public interface SectorRepository {
 
 	public void deleteSector(int id);
 
-	public void updateSector(Sector sector);
+	public void updateSector(Sector sector, String name, double price);
 }

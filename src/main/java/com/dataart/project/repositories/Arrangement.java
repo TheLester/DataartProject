@@ -29,7 +29,7 @@ public class Arrangement {
 	@Column(nullable = false)
 	private Date date;
 	@OneToMany(mappedBy = "arrangement")
-	private Set<Sector> sectors;
+	private Set<Sector> sectors = new HashSet<Sector>();;
 
 	public Arrangement(String name, Date date) {
 		this.name = name;
@@ -78,6 +78,10 @@ public class Arrangement {
 		this.sectors = sectors;
 	}
 
+	public void addSector(Sector sector) {
+		this.sectors.add(sector);
+	}
+	
 	public boolean equals(Object obj) {
 		// null instanceof Object will always return false
 		if (!(obj instanceof Arrangement))

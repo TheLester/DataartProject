@@ -13,13 +13,12 @@ import com.dataart.project.repositories.ArrangementRepository;
 import com.dataart.project.repositories.Sector;
 
 @Service
-public class ArrangementService{
+public class ArrangementService {
 
 	@Autowired
 	protected ArrangementRepository repository;
-	
 	@Autowired
-	protected SectorService sector_service;
+	protected SectorService sectorService;
 
 	/* get list of all arrangements */
 	public List<Arrangement> getArrangements() {
@@ -27,28 +26,20 @@ public class ArrangementService{
 	}
 
 	/* create an arrangement */
-	public void createArrangement(Arrangement arrangement) {		
-		repository.createArrangement(arrangement);
-		arrangement.setSectors(setSectors(arrangement));
+	public void createArrangement(Arrangement arrangement) {
+		repository.createArrangement(arrangement);		
 	}
 
-	public void deleteArrangement(int id) {
-		repository.deleteArrangement(id);
-	}
-
-	public void updateArrangement(int id, String name, Date date) {
-		repository.updateArrangement(id, name, date);
-	}
-
-	/* sets sectors for an event */
-private Set<Sector> setSectors(Arrangement arrangement) {
-		Set<Sector> sectors = new HashSet<Sector>();
-		for (int i=0;i<25;i++) {
-			Sector s=new Sector(String.valueOf(i),100.0);
-			s.setArrangement(arrangement);
-			sectors.add(s);
-			sector_service.createSector(s);
+	/* delete an arrangement */
+	public void deleteArrangement(Arrangement arrangement) {
+		for(Sector sector: arrangement.getSectors()) {
+			sectorService.deleteSector(sector);
 		}
-		return sectors;
+		repository.deleteArrangement(arrangement);
+	}
+
+	/* edit an arrangement */
+	public void updateArrangement(Arrangement arrangement, String name, Date date) {
+		repository.updateArrangement(arrangement, name, date);
 	}
 }
