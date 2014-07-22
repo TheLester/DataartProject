@@ -29,7 +29,7 @@ public class Arrangement {
 	@Column(nullable = false)
 	private Date date;
 	@OneToMany(mappedBy = "arrangement")
-	private Set<Sector> sectors = new HashSet<Sector>();;
+	private Set<Sector> sectors = new HashSet<Sector>();
 
 	public Arrangement(String name, Date date) {
 		this.name = name;

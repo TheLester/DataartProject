@@ -32,3 +32,15 @@ function checkForNull() {
 
 	}
 }
+function setFields() {
+	var selectorValue = document.forms["reviewForm"].sectorSelector.value;
+
+	console.log("Selector: " + selectorValue);
+
+	var res = selectorValue.split("/");
+	console.log(res);
+	// document.forms["reviewForm"].arrangement_id.value = res[0];
+	// document.forms["reviewForm"].name.value = res[1];
+	document.forms["reviewForm"].sectorPrice.value = res[2];
+
+}

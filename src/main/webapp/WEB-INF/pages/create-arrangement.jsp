@@ -4,6 +4,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ page trimDirectiveWhitespaces="true"%>
+<%@ page import="com.dataart.project.repositories.Sector"%>
+<%@ page import="java.util.Set"%>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -28,7 +30,7 @@
 <script type="text/javascript"
 	src="<c:url value="/resources/js/custom-js/create-arrangement.js"/>"></script>
 </head>
-<body>
+<body onload="setFields();">
 	<div class="bs-example" id="warn">
 		<div class="alert alert-error">
 			<a href="#" class="close" data-dismiss="alert">&times;</a> <strong>Note!</strong>
@@ -64,70 +66,80 @@
 					<td><input type="time" id="time" name="time" /></td>
 				</table>
 				<br />
+				<div class="DemoBS2">
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion"
+										href="#accordionOne"> Sectors </a>
+								</h4>
+							</div>
+							<div id="accordionOne" class="panel-collapse collapse">
+								<!-- <div id="accordionOne" class="panel-collapse collapse in">-->
+								<div class="panel-body">
+									<table>
+										<tr>
+											<td>Sector:</td>
+											<td><select id="sectorSelector" name="sectorSelector"
+												onclick="setFields();<%
+												Set<Sector> sectors = (Set<Sector>)request.getAttribute("sectors");
+												for (Sector s : sectors) {
+													if (s.getName().equals("0")) {
+														s.setPrice(100000.0);
+													}
+												}%>">
+													<c:forEach items="${sectors}" var="sector">
+														<option
+															value="${sector.id}/${sector.name}/${sector.price}">${sector.name}</option>
+													</c:forEach>
+											</select></td>
+											<td>Price:</td>
+											<td><input type="text" id="sectorPrice"
+												name="sectorPrice" /></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-success">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion"
+										href="#accordionTwo"> Collapsible Accordion 2 </a>
+								</h4>
+							</div>
+							<div id="accordionTwo" class="panel-collapse collapse">
+								<div class="panel-body">Change does not roll in on the
+									wheels of inevitability, but comes through continuous struggle.
+									And so we must straighten our backs and work for our freedom. A
+									man can't ride you unless your back is bent.</div>
+							</div>
+						</div>
+						<div class="panel panel-info">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion"
+										href="#accordionThree"> Collapsible Accordion 3 </a>
+								</h4>
+							</div>
+
+							<div id="accordionThree" class="panel-collapse collapse">
+								<div class="panel-body">You must take personal
+									responsibility. You cannot change the circumstances, the
+									seasons, or the wind, but you can change yourself. That is
+									something you have charge of.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</br>
 				<input type="hidden" id="NotNull" name="NotNull" value="true">
 				<button type="submit" id="submitButton" onclick="checkForNull();"
 					class="btn btn-primary btn-lg">Create</button>
 			</form:form>
-			<div class="DemoBS2">
-<div class="panel-group" id="accordion">
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion"
-                href="#accordionOne">
-              Collapsible Accordion 1
-            </a>
-          </h4>
-        </div>
-        <div id="accordionOne" class="panel-collapse collapse in">
-          <div class="panel-body">
-           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat
-            </div>
-        </div>
-      </div>
-      <div class="panel panel-success">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion"
-               href="#accordionTwo">
-              Collapsible Accordion 2
-            </a>
-          </h4>
-        </div>
-        <div id="accordionTwo" class="panel-collapse collapse">
-          <div class="panel-body">
-            Change does not roll in on the wheels of inevitability,
-            but comes through continuous struggle.
-            And so we must straighten our backs and work for
-            our freedom. A man can't ride you unless your back is bent.
-      </div>
-        </div>
-      </div>
-      <div class="panel panel-info">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" 
-               href="#accordionThree">
-              Collapsible Accordion 3
-            </a>
-          </h4>
-        </div>
-		
-        <div id="accordionThree" class="panel-collapse collapse">
-          <div class="panel-body">
-          You must take personal responsibility.
-            You cannot change the circumstances,
-            the seasons, or the wind, but you can change yourself.
-            That is something you have charge of.
-      </div>
-        </div>
-      </div>
-    </div></div>
-</div>
 		</div>
-	
+	</div>
+
 </body>
 </html>

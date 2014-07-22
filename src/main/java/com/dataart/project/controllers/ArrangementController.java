@@ -14,16 +14,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import com.dataart.project.repositories.Arrangement;
 import com.dataart.project.services.ArrangementService;
+import com.dataart.project.services.SectorService;
 import com.dataart.project.services.Utilities;
 
 @Controller
 public class ArrangementController {
 	@Autowired
-	protected ArrangementService service;
-
+	protected ArrangementService arrangementService;
+	@Autowired
+	protected SectorService sectorService;
+	
 	@RequestMapping(value = { "/arrangements" })
 	public String getArrangements(Model model) {
-		List<Arrangement> arrangements = service.getArrangements();
+		List<Arrangement> arrangements = arrangementService.getArrangements();
 		model.addAttribute("partial", "arrangements.jsp");
 		model.addAttribute("title", "Events");
 		model.addAttribute("arrangements", arrangements);
@@ -34,6 +37,7 @@ public class ArrangementController {
 	public String createArrangementGet(Model model) {
 		model.addAttribute("partial", "create-arrangement.jsp");
 		model.addAttribute("title", "Create Event");
+		model.addAttribute("sectors", sectorService.getDefaultSectors());
 		return "template";
 	}
 
@@ -52,15 +56,15 @@ public class ArrangementController {
 				.println("=============================================================================");
 		if (check.equals("true")) {
 			Arrangement a = new Arrangement(name, Utilities.getDate(date, time));
-			service.createArrangement(a);
+			arrangementService.createArrangement(a);
 			return "redirect:arrangements";
 		}
 		return "redirect:create-arrangement";
 	}
-
+/*
 	@RequestMapping(value = { "/delete-arrangement" })
 	public String deleteArrangementGet(Model model) {
-		List<Arrangement> arrangements = service.getArrangements();
+		List<Arrangement> arrangements = arrangementService.getArrangements();
 		model.addAttribute("partial", "delete-arrangement.jsp");
 		model.addAttribute("title", "Delete Event");
 		model.addAttribute("arrangements", arrangements);
@@ -72,7 +76,7 @@ public class ArrangementController {
 		String check = request.getParameter("NotNull");
 		if (check.equals("true")) {
 			String id = request.getParameter("selector");
-			new service.deleteArrangement(Integer.parseInt(id)); // /!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+			new arrangementService.deleteArrangement(Integer.parseInt(id)); // /!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 			return "redirect:arrangements";
 		}
 		return "redirect:delete-arrangement";
@@ -80,7 +84,7 @@ public class ArrangementController {
 
 	@RequestMapping(value = { "/edit-arrangement" })
 	public String editArrangementGet(Model model) {
-		List<Arrangement> arrangements = service.getArrangements();
+		List<Arrangement> arrangements = arrangementService.getArrangements();
 		model.addAttribute("partial", "edit-arrangement.jsp");
 		model.addAttribute("title", "Edit Event");
 		model.addAttribute("arrangements", arrangements);
@@ -103,12 +107,12 @@ public class ArrangementController {
 		if (!arrangement_ID.equals("true")) {
 			int arrangement_id = Integer.parseInt(request
 					.getParameter("arrangement_id"));
-			service.updateArrangement(arrangement_id, name,
+			arrangementService.updateArrangement(arrangement_id, name,
 					Utilities.getDate(date, time));
 			return "redirect:arrangements";
 		} else
 			return "redirect:edit-arrangement";
-	}
+	}*/
 
 	/*	Example of updating dependencies 
 	 * 
