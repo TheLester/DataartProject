@@ -3,16 +3,21 @@ package com.dataart.project.controllers;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
 import com.dataart.project.repositories.Arrangement;
+import com.dataart.project.repositories.Sector;
 import com.dataart.project.services.ArrangementService;
 import com.dataart.project.services.SectorService;
 import com.dataart.project.services.Utilities;
@@ -42,7 +47,7 @@ public class ArrangementController {
 	}
 
 	@RequestMapping(value = "create-arrangement", method = RequestMethod.POST)
-	public String createArrangementPost(HttpServletRequest request) {
+	public String createArrangementPost(@ModelAttribute("sectors") Set<Sector> sectors, HttpServletRequest request) {
 		String time = request.getParameter("time");
 		String date = request.getParameter("date");
 		String name = request.getParameter("name");

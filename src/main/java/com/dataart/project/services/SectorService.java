@@ -1,5 +1,6 @@
 package com.dataart.project.services;
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -36,11 +37,18 @@ public class SectorService {
 		repository.updateSector(sector, name, price);
 	}
 
-	public Set<Sector> getDefaultSectors() {
+	public Set<Sector>getDefaultSectors() {
 		Set<Sector> sectors = new HashSet<Sector>();
 		for (int i = 0; i < 10; i++) {
-			sectors.add(new Sector(String.valueOf(i), 15.3));
+			Sector s=new Sector(String.valueOf(i), 15.3+i);
+			sectors.add(s);
 		}
 		return sectors;
+	}
+	
+	public void createSectors(Set<Sector> sectors, Arrangement arrangement){
+		for(Sector sector: arrangement.getSectors()) {
+			createSector(sector, arrangement);
+		}
 	}
 }

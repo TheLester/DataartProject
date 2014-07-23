@@ -145,9 +145,6 @@ background:white;
  padding:15px 0 !important;
 }
 
-
-
-
 a.selected {
 background:white;
 color:#3c5e83 !important;
@@ -194,7 +191,8 @@ background:#a4b9cf;
 img.arr_d {
 float:left;
 }
-/*---------------------------------------------------------------------- */
+
+
 .footer {
 	width: 100%;
 	height: 50px;

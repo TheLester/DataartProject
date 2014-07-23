@@ -33,7 +33,7 @@
 <body onload="setFields();">
 	<div class="bs-example" id="warn">
 		<div class="alert alert-error">
-			<a href="#" class="close" data-dismiss="alert">&times;</a> <strong>Note!</strong>
+			<a href="#" class="close" data-dismiss="alert">&times;</a> <strong>There is an error in the submission!</strong>
 			Please fill all fields.
 		</div>
 	</div>
@@ -84,9 +84,12 @@
 											<td><select id="sectorSelector" name="sectorSelector"
 												onclick="setFields();<%
 												Set<Sector> sectors = (Set<Sector>)request.getAttribute("sectors");
+												String sectorName = request.getParameter("sectorSelector");
+												//double price =  String.valueOf(request.getParameter("sectorPrice"));
+												double price
 												for (Sector s : sectors) {
-													if (s.getName().equals("0")) {
-														s.setPrice(100000.0);
+													if (s.getName().equals(sectorName)) {
+														s.setPrice(price);
 													}
 												}%>">
 													<c:forEach items="${sectors}" var="sector">
