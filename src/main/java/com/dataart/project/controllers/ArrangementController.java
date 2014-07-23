@@ -4,6 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -47,26 +48,29 @@ public class ArrangementController {
 	}
 
 	@RequestMapping(value = "create-arrangement", method = RequestMethod.POST)
-	public String createArrangementPost(@ModelAttribute("sectors") Set<Sector> sectors, HttpServletRequest request) {
+	public String createArrangementPost( HttpServletRequest request) {
 		String time = request.getParameter("time");
 		String date = request.getParameter("date");
 		String name = request.getParameter("name");
 		String check = request.getParameter("NotNull");
+		Set<Sector> sectors=sectorService.getDefaultSectors();
 		System.out
 				.println("\n=============================================================================");
 		System.out.println(name);
 		System.out.println(date);
-		System.out.println(time);
+		System.out.println(sectors);
 		System.out
 				.println("=============================================================================");
 		if (check.equals("true")) {
 			Arrangement a = new Arrangement(name, Utilities.getDate(date, time));
 			arrangementService.createArrangement(a);
+			a.setSectors(sectors);
+			sectorService.createSectors(sectors, a);
 			return "redirect:arrangements";
 		}
 		return "redirect:create-arrangement";
 	}
-/*
+
 	@RequestMapping(value = { "/delete-arrangement" })
 	public String deleteArrangementGet(Model model) {
 		List<Arrangement> arrangements = arrangementService.getArrangements();
@@ -81,7 +85,7 @@ public class ArrangementController {
 		String check = request.getParameter("NotNull");
 		if (check.equals("true")) {
 			String id = request.getParameter("selector");
-			new arrangementService.deleteArrangement(Integer.parseInt(id)); // /!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+			arrangementService.deleteArrangement(Integer.parseInt(id)); // /!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 			return "redirect:arrangements";
 		}
 		return "redirect:delete-arrangement";
@@ -117,7 +121,7 @@ public class ArrangementController {
 			return "redirect:arrangements";
 		} else
 			return "redirect:edit-arrangement";
-	}*/
+	}
 
 	/*	Example of updating dependencies 
 	 * 

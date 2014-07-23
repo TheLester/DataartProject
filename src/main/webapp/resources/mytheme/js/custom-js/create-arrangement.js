@@ -44,3 +44,8 @@ function setFields() {
 	document.forms["reviewForm"].sectorPrice.value = res[2];
 
 }
+
+function setSectorPrice() {
+	var sectors = "${sectors}";
+	console.log(sectors);
+}

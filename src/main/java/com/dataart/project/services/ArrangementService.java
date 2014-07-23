@@ -16,9 +16,7 @@ import com.dataart.project.repositories.Sector;
 public class ArrangementService {
 
 	@Autowired
-	protected ArrangementRepository repository;
-	@Autowired
-	protected SectorService sectorService;
+	protected ArrangementRepository repository;	
 
 	/* get list of all arrangements */
 	public List<Arrangement> getArrangements() {
@@ -31,15 +29,12 @@ public class ArrangementService {
 	}
 
 	/* delete an arrangement */
-	public void deleteArrangement(Arrangement arrangement) {
-		for(Sector sector: arrangement.getSectors()) {
-			sectorService.deleteSector(sector);
-		}
-		repository.deleteArrangement(arrangement);
+	public void deleteArrangement(int id) {	
+		repository.deleteArrangement(id);
 	}
 
 	/* edit an arrangement */
-	public void updateArrangement(Arrangement arrangement, String name, Date date) {
-		repository.updateArrangement(arrangement, name, date);
+	public void updateArrangement(int id, String name, Date date) {
+		repository.updateArrangement(id, name, date);
 	}
 }

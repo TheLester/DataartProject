@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.dataart.project.services.SectorService;
+
 @Repository
 @Transactional
 public class ArrangementRepositoryHibernateImpl implements
@@ -16,7 +18,9 @@ public class ArrangementRepositoryHibernateImpl implements
 
 	@Autowired
 	protected SessionFactory sessionFactory;
-
+	@Autowired
+	protected SectorService sectorService;
+	
 	/* change to sessionFactory if using HSQL in memory DB */
 	@Override
 	@SuppressWarnings("unchecked")
@@ -31,14 +35,19 @@ public class ArrangementRepositoryHibernateImpl implements
 	}
 
 	@Override
-	public void deleteArrangement(Arrangement arrangement) {
-		/*Arrangement arrangement = (Arrangement) sessionFactory
-				.getCurrentSession().get(Arrangement.class, id);*/
+	public void deleteArrangement(int id) {
+		Arrangement arrangement = (Arrangement) sessionFactory
+				.getCurrentSession().get(Arrangement.class, id);
+		for(Sector sector: arrangement.getSectors()) {
+			sectorService.deleteSector(sector);
+		}
 		currentSession().delete(arrangement);
 	}
 
 	@Override
-	public void updateArrangement(Arrangement arrangement, String name, Date date) {
+	public void updateArrangement(int id, String name, Date date) {
+		Arrangement arrangement = (Arrangement) sessionFactory
+				.getCurrentSession().get(Arrangement.class, id);
 		arrangement.setName(name);
 		arrangement.setDate(date);
 		currentSession().update(arrangement);	

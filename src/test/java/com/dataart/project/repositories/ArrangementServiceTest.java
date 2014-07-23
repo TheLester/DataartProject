@@ -81,7 +81,7 @@ public class ArrangementServiceTest {
 		}
 		List real = getArrangementsSql();
 		assertEquals(1, real.size());
-		arrangementService.deleteArrangement(a);
+		arrangementService.deleteArrangement(a.getId());
 		real = getArrangementsSql();
 		assertEquals(0, real.size());
 	}
@@ -93,7 +93,7 @@ public class ArrangementServiceTest {
 		arrangementService.createArrangement(input);
 		List real = getArrangementsSql();
 		assertEquals(1, real.size());
-		arrangementService.updateArrangement(input, "Mama",
+		arrangementService.updateArrangement(input.getId(), "Mama",
 				utilities.getDate("1992", "05", "24"));
 		real = getArrangementsSql();
 		Arrangement expected = new Arrangement("Mama", utilities.getDate(

@@ -33,8 +33,8 @@
 <body onload="setFields();">
 	<div class="bs-example" id="warn">
 		<div class="alert alert-error">
-			<a href="#" class="close" data-dismiss="alert">&times;</a> <strong>There is an error in the submission!</strong>
-			Please fill all fields.
+			<a href="#" class="close" data-dismiss="alert">&times;</a> <strong>There
+				is an error in the submission!</strong> Please fill all fields.
 		</div>
 	</div>
 	<div class="bs-example1" id="suc">
@@ -78,29 +78,17 @@
 							<div id="accordionOne" class="panel-collapse collapse">
 								<!-- <div id="accordionOne" class="panel-collapse collapse in">-->
 								<div class="panel-body">
-									<table>
+									<table id="sectors">
 										<tr>
-											<td>Sector:</td>
-											<td><select id="sectorSelector" name="sectorSelector"
-												onclick="setFields();<%
-												Set<Sector> sectors = (Set<Sector>)request.getAttribute("sectors");
-												String sectorName = request.getParameter("sectorSelector");
-												//double price =  String.valueOf(request.getParameter("sectorPrice"));
-												double price
-												for (Sector s : sectors) {
-													if (s.getName().equals(sectorName)) {
-														s.setPrice(price);
-													}
-												}%>">
-													<c:forEach items="${sectors}" var="sector">
-														<option
-															value="${sector.id}/${sector.name}/${sector.price}">${sector.name}</option>
-													</c:forEach>
-											</select></td>
-											<td>Price:</td>
-											<td><input type="text" id="sectorPrice"
-												name="sectorPrice" /></td>
+											<th>Sector</th>
+											<th>Price</th>
 										</tr>
+										<c:forEach items="${sectors}" var="sector">
+											<tr>
+												<td>${sector.name}</td>
+												<td>${sector.price}</td>
+											</tr>
+										</c:forEach>
 									</table>
 								</div>
 							</div>
