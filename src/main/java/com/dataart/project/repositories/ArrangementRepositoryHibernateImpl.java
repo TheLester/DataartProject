@@ -50,7 +50,9 @@ public class ArrangementRepositoryHibernateImpl implements
 				.getCurrentSession().get(Arrangement.class, id);
 		arrangement.setName(name);
 		arrangement.setDate(date);
+		currentSession().createSQLQuery("SET FOREIGN_KEY_CHECKS=0;");
 		currentSession().update(arrangement);	
+		currentSession().createSQLQuery("SET FOREIGN_KEY_CHECKS=1;");
 	}
 
 	private Session currentSession() {
