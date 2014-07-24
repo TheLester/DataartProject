@@ -25,3 +25,5 @@ http://www.circus.dp.ua/bilety.php
 http://metalist.ua/stadium-scheme.html
 
 http://forum.spring.io/forum/spring-projects/web/87774-list-form-binding-via-modelattribute
+
+http://bitbybitblog.com/forms-and-data-models-in-spring-mvc/
