@@ -39,33 +39,35 @@ public class ArrangementController {
 		return "template";
 	}
 
-	@RequestMapping(value = "create-arrangement")
+	@RequestMapping(value = "create-arrangement", method = RequestMethod.GET)
 	public String createArrangementGet(Model model) {
 		model.addAttribute("partial", "create-arrangement.jsp");
 		model.addAttribute("title", "Create Event");
 		model.addAttribute("sectors", sectorService.getDefaultSectors());
+		model.addAttribute("requestSector", new SectorRequest());
 		return "template";
 	}
 
 	@RequestMapping(value = "create-arrangement", method = RequestMethod.POST)
-	public String createArrangementPost( HttpServletRequest request) {
+	public String createArrangementPost(@ModelAttribute("requestSector") SectorRequest requestSector, HttpServletRequest request) {
 		String time = request.getParameter("time");
 		String date = request.getParameter("date");
 		String name = request.getParameter("name");
 		String check = request.getParameter("NotNull");
-		Set<Sector> sectors=sectorService.getDefaultSectors();
+	//	Set<Sector> sectors=sectorService.getDefaultSectors();
 		System.out
 				.println("\n=============================================================================");
 		System.out.println(name);
 		System.out.println(date);
-		System.out.println(sectors);
+		System.out.println(requestSector);
 		System.out
 				.println("=============================================================================");
 		if (check.equals("true")) {
 			Arrangement a = new Arrangement(name, Utilities.getDate(date, time));
 			arrangementService.createArrangement(a);
-			a.setSectors(sectors);
-			sectorService.createSectors(sectors, a);
+			Set<Sector> result=new HashSet<Sector>(requestSector.getAllSectors());
+			a.setSectors(result);
+			sectorService.createSectors(result, a);
 			return "redirect:arrangements";
 		}
 		return "redirect:create-arrangement";

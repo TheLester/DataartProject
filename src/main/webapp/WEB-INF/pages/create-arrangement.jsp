@@ -52,7 +52,7 @@
 		</div>
 		<div class="panel-body">
 
-			<form:form id="reviewForm" method="post">
+			<form:form modelAttribute="requestSector" id="reviewForm" method="post">
 				<table>
 					<tr>
 						<td>Name:</td>
@@ -83,45 +83,17 @@
 											<th>Sector</th>
 											<th>Price</th>
 										</tr>
-										<c:forEach items="${sectors}" var="sector">
+										<c:forEach items="${sectors}" var="sector" varStatus="loop">
 											<tr>
-												<td>${sector.name}</td>
-												<td>${sector.price}</td>
+											<td><form:input path="allSectors[${loop.index}].name" value="${sector.name}" readonly="true"/></td>
+											<td><form:input path="allSectors[${loop.index}].price" value="${sector.price}"/></td>
+												
 											</tr>
 										</c:forEach>
 									</table>
 								</div>
 							</div>
-						</div>
-						<div class="panel panel-success">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion"
-										href="#accordionTwo"> Collapsible Accordion 2 </a>
-								</h4>
-							</div>
-							<div id="accordionTwo" class="panel-collapse collapse">
-								<div class="panel-body">Change does not roll in on the
-									wheels of inevitability, but comes through continuous struggle.
-									And so we must straighten our backs and work for our freedom. A
-									man can't ride you unless your back is bent.</div>
-							</div>
-						</div>
-						<div class="panel panel-info">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion"
-										href="#accordionThree"> Collapsible Accordion 3 </a>
-								</h4>
-							</div>
-
-							<div id="accordionThree" class="panel-collapse collapse">
-								<div class="panel-body">You must take personal
-									responsibility. You cannot change the circumstances, the
-									seasons, or the wind, but you can change yourself. That is
-									something you have charge of.</div>
-							</div>
-						</div>
+						</div>						
 					</div>
 				</div>
 				</br>
