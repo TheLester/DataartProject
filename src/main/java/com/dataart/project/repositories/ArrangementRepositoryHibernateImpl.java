@@ -19,7 +19,7 @@ public class ArrangementRepositoryHibernateImpl implements
 	@Autowired
 	protected SessionFactory sessionFactory;
 	@Autowired
-	protected SectorService sectorService;
+	protected SectorRepository sectorRepository;
 	
 	/* change to sessionFactory if using HSQL in memory DB */
 	@Override
@@ -39,7 +39,7 @@ public class ArrangementRepositoryHibernateImpl implements
 		Arrangement arrangement = (Arrangement) sessionFactory
 				.getCurrentSession().get(Arrangement.class, id);
 		for(Sector sector: arrangement.getSectors()) {
-			sectorService.deleteSector(sector);
+			sectorRepository.deleteSector(sector.getId());
 		}
 		currentSession().delete(arrangement);
 	}

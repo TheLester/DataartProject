@@ -4,10 +4,6 @@ import java.util.Set;
 
 import javax.persistence.*;
 
-enum TicketStatus {
-	FREE, SOLD, RESERVED
-};
-
 /**
  * Represents ticket for one seat
  * 
